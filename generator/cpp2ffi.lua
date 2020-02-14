@@ -387,26 +387,39 @@ local function parseFunction(self,stname,lineorig,namespace)
     local functype_reex =     "^(%s*[%w%s%*]+)%(%*([%w_]+)%)(%([^%(%)]*%))"
     local functype_arg_rest = "^(%s*[%w%s%*]+%(%*[%w_]+%)%([^%(%)]*%)),*(.*)"
     local rest = argscsinpars:sub(2,-2) --strip ()
+	
+	local implArgsArr = {}
+	local callArgsArr = {}
+	local signatureArr = {}
+	local signatureArgsArr = {}
     
     while true do
     --local tt = strsplit(rest,",")
     --for ii,arg in ipairs(tt) do
     --for arg in argscsinpars:gmatch("[%(,]*([^,%(%)]+)[%),]") do
 		if rest == "void" then break end
-        local type,name,retf,sigf
+        local type,name,retf,sigf,call,sigType
         local arg,restt = rest:match(functype_arg_rest)
         if arg then
             local t1,namef,t2 = arg:match(functype_reex)
             type=t1.."(*)"..t2;name=namef
+			sigType=t1.."(*)"..t2:gsub("([%w%s%*_]+)%s[%w_]+%s*([,%)])","%1%2")
             retf = t1
             sigf = t2
             rest = restt
+			call = name
         else
             arg,restt = rest:match(",*([^,%(%)]+),*(.*)")
             if not arg then break end
             rest = restt
-            if arg:match("&") and arg:match("const") then
-                arg = arg:gsub("&","")
+			local ptrFix = ""
+            if arg:match("&") then
+				if arg:match("const") then
+					arg = arg:gsub("&","")
+				else
+					arg = arg:gsub("&","*")
+					ptrFix = "*"
+				end
             end
             if arg:match("%.%.%.") then 
                 type="...";name="..."
@@ -416,7 +429,6 @@ local function parseFunction(self,stname,lineorig,namespace)
 
             if not type or not name then 
                 print("failure arg detection",funcname,type,name,argscsinpars,arg)
-
             else
 				if name:match"%*" then print("**",funcname) end
                 --float name[2] to float[2] name
@@ -424,30 +436,23 @@ local function parseFunction(self,stname,lineorig,namespace)
                 if siz then
                     type = type..siz
                     name = name:gsub("(%[%d*%])","")
+				elseif name:match("%[") then
+					print("Unhandled [ in "..name)
                 end
             end
+			sigType = type
+			call = ptrFix..name
         end
+		table.insert(implArgsArr,arg)
+		table.insert(signatureArgsArr,sigType)
+		table.insert(callArgsArr,call)
         table.insert(argsArr,{type=type,name=name,ret=retf,signature=sigf})
-        if arg:match("&") and not arg:match("const") then
-            --only post error if not manual
-            local cname = self.getCname(stname,funcname) --cimguiname
-            if not self.manuals[cname] then
-                print("reference to no const arg in",funcname,argscsinpars)
-            end
-        end
     end
-    argscsinpars = argscsinpars:gsub("&","")
-    
-    local signature = argscsinpars:gsub("([%w%s%*_]+)%s[%w_]+%s*([,%)])","%1%2")
-    signature = signature:gsub("%s*([,%)])","%1") --space before , and )
-    signature = signature:gsub(",%s*",",")--space after ,
-    signature = signature:gsub("([%w_]+)%s[%w_]+(%[%d*%])","%1%2") -- float[2]
-    signature = signature:gsub("(%(%*)[%w_]+(%)%([^%(%)]*%))","%1%2") --func defs
+
+    argscsinpars = "("..table.concat(implArgsArr,",")..")"
+	local signature = "("..table.concat(signatureArgsArr,",")..")"
 	signature = signature .. (extraconst or "")
-    
-    local call_args = argscsinpars:gsub("([%w_]+%s[%w_]+)%[%d*%]","%1") --float[2]
-    call_args = call_args:gsub("%(%*([%w_]+)%)%([^%(%)]*%)"," %1") --func type
-    call_args = call_args:gsub("[^%(].-([%w_]+)%s*([,%)])","%1%2")
+    local call_args = "("..table.concat(callArgsArr,",")..")"
     
     if not ret and stname then --must be constructors
         if not (stname == funcname or "~"..stname==funcname) then --break end

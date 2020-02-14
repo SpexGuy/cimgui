@@ -6676,7 +6676,7 @@
   ],
   "ImVector_swap": [
     {
-      "args": "(ImVector* self,ImVector rhs)",
+      "args": "(ImVector* self,ImVector* rhs)",
       "argsT": [
         {
           "name": "self",
@@ -6684,17 +6684,17 @@
         },
         {
           "name": "rhs",
-          "type": "ImVector&"
+          "type": "ImVector*"
         }
       ],
       "argsoriginal": "(ImVector<T>& rhs)",
-      "call_args": "(rhs)",
+      "call_args": "(*rhs)",
       "cimguiname": "ImVector_swap",
       "defaults": [],
       "funcname": "swap",
       "ov_cimguiname": "ImVector_swap",
       "ret": "void",
-      "signature": "(ImVector)",
+      "signature": "(ImVector*)",
       "stname": "ImVector",
       "templated": true
     }
@@ -7758,7 +7758,7 @@
   ],
   "igColorConvertHSVtoRGB": [
     {
-      "args": "(float h,float s,float v,float out_r,float out_g,float out_b)",
+      "args": "(float h,float s,float v,float* out_r,float* out_g,float* out_b)",
       "argsT": [
         {
           "name": "h",
@@ -7774,19 +7774,19 @@
         },
         {
           "name": "out_r",
-          "type": "float&"
+          "type": "float*"
         },
         {
           "name": "out_g",
-          "type": "float&"
+          "type": "float*"
         },
         {
           "name": "out_b",
-          "type": "float&"
+          "type": "float*"
         }
       ],
       "argsoriginal": "(float h,float s,float v,float& out_r,float& out_g,float& out_b)",
-      "call_args": "(h,s,v,out_r,out_g,out_b)",
+      "call_args": "(h,s,v,*out_r,*out_g,*out_b)",
       "cimguiname": "igColorConvertHSVtoRGB",
       "defaults": [],
       "funcname": "ColorConvertHSVtoRGB",
@@ -7794,13 +7794,13 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igColorConvertHSVtoRGB",
       "ret": "void",
-      "signature": "(float,float,float,float,float,float)",
+      "signature": "(float,float,float,float*,float*,float*)",
       "stname": ""
     }
   ],
   "igColorConvertRGBtoHSV": [
     {
-      "args": "(float r,float g,float b,float out_h,float out_s,float out_v)",
+      "args": "(float r,float g,float b,float* out_h,float* out_s,float* out_v)",
       "argsT": [
         {
           "name": "r",
@@ -7816,19 +7816,19 @@
         },
         {
           "name": "out_h",
-          "type": "float&"
+          "type": "float*"
         },
         {
           "name": "out_s",
-          "type": "float&"
+          "type": "float*"
         },
         {
           "name": "out_v",
-          "type": "float&"
+          "type": "float*"
         }
       ],
       "argsoriginal": "(float r,float g,float b,float& out_h,float& out_s,float& out_v)",
-      "call_args": "(r,g,b,out_h,out_s,out_v)",
+      "call_args": "(r,g,b,*out_h,*out_s,*out_v)",
       "cimguiname": "igColorConvertRGBtoHSV",
       "defaults": [],
       "funcname": "ColorConvertRGBtoHSV",
@@ -7836,7 +7836,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igColorConvertRGBtoHSV",
       "ret": "void",
-      "signature": "(float,float,float,float,float,float)",
+      "signature": "(float,float,float,float*,float*,float*)",
       "stname": ""
     }
   ],
@@ -12806,14 +12806,14 @@
           "type": "int"
         }
       ],
-      "argsoriginal": "(const char* label,const float* values,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.40282346638528859811704183484516925e+38F,float scale_max=3.40282346638528859811704183484516925e+38F,ImVec2 graph_size=ImVec2(0,0),int stride=sizeof(float))",
+      "argsoriginal": "(const char* label,const float* values,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.402823466e+38F,float scale_max=3.402823466e+38F,ImVec2 graph_size=ImVec2(0,0),int stride=sizeof(float))",
       "call_args": "(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride)",
       "cimguiname": "igPlotHistogram",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
         "overlay_text": "((void*)0)",
-        "scale_max": "FLT_MAX",
-        "scale_min": "FLT_MAX",
+        "scale_max": "3.402823466e+38F",
+        "scale_min": "3.402823466e+38F",
         "stride": "sizeof(float)",
         "values_offset": "0"
       },
@@ -12866,14 +12866,14 @@
           "type": "ImVec2"
         }
       ],
-      "argsoriginal": "(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.40282346638528859811704183484516925e+38F,float scale_max=3.40282346638528859811704183484516925e+38F,ImVec2 graph_size=ImVec2(0,0))",
+      "argsoriginal": "(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.402823466e+38F,float scale_max=3.402823466e+38F,ImVec2 graph_size=ImVec2(0,0))",
       "call_args": "(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size)",
       "cimguiname": "igPlotHistogram",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
         "overlay_text": "((void*)0)",
-        "scale_max": "FLT_MAX",
-        "scale_min": "FLT_MAX",
+        "scale_max": "3.402823466e+38F",
+        "scale_min": "3.402823466e+38F",
         "values_offset": "0"
       },
       "funcname": "PlotHistogram",
@@ -12925,14 +12925,14 @@
           "type": "int"
         }
       ],
-      "argsoriginal": "(const char* label,const float* values,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.40282346638528859811704183484516925e+38F,float scale_max=3.40282346638528859811704183484516925e+38F,ImVec2 graph_size=ImVec2(0,0),int stride=sizeof(float))",
+      "argsoriginal": "(const char* label,const float* values,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.402823466e+38F,float scale_max=3.402823466e+38F,ImVec2 graph_size=ImVec2(0,0),int stride=sizeof(float))",
       "call_args": "(label,values,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size,stride)",
       "cimguiname": "igPlotLines",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
         "overlay_text": "((void*)0)",
-        "scale_max": "FLT_MAX",
-        "scale_min": "FLT_MAX",
+        "scale_max": "3.402823466e+38F",
+        "scale_min": "3.402823466e+38F",
         "stride": "sizeof(float)",
         "values_offset": "0"
       },
@@ -12985,14 +12985,14 @@
           "type": "ImVec2"
         }
       ],
-      "argsoriginal": "(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.40282346638528859811704183484516925e+38F,float scale_max=3.40282346638528859811704183484516925e+38F,ImVec2 graph_size=ImVec2(0,0))",
+      "argsoriginal": "(const char* label,float(*values_getter)(void* data,int idx),void* data,int values_count,int values_offset=0,const char* overlay_text=((void*)0),float scale_min=3.402823466e+38F,float scale_max=3.402823466e+38F,ImVec2 graph_size=ImVec2(0,0))",
       "call_args": "(label,values_getter,data,values_count,values_offset,overlay_text,scale_min,scale_max,graph_size)",
       "cimguiname": "igPlotLines",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
         "overlay_text": "((void*)0)",
-        "scale_max": "FLT_MAX",
-        "scale_min": "FLT_MAX",
+        "scale_max": "3.402823466e+38F",
+        "scale_min": "3.402823466e+38F",
         "values_offset": "0"
       },
       "funcname": "PlotLines",
