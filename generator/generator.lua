@@ -46,7 +46,7 @@ local implementations = {}
 for i=2,#script_args do table.insert(implementations,script_args[i]) end
 
 local placementConstruction = true
-local genTemplates = false
+local genTemplates = true
 
 --------------------------------------------------------------------------
 --this table has the functions to be skipped in generation

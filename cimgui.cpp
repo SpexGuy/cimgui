@@ -1448,6 +1448,2386 @@ CIMGUI_API void igMemFree(void* ptr)
 {
     return ImGui::MemFree(ptr);
 }
+CIMGUI_API void ImVector_ImVector_float(ImVector_float* self)
+{
+    new (self) ImVector_float();
+}
+CIMGUI_API void ImVector_ImVector_ImWchar(ImVector_ImWchar* self)
+{
+    new (self) ImVector_ImWchar();
+}
+CIMGUI_API void ImVector_ImVector_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    new (self) ImVector_ImDrawVert();
+}
+CIMGUI_API void ImVector_ImVector_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    new (self) ImVector_ImFontGlyph();
+}
+CIMGUI_API void ImVector_ImVector_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    new (self) ImVector_ImGuiTextRange();
+}
+CIMGUI_API void ImVector_ImVector_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    new (self) ImVector_ImGuiStoragePair();
+}
+CIMGUI_API void ImVector_ImVector_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    new (self) ImVector_ImDrawChannel();
+}
+CIMGUI_API void ImVector_ImVector_char(ImVector_char* self)
+{
+    new (self) ImVector_char();
+}
+CIMGUI_API void ImVector_ImVector_ImU32(ImVector_ImU32* self)
+{
+    new (self) ImVector_ImU32();
+}
+CIMGUI_API void ImVector_ImVector_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    new (self) ImVector_ImFontAtlasCustomRect();
+}
+CIMGUI_API void ImVector_ImVector_ImTextureID(ImVector_ImTextureID* self)
+{
+    new (self) ImVector_ImTextureID();
+}
+CIMGUI_API void ImVector_ImVector_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    new (self) ImVector_ImFontConfig();
+}
+CIMGUI_API void ImVector_ImVector_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    new (self) ImVector_ImFontPtr();
+}
+CIMGUI_API void ImVector_ImVector_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    new (self) ImVector_ImDrawCmd();
+}
+CIMGUI_API void ImVector_ImVector_ImVec4(ImVector_ImVec4* self)
+{
+    new (self) ImVector_ImVec4();
+}
+CIMGUI_API void ImVector_ImVector_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    new (self) ImVector_ImDrawIdx();
+}
+CIMGUI_API void ImVector_ImVector_ImVec2(ImVector_ImVec2* self)
+{
+    new (self) ImVector_ImVec2();
+}
+CIMGUI_API void ImVector_destroy_float(ImVector_float* self)
+{
+    self->~ImVector_float();
+}
+CIMGUI_API void ImVector_destroy_ImWchar(ImVector_ImWchar* self)
+{
+    self->~ImVector_ImWchar();
+}
+CIMGUI_API void ImVector_destroy_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    self->~ImVector_ImDrawVert();
+}
+CIMGUI_API void ImVector_destroy_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    self->~ImVector_ImFontGlyph();
+}
+CIMGUI_API void ImVector_destroy_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    self->~ImVector_ImGuiTextRange();
+}
+CIMGUI_API void ImVector_destroy_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    self->~ImVector_ImGuiStoragePair();
+}
+CIMGUI_API void ImVector_destroy_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    self->~ImVector_ImDrawChannel();
+}
+CIMGUI_API void ImVector_destroy_char(ImVector_char* self)
+{
+    self->~ImVector_char();
+}
+CIMGUI_API void ImVector_destroy_ImU32(ImVector_ImU32* self)
+{
+    self->~ImVector_ImU32();
+}
+CIMGUI_API void ImVector_destroy_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    self->~ImVector_ImFontAtlasCustomRect();
+}
+CIMGUI_API void ImVector_destroy_ImTextureID(ImVector_ImTextureID* self)
+{
+    self->~ImVector_ImTextureID();
+}
+CIMGUI_API void ImVector_destroy_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    self->~ImVector_ImFontConfig();
+}
+CIMGUI_API void ImVector_destroy_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    self->~ImVector_ImFontPtr();
+}
+CIMGUI_API void ImVector_destroy_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    self->~ImVector_ImDrawCmd();
+}
+CIMGUI_API void ImVector_destroy_ImVec4(ImVector_ImVec4* self)
+{
+    self->~ImVector_ImVec4();
+}
+CIMGUI_API void ImVector_destroy_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    self->~ImVector_ImDrawIdx();
+}
+CIMGUI_API void ImVector_destroy_ImVec2(ImVector_ImVec2* self)
+{
+    self->~ImVector_ImVec2();
+}
+CIMGUI_API void ImVector_ImVectorVector_float(ImVector_float* self,const ImVector_float src)
+{
+    new (self) ImVector_float(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImWchar(ImVector_ImWchar* self,const ImVector_ImWchar src)
+{
+    new (self) ImVector_ImWchar(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImDrawVert(ImVector_ImDrawVert* self,const ImVector_ImDrawVert src)
+{
+    new (self) ImVector_ImDrawVert(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImFontGlyph(ImVector_ImFontGlyph* self,const ImVector_ImFontGlyph src)
+{
+    new (self) ImVector_ImFontGlyph(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImVector_ImGuiTextRange src)
+{
+    new (self) ImVector_ImGuiTextRange(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImVector_ImGuiStoragePair src)
+{
+    new (self) ImVector_ImGuiStoragePair(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImDrawChannel(ImVector_ImDrawChannel* self,const ImVector_ImDrawChannel src)
+{
+    new (self) ImVector_ImDrawChannel(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_char(ImVector_char* self,const ImVector_char src)
+{
+    new (self) ImVector_char(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImU32(ImVector_ImU32* self,const ImVector_ImU32 src)
+{
+    new (self) ImVector_ImU32(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImVector_ImFontAtlasCustomRect src)
+{
+    new (self) ImVector_ImFontAtlasCustomRect(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImTextureID(ImVector_ImTextureID* self,const ImVector_ImTextureID src)
+{
+    new (self) ImVector_ImTextureID(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImFontConfig(ImVector_ImFontConfig* self,const ImVector_ImFontConfig src)
+{
+    new (self) ImVector_ImFontConfig(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImFontPtr(ImVector_ImFontPtr* self,const ImVector_ImFontPtr src)
+{
+    new (self) ImVector_ImFontPtr(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImDrawCmd(ImVector_ImDrawCmd* self,const ImVector_ImDrawCmd src)
+{
+    new (self) ImVector_ImDrawCmd(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImVec4(ImVector_ImVec4* self,const ImVector_ImVec4 src)
+{
+    new (self) ImVector_ImVec4(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImDrawIdx(ImVector_ImDrawIdx* self,const ImVector_ImDrawIdx src)
+{
+    new (self) ImVector_ImDrawIdx(src);
+}
+CIMGUI_API void ImVector_ImVectorVector_ImVec2(ImVector_ImVec2* self,const ImVector_ImVec2 src)
+{
+    new (self) ImVector_ImVec2(src);
+}
+CIMGUI_API bool ImVector_empty_float(ImVector_float* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImWchar(ImVector_ImWchar* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_char(ImVector_char* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImU32(ImVector_ImU32* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImVec4(ImVector_ImVec4* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->empty();
+}
+CIMGUI_API bool ImVector_empty_ImVec2(ImVector_ImVec2* self)
+{
+    return self->empty();
+}
+CIMGUI_API int ImVector_size_float(ImVector_float* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImWchar(ImVector_ImWchar* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_char(ImVector_char* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImU32(ImVector_ImU32* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImVec4(ImVector_ImVec4* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_ImVec2(ImVector_ImVec2* self)
+{
+    return self->size();
+}
+CIMGUI_API int ImVector_size_in_bytes_float(ImVector_float* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImWchar(ImVector_ImWchar* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_char(ImVector_char* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImU32(ImVector_ImU32* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImVec4(ImVector_ImVec4* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_size_in_bytes_ImVec2(ImVector_ImVec2* self)
+{
+    return self->size_in_bytes();
+}
+CIMGUI_API int ImVector_capacity_float(ImVector_float* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImWchar(ImVector_ImWchar* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_char(ImVector_char* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImU32(ImVector_ImU32* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImVec4(ImVector_ImVec4* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->capacity();
+}
+CIMGUI_API int ImVector_capacity_ImVec2(ImVector_ImVec2* self)
+{
+    return self->capacity();
+}
+CIMGUI_API void ImVector_clear_float(ImVector_float* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImWchar(ImVector_ImWchar* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_char(ImVector_char* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImU32(ImVector_ImU32* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImVec4(ImVector_ImVec4* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->clear();
+}
+CIMGUI_API void ImVector_clear_ImVec2(ImVector_ImVec2* self)
+{
+    return self->clear();
+}
+CIMGUI_API float* ImVector_begin_float(ImVector_float* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImWchar* ImVector_begin_ImWchar(ImVector_ImWchar* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImDrawVert* ImVector_begin_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImFontGlyph* ImVector_begin_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImGuiTextRange* ImVector_begin_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImGuiStoragePair* ImVector_begin_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImDrawChannel* ImVector_begin_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->begin();
+}
+CIMGUI_API char* ImVector_begin_char(ImVector_char* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImU32* ImVector_begin_ImU32(ImVector_ImU32* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_begin_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImTextureID* ImVector_begin_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImFontConfig* ImVector_begin_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImFont** ImVector_begin_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImDrawCmd* ImVector_begin_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImVec4* ImVector_begin_ImVec4(ImVector_ImVec4* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImDrawIdx* ImVector_begin_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->begin();
+}
+CIMGUI_API ImVec2* ImVector_begin_ImVec2(ImVector_ImVec2* self)
+{
+    return self->begin();
+}
+CIMGUI_API const float* ImVector_begin_const_float(ImVector_float* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImWchar* ImVector_begin_const_ImWchar(ImVector_ImWchar* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImDrawVert* ImVector_begin_const_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImFontGlyph* ImVector_begin_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImGuiTextRange* ImVector_begin_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImGuiStoragePair* ImVector_begin_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImDrawChannel* ImVector_begin_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->begin();
+}
+CIMGUI_API const char* ImVector_begin_const_char(ImVector_char* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImU32* ImVector_begin_const_ImU32(ImVector_ImU32* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_begin_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImTextureID* ImVector_begin_const_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImFontConfig* ImVector_begin_const_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImFont** ImVector_begin_const_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImDrawCmd* ImVector_begin_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImVec4* ImVector_begin_const_ImVec4(ImVector_ImVec4* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImDrawIdx* ImVector_begin_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->begin();
+}
+CIMGUI_API const ImVec2* ImVector_begin_const_ImVec2(ImVector_ImVec2* self)
+{
+    return self->begin();
+}
+CIMGUI_API float* ImVector_end_float(ImVector_float* self)
+{
+    return self->end();
+}
+CIMGUI_API ImWchar* ImVector_end_ImWchar(ImVector_ImWchar* self)
+{
+    return self->end();
+}
+CIMGUI_API ImDrawVert* ImVector_end_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->end();
+}
+CIMGUI_API ImFontGlyph* ImVector_end_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->end();
+}
+CIMGUI_API ImGuiTextRange* ImVector_end_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->end();
+}
+CIMGUI_API ImGuiStoragePair* ImVector_end_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->end();
+}
+CIMGUI_API ImDrawChannel* ImVector_end_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->end();
+}
+CIMGUI_API char* ImVector_end_char(ImVector_char* self)
+{
+    return self->end();
+}
+CIMGUI_API ImU32* ImVector_end_ImU32(ImVector_ImU32* self)
+{
+    return self->end();
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_end_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->end();
+}
+CIMGUI_API ImTextureID* ImVector_end_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->end();
+}
+CIMGUI_API ImFontConfig* ImVector_end_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->end();
+}
+CIMGUI_API ImFont** ImVector_end_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->end();
+}
+CIMGUI_API ImDrawCmd* ImVector_end_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->end();
+}
+CIMGUI_API ImVec4* ImVector_end_ImVec4(ImVector_ImVec4* self)
+{
+    return self->end();
+}
+CIMGUI_API ImDrawIdx* ImVector_end_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->end();
+}
+CIMGUI_API ImVec2* ImVector_end_ImVec2(ImVector_ImVec2* self)
+{
+    return self->end();
+}
+CIMGUI_API const float* ImVector_end_const_float(ImVector_float* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImWchar* ImVector_end_const_ImWchar(ImVector_ImWchar* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImDrawVert* ImVector_end_const_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImFontGlyph* ImVector_end_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImGuiTextRange* ImVector_end_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImGuiStoragePair* ImVector_end_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImDrawChannel* ImVector_end_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->end();
+}
+CIMGUI_API const char* ImVector_end_const_char(ImVector_char* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImU32* ImVector_end_const_ImU32(ImVector_ImU32* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_end_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImTextureID* ImVector_end_const_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImFontConfig* ImVector_end_const_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImFont** ImVector_end_const_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImDrawCmd* ImVector_end_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImVec4* ImVector_end_const_ImVec4(ImVector_ImVec4* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImDrawIdx* ImVector_end_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->end();
+}
+CIMGUI_API const ImVec2* ImVector_end_const_ImVec2(ImVector_ImVec2* self)
+{
+    return self->end();
+}
+CIMGUI_API float* ImVector_front_float(ImVector_float* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImWchar* ImVector_front_ImWchar(ImVector_ImWchar* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImDrawVert* ImVector_front_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImFontGlyph* ImVector_front_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImGuiTextRange* ImVector_front_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImGuiStoragePair* ImVector_front_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImDrawChannel* ImVector_front_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return &self->front();
+}
+CIMGUI_API char* ImVector_front_char(ImVector_char* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImU32* ImVector_front_ImU32(ImVector_ImU32* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_front_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImTextureID* ImVector_front_ImTextureID(ImVector_ImTextureID* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImFontConfig* ImVector_front_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImFont** ImVector_front_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImDrawCmd* ImVector_front_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImVec4* ImVector_front_ImVec4(ImVector_ImVec4* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImDrawIdx* ImVector_front_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return &self->front();
+}
+CIMGUI_API ImVec2* ImVector_front_ImVec2(ImVector_ImVec2* self)
+{
+    return &self->front();
+}
+CIMGUI_API const float* ImVector_front_const_float(ImVector_float* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImWchar* ImVector_front_const_ImWchar(ImVector_ImWchar* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImDrawVert* ImVector_front_const_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImFontGlyph* ImVector_front_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImGuiTextRange* ImVector_front_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImGuiStoragePair* ImVector_front_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImDrawChannel* ImVector_front_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return &self->front();
+}
+CIMGUI_API const char* ImVector_front_const_char(ImVector_char* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImU32* ImVector_front_const_ImU32(ImVector_ImU32* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_front_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImTextureID* ImVector_front_const_ImTextureID(ImVector_ImTextureID* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImFontConfig* ImVector_front_const_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImFont** ImVector_front_const_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImDrawCmd* ImVector_front_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImVec4* ImVector_front_const_ImVec4(ImVector_ImVec4* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImDrawIdx* ImVector_front_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return &self->front();
+}
+CIMGUI_API const ImVec2* ImVector_front_const_ImVec2(ImVector_ImVec2* self)
+{
+    return &self->front();
+}
+CIMGUI_API float* ImVector_back_float(ImVector_float* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImWchar* ImVector_back_ImWchar(ImVector_ImWchar* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImDrawVert* ImVector_back_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImFontGlyph* ImVector_back_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImGuiTextRange* ImVector_back_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImGuiStoragePair* ImVector_back_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImDrawChannel* ImVector_back_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return &self->back();
+}
+CIMGUI_API char* ImVector_back_char(ImVector_char* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImU32* ImVector_back_ImU32(ImVector_ImU32* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_back_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImTextureID* ImVector_back_ImTextureID(ImVector_ImTextureID* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImFontConfig* ImVector_back_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImFont** ImVector_back_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImDrawCmd* ImVector_back_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImVec4* ImVector_back_ImVec4(ImVector_ImVec4* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImDrawIdx* ImVector_back_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return &self->back();
+}
+CIMGUI_API ImVec2* ImVector_back_ImVec2(ImVector_ImVec2* self)
+{
+    return &self->back();
+}
+CIMGUI_API const float* ImVector_back_const_float(ImVector_float* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImWchar* ImVector_back_const_ImWchar(ImVector_ImWchar* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImDrawVert* ImVector_back_const_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImFontGlyph* ImVector_back_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImGuiTextRange* ImVector_back_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImGuiStoragePair* ImVector_back_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImDrawChannel* ImVector_back_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return &self->back();
+}
+CIMGUI_API const char* ImVector_back_const_char(ImVector_char* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImU32* ImVector_back_const_ImU32(ImVector_ImU32* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_back_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImTextureID* ImVector_back_const_ImTextureID(ImVector_ImTextureID* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImFontConfig* ImVector_back_const_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImFont** ImVector_back_const_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImDrawCmd* ImVector_back_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImVec4* ImVector_back_const_ImVec4(ImVector_ImVec4* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImDrawIdx* ImVector_back_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return &self->back();
+}
+CIMGUI_API const ImVec2* ImVector_back_const_ImVec2(ImVector_ImVec2* self)
+{
+    return &self->back();
+}
+CIMGUI_API void ImVector_swap_float(ImVector_float* self,ImVector_float* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImWchar(ImVector_ImWchar* self,ImVector_ImWchar* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImDrawVert(ImVector_ImDrawVert* self,ImVector_ImDrawVert* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImFontGlyph(ImVector_ImFontGlyph* self,ImVector_ImFontGlyph* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImGuiTextRange(ImVector_ImGuiTextRange* self,ImVector_ImGuiTextRange* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,ImVector_ImGuiStoragePair* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImDrawChannel(ImVector_ImDrawChannel* self,ImVector_ImDrawChannel* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_char(ImVector_char* self,ImVector_char* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImU32(ImVector_ImU32* self,ImVector_ImU32* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,ImVector_ImFontAtlasCustomRect* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImTextureID(ImVector_ImTextureID* self,ImVector_ImTextureID* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImFontConfig(ImVector_ImFontConfig* self,ImVector_ImFontConfig* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImFontPtr(ImVector_ImFontPtr* self,ImVector_ImFontPtr* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImDrawCmd(ImVector_ImDrawCmd* self,ImVector_ImDrawCmd* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImVec4(ImVector_ImVec4* self,ImVector_ImVec4* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImDrawIdx(ImVector_ImDrawIdx* self,ImVector_ImDrawIdx* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API void ImVector_swap_ImVec2(ImVector_ImVec2* self,ImVector_ImVec2* rhs)
+{
+    return self->swap(*rhs);
+}
+CIMGUI_API int ImVector__grow_capacity_float(ImVector_float* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImWchar(ImVector_ImWchar* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImDrawVert(ImVector_ImDrawVert* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImFontGlyph(ImVector_ImFontGlyph* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImGuiTextRange(ImVector_ImGuiTextRange* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImDrawChannel(ImVector_ImDrawChannel* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_char(ImVector_char* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImU32(ImVector_ImU32* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImTextureID(ImVector_ImTextureID* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImFontConfig(ImVector_ImFontConfig* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImFontPtr(ImVector_ImFontPtr* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImDrawCmd(ImVector_ImDrawCmd* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImVec4(ImVector_ImVec4* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImDrawIdx(ImVector_ImDrawIdx* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API int ImVector__grow_capacity_ImVec2(ImVector_ImVec2* self,int sz)
+{
+    return self->_grow_capacity(sz);
+}
+CIMGUI_API void ImVector_resize_float(ImVector_float* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImWchar(ImVector_ImWchar* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImDrawVert(ImVector_ImDrawVert* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImFontGlyph(ImVector_ImFontGlyph* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImGuiTextRange(ImVector_ImGuiTextRange* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImDrawChannel(ImVector_ImDrawChannel* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_char(ImVector_char* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImU32(ImVector_ImU32* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImTextureID(ImVector_ImTextureID* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImFontConfig(ImVector_ImFontConfig* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImFontPtr(ImVector_ImFontPtr* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImDrawCmd(ImVector_ImDrawCmd* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImVec4(ImVector_ImVec4* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImDrawIdx(ImVector_ImDrawIdx* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resize_ImVec2(ImVector_ImVec2* self,int new_size)
+{
+    return self->resize(new_size);
+}
+CIMGUI_API void ImVector_resizeT_float(ImVector_float* self,int new_size,const float v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImWchar(ImVector_ImWchar* self,int new_size,const ImWchar v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImDrawVert(ImVector_ImDrawVert* self,int new_size,const ImDrawVert v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImFontGlyph(ImVector_ImFontGlyph* self,int new_size,const ImFontGlyph v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImGuiTextRange(ImVector_ImGuiTextRange* self,int new_size,const ImGuiTextRange v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int new_size,const ImGuiStoragePair v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImDrawChannel(ImVector_ImDrawChannel* self,int new_size,const ImDrawChannel v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_char(ImVector_char* self,int new_size,const char v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImU32(ImVector_ImU32* self,int new_size,const ImU32 v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int new_size,const ImFontAtlasCustomRect v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImTextureID(ImVector_ImTextureID* self,int new_size,const ImTextureID v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImFontConfig(ImVector_ImFontConfig* self,int new_size,const ImFontConfig v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImFontPtr(ImVector_ImFontPtr* self,int new_size,const ImFont* v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImDrawCmd(ImVector_ImDrawCmd* self,int new_size,const ImDrawCmd v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImVec4(ImVector_ImVec4* self,int new_size,const ImVec4 v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImDrawIdx(ImVector_ImDrawIdx* self,int new_size,const ImDrawIdx v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_resizeT_ImVec2(ImVector_ImVec2* self,int new_size,const ImVec2 v)
+{
+    return self->resize(new_size,v);
+}
+CIMGUI_API void ImVector_shrink_float(ImVector_float* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImWchar(ImVector_ImWchar* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImDrawVert(ImVector_ImDrawVert* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImFontGlyph(ImVector_ImFontGlyph* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImGuiTextRange(ImVector_ImGuiTextRange* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImDrawChannel(ImVector_ImDrawChannel* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_char(ImVector_char* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImU32(ImVector_ImU32* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImTextureID(ImVector_ImTextureID* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImFontConfig(ImVector_ImFontConfig* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImFontPtr(ImVector_ImFontPtr* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImDrawCmd(ImVector_ImDrawCmd* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImVec4(ImVector_ImVec4* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImDrawIdx(ImVector_ImDrawIdx* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_shrink_ImVec2(ImVector_ImVec2* self,int new_size)
+{
+    return self->shrink(new_size);
+}
+CIMGUI_API void ImVector_reserve_float(ImVector_float* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImWchar(ImVector_ImWchar* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImDrawVert(ImVector_ImDrawVert* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImFontGlyph(ImVector_ImFontGlyph* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImGuiTextRange(ImVector_ImGuiTextRange* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImDrawChannel(ImVector_ImDrawChannel* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_char(ImVector_char* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImU32(ImVector_ImU32* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImTextureID(ImVector_ImTextureID* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImFontConfig(ImVector_ImFontConfig* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImFontPtr(ImVector_ImFontPtr* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImDrawCmd(ImVector_ImDrawCmd* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImVec4(ImVector_ImVec4* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImDrawIdx(ImVector_ImDrawIdx* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_reserve_ImVec2(ImVector_ImVec2* self,int new_capacity)
+{
+    return self->reserve(new_capacity);
+}
+CIMGUI_API void ImVector_push_back_float(ImVector_float* self,const float v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_char(ImVector_char* self,const char v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_push_back_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->push_back(v);
+}
+CIMGUI_API void ImVector_pop_back_float(ImVector_float* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImWchar(ImVector_ImWchar* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImDrawVert(ImVector_ImDrawVert* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImFontGlyph(ImVector_ImFontGlyph* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImDrawChannel(ImVector_ImDrawChannel* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_char(ImVector_char* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImU32(ImVector_ImU32* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImTextureID(ImVector_ImTextureID* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImFontConfig(ImVector_ImFontConfig* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImFontPtr(ImVector_ImFontPtr* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImDrawCmd(ImVector_ImDrawCmd* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImVec4(ImVector_ImVec4* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImDrawIdx(ImVector_ImDrawIdx* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_pop_back_ImVec2(ImVector_ImVec2* self)
+{
+    return self->pop_back();
+}
+CIMGUI_API void ImVector_push_front_float(ImVector_float* self,const float v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_char(ImVector_char* self,const char v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API void ImVector_push_front_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->push_front(v);
+}
+CIMGUI_API float* ImVector_erase_float(ImVector_float* self,const float* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImWchar* ImVector_erase_ImWchar(ImVector_ImWchar* self,const ImWchar* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImDrawVert* ImVector_erase_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImFontGlyph* ImVector_erase_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImGuiTextRange* ImVector_erase_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImGuiStoragePair* ImVector_erase_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImDrawChannel* ImVector_erase_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API char* ImVector_erase_char(ImVector_char* self,const char* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImU32* ImVector_erase_ImU32(ImVector_ImU32* self,const ImU32* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_erase_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImTextureID* ImVector_erase_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImFontConfig* ImVector_erase_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImFont** ImVector_erase_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImDrawCmd* ImVector_erase_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImVec4* ImVector_erase_ImVec4(ImVector_ImVec4* self,const ImVec4* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImDrawIdx* ImVector_erase_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API ImVec2* ImVector_erase_ImVec2(ImVector_ImVec2* self,const ImVec2* it)
+{
+    return self->erase(it);
+}
+CIMGUI_API float* ImVector_eraseTPtr_float(ImVector_float* self,const float* it,const float* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImWchar* ImVector_eraseTPtr_ImWchar(ImVector_ImWchar* self,const ImWchar* it,const ImWchar* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImDrawVert* ImVector_eraseTPtr_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it,const ImDrawVert* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImFontGlyph* ImVector_eraseTPtr_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it,const ImFontGlyph* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImGuiTextRange* ImVector_eraseTPtr_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it,const ImGuiTextRange* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImGuiStoragePair* ImVector_eraseTPtr_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it,const ImGuiStoragePair* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImDrawChannel* ImVector_eraseTPtr_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it,const ImDrawChannel* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API char* ImVector_eraseTPtr_char(ImVector_char* self,const char* it,const char* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImU32* ImVector_eraseTPtr_ImU32(ImVector_ImU32* self,const ImU32* it,const ImU32* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_eraseTPtr_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it,const ImFontAtlasCustomRect* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImTextureID* ImVector_eraseTPtr_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it,const ImTextureID* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImFontConfig* ImVector_eraseTPtr_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it,const ImFontConfig* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImFont** ImVector_eraseTPtr_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it,const ImFont** it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImDrawCmd* ImVector_eraseTPtr_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it,const ImDrawCmd* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImVec4* ImVector_eraseTPtr_ImVec4(ImVector_ImVec4* self,const ImVec4* it,const ImVec4* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImDrawIdx* ImVector_eraseTPtr_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it,const ImDrawIdx* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API ImVec2* ImVector_eraseTPtr_ImVec2(ImVector_ImVec2* self,const ImVec2* it,const ImVec2* it_last)
+{
+    return self->erase(it,it_last);
+}
+CIMGUI_API float* ImVector_erase_unsorted_float(ImVector_float* self,const float* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImWchar* ImVector_erase_unsorted_ImWchar(ImVector_ImWchar* self,const ImWchar* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImDrawVert* ImVector_erase_unsorted_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImFontGlyph* ImVector_erase_unsorted_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImGuiTextRange* ImVector_erase_unsorted_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImGuiStoragePair* ImVector_erase_unsorted_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImDrawChannel* ImVector_erase_unsorted_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API char* ImVector_erase_unsorted_char(ImVector_char* self,const char* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImU32* ImVector_erase_unsorted_ImU32(ImVector_ImU32* self,const ImU32* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_erase_unsorted_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImTextureID* ImVector_erase_unsorted_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImFontConfig* ImVector_erase_unsorted_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImFont** ImVector_erase_unsorted_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImDrawCmd* ImVector_erase_unsorted_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImVec4* ImVector_erase_unsorted_ImVec4(ImVector_ImVec4* self,const ImVec4* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImDrawIdx* ImVector_erase_unsorted_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API ImVec2* ImVector_erase_unsorted_ImVec2(ImVector_ImVec2* self,const ImVec2* it)
+{
+    return self->erase_unsorted(it);
+}
+CIMGUI_API float* ImVector_insert_float(ImVector_float* self,const float* it,const float v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImWchar* ImVector_insert_ImWchar(ImVector_ImWchar* self,const ImWchar* it,const ImWchar v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImDrawVert* ImVector_insert_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it,const ImDrawVert v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImFontGlyph* ImVector_insert_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it,const ImFontGlyph v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImGuiTextRange* ImVector_insert_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it,const ImGuiTextRange v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImGuiStoragePair* ImVector_insert_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it,const ImGuiStoragePair v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImDrawChannel* ImVector_insert_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it,const ImDrawChannel v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API char* ImVector_insert_char(ImVector_char* self,const char* it,const char v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImU32* ImVector_insert_ImU32(ImVector_ImU32* self,const ImU32* it,const ImU32 v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_insert_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it,const ImFontAtlasCustomRect v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImTextureID* ImVector_insert_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it,const ImTextureID v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImFontConfig* ImVector_insert_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it,const ImFontConfig v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImFont** ImVector_insert_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it,const ImFont* v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImDrawCmd* ImVector_insert_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it,const ImDrawCmd v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImVec4* ImVector_insert_ImVec4(ImVector_ImVec4* self,const ImVec4* it,const ImVec4 v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImDrawIdx* ImVector_insert_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it,const ImDrawIdx v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API ImVec2* ImVector_insert_ImVec2(ImVector_ImVec2* self,const ImVec2* it,const ImVec2 v)
+{
+    return self->insert(it,v);
+}
+CIMGUI_API bool ImVector_contains_float(ImVector_float* self,const float v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_char(ImVector_char* self,const char v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->contains(v);
+}
+CIMGUI_API bool ImVector_contains_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->contains(v);
+}
+CIMGUI_API float* ImVector_find_float(ImVector_float* self,const float v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImWchar* ImVector_find_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImDrawVert* ImVector_find_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImFontGlyph* ImVector_find_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImGuiTextRange* ImVector_find_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImGuiStoragePair* ImVector_find_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImDrawChannel* ImVector_find_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->find(v);
+}
+CIMGUI_API char* ImVector_find_char(ImVector_char* self,const char v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImU32* ImVector_find_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImFontAtlasCustomRect* ImVector_find_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImTextureID* ImVector_find_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImFontConfig* ImVector_find_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImFont** ImVector_find_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImDrawCmd* ImVector_find_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImVec4* ImVector_find_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImDrawIdx* ImVector_find_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->find(v);
+}
+CIMGUI_API ImVec2* ImVector_find_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->find(v);
+}
+CIMGUI_API const float* ImVector_find_const_float(ImVector_float* self,const float v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImWchar* ImVector_find_const_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImDrawVert* ImVector_find_const_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImFontGlyph* ImVector_find_const_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImGuiTextRange* ImVector_find_const_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImGuiStoragePair* ImVector_find_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImDrawChannel* ImVector_find_const_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->find(v);
+}
+CIMGUI_API const char* ImVector_find_const_char(ImVector_char* self,const char v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImU32* ImVector_find_const_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_find_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImTextureID* ImVector_find_const_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImFontConfig* ImVector_find_const_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImFont** ImVector_find_const_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImDrawCmd* ImVector_find_const_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImVec4* ImVector_find_const_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImDrawIdx* ImVector_find_const_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->find(v);
+}
+CIMGUI_API const ImVec2* ImVector_find_const_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->find(v);
+}
+CIMGUI_API bool ImVector_find_erase_float(ImVector_float* self,const float v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_char(ImVector_char* self,const char v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->find_erase(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_float(ImVector_float* self,const float v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_char(ImVector_char* self,const char v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImU32(ImVector_ImU32* self,const ImU32 v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API bool ImVector_find_erase_unsorted_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+{
+    return self->find_erase_unsorted(v);
+}
+CIMGUI_API int ImVector_index_from_ptr_float(ImVector_float* self,const float* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImWchar(ImVector_ImWchar* self,const ImWchar* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_char(ImVector_char* self,const char* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImU32(ImVector_ImU32* self,const ImU32* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImVec4(ImVector_ImVec4* self,const ImVec4* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it)
+{
+    return self->index_from_ptr(it);
+}
+CIMGUI_API int ImVector_index_from_ptr_ImVec2(ImVector_ImVec2* self,const ImVec2* it)
+{
+    return self->index_from_ptr(it);
+}
 CIMGUI_API void ImGuiStyle_ImGuiStyle(ImGuiStyle* self)
 {
     new (self) ImGuiStyle();
