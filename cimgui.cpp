@@ -7,29 +7,29 @@
 
 
 
-CIMGUI_API ImVec2* ImVec2_ImVec2(void)
+CIMGUI_API void ImVec2_ImVec2(ImVec2* self)
 {
-    return IM_NEW(ImVec2)();
+    new (self) ImVec2();
 }
 CIMGUI_API void ImVec2_destroy(ImVec2* self)
 {
-    IM_DELETE(self);
+    self->~ImVec2();
 }
-CIMGUI_API ImVec2* ImVec2_ImVec2Float(float _x,float _y)
+CIMGUI_API void ImVec2_ImVec2Float(ImVec2* self,float _x,float _y)
 {
-    return IM_NEW(ImVec2)(_x,_y);
+    new (self) ImVec2(_x,_y);
 }
-CIMGUI_API ImVec4* ImVec4_ImVec4(void)
+CIMGUI_API void ImVec4_ImVec4(ImVec4* self)
 {
-    return IM_NEW(ImVec4)();
+    new (self) ImVec4();
 }
 CIMGUI_API void ImVec4_destroy(ImVec4* self)
 {
-    IM_DELETE(self);
+    self->~ImVec4();
 }
-CIMGUI_API ImVec4* ImVec4_ImVec4Float(float _x,float _y,float _z,float _w)
+CIMGUI_API void ImVec4_ImVec4Float(ImVec4* self,float _x,float _y,float _z,float _w)
 {
-    return IM_NEW(ImVec4)(_x,_y,_z,_w);
+    new (self) ImVec4(_x,_y,_z,_w);
 }
 CIMGUI_API ImGuiContext* igCreateContext(ImFontAtlas* shared_font_atlas)
 {
@@ -1448,13 +1448,13 @@ CIMGUI_API void igMemFree(void* ptr)
 {
     return ImGui::MemFree(ptr);
 }
-CIMGUI_API ImGuiStyle* ImGuiStyle_ImGuiStyle(void)
+CIMGUI_API void ImGuiStyle_ImGuiStyle(ImGuiStyle* self)
 {
-    return IM_NEW(ImGuiStyle)();
+    new (self) ImGuiStyle();
 }
 CIMGUI_API void ImGuiStyle_destroy(ImGuiStyle* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiStyle();
 }
 CIMGUI_API void ImGuiStyle_ScaleAllSizes(ImGuiStyle* self,float scale_factor)
 {
@@ -1472,21 +1472,21 @@ CIMGUI_API void ImGuiIO_ClearInputCharacters(ImGuiIO* self)
 {
     return self->ClearInputCharacters();
 }
-CIMGUI_API ImGuiIO* ImGuiIO_ImGuiIO(void)
+CIMGUI_API void ImGuiIO_ImGuiIO(ImGuiIO* self)
 {
-    return IM_NEW(ImGuiIO)();
+    new (self) ImGuiIO();
 }
 CIMGUI_API void ImGuiIO_destroy(ImGuiIO* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiIO();
 }
-CIMGUI_API ImGuiInputTextCallbackData* ImGuiInputTextCallbackData_ImGuiInputTextCallbackData(void)
+CIMGUI_API void ImGuiInputTextCallbackData_ImGuiInputTextCallbackData(ImGuiInputTextCallbackData* self)
 {
-    return IM_NEW(ImGuiInputTextCallbackData)();
+    new (self) ImGuiInputTextCallbackData();
 }
 CIMGUI_API void ImGuiInputTextCallbackData_destroy(ImGuiInputTextCallbackData* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiInputTextCallbackData();
 }
 CIMGUI_API void ImGuiInputTextCallbackData_DeleteChars(ImGuiInputTextCallbackData* self,int pos,int bytes_count)
 {
@@ -1500,13 +1500,13 @@ CIMGUI_API bool ImGuiInputTextCallbackData_HasSelection(ImGuiInputTextCallbackDa
 {
     return self->HasSelection();
 }
-CIMGUI_API ImGuiPayload* ImGuiPayload_ImGuiPayload(void)
+CIMGUI_API void ImGuiPayload_ImGuiPayload(ImGuiPayload* self)
 {
-    return IM_NEW(ImGuiPayload)();
+    new (self) ImGuiPayload();
 }
 CIMGUI_API void ImGuiPayload_destroy(ImGuiPayload* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiPayload();
 }
 CIMGUI_API void ImGuiPayload_Clear(ImGuiPayload* self)
 {
@@ -1524,21 +1524,21 @@ CIMGUI_API bool ImGuiPayload_IsDelivery(ImGuiPayload* self)
 {
     return self->IsDelivery();
 }
-CIMGUI_API ImGuiOnceUponAFrame* ImGuiOnceUponAFrame_ImGuiOnceUponAFrame(void)
+CIMGUI_API void ImGuiOnceUponAFrame_ImGuiOnceUponAFrame(ImGuiOnceUponAFrame* self)
 {
-    return IM_NEW(ImGuiOnceUponAFrame)();
+    new (self) ImGuiOnceUponAFrame();
 }
 CIMGUI_API void ImGuiOnceUponAFrame_destroy(ImGuiOnceUponAFrame* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiOnceUponAFrame();
 }
-CIMGUI_API ImGuiTextFilter* ImGuiTextFilter_ImGuiTextFilter(const char* default_filter)
+CIMGUI_API void ImGuiTextFilter_ImGuiTextFilter(ImGuiTextFilter* self,const char* default_filter)
 {
-    return IM_NEW(ImGuiTextFilter)(default_filter);
+    new (self) ImGuiTextFilter(default_filter);
 }
 CIMGUI_API void ImGuiTextFilter_destroy(ImGuiTextFilter* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiTextFilter();
 }
 CIMGUI_API bool ImGuiTextFilter_Draw(ImGuiTextFilter* self,const char* label,float width)
 {
@@ -1560,17 +1560,17 @@ CIMGUI_API bool ImGuiTextFilter_IsActive(ImGuiTextFilter* self)
 {
     return self->IsActive();
 }
-CIMGUI_API ImGuiTextRange* ImGuiTextRange_ImGuiTextRange(void)
+CIMGUI_API void ImGuiTextRange_ImGuiTextRange(ImGuiTextRange* self)
 {
-    return IM_NEW(ImGuiTextRange)();
+    new (self) ImGuiTextRange();
 }
 CIMGUI_API void ImGuiTextRange_destroy(ImGuiTextRange* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiTextRange();
 }
-CIMGUI_API ImGuiTextRange* ImGuiTextRange_ImGuiTextRangeStr(const char* _b,const char* _e)
+CIMGUI_API void ImGuiTextRange_ImGuiTextRangeStr(ImGuiTextRange* self,const char* _b,const char* _e)
 {
-    return IM_NEW(ImGuiTextRange)(_b,_e);
+    new (self) ImGuiTextRange(_b,_e);
 }
 CIMGUI_API bool ImGuiTextRange_empty(ImGuiTextRange* self)
 {
@@ -1580,13 +1580,13 @@ CIMGUI_API void ImGuiTextRange_split(ImGuiTextRange* self,char separator,ImVecto
 {
     return self->split(separator,out);
 }
-CIMGUI_API ImGuiTextBuffer* ImGuiTextBuffer_ImGuiTextBuffer(void)
+CIMGUI_API void ImGuiTextBuffer_ImGuiTextBuffer(ImGuiTextBuffer* self)
 {
-    return IM_NEW(ImGuiTextBuffer)();
+    new (self) ImGuiTextBuffer();
 }
 CIMGUI_API void ImGuiTextBuffer_destroy(ImGuiTextBuffer* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiTextBuffer();
 }
 CIMGUI_API const char* ImGuiTextBuffer_begin(ImGuiTextBuffer* self)
 {
@@ -1624,21 +1624,21 @@ CIMGUI_API void ImGuiTextBuffer_appendfv(ImGuiTextBuffer* self,const char* fmt,v
 {
     return self->appendfv(fmt,args);
 }
-CIMGUI_API ImGuiStoragePair* ImGuiStoragePair_ImGuiStoragePairInt(ImGuiID _key,int _val_i)
+CIMGUI_API void ImGuiStoragePair_ImGuiStoragePairInt(ImGuiStoragePair* self,ImGuiID _key,int _val_i)
 {
-    return IM_NEW(ImGuiStoragePair)(_key,_val_i);
+    new (self) ImGuiStoragePair(_key,_val_i);
 }
 CIMGUI_API void ImGuiStoragePair_destroy(ImGuiStoragePair* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiStoragePair();
 }
-CIMGUI_API ImGuiStoragePair* ImGuiStoragePair_ImGuiStoragePairFloat(ImGuiID _key,float _val_f)
+CIMGUI_API void ImGuiStoragePair_ImGuiStoragePairFloat(ImGuiStoragePair* self,ImGuiID _key,float _val_f)
 {
-    return IM_NEW(ImGuiStoragePair)(_key,_val_f);
+    new (self) ImGuiStoragePair(_key,_val_f);
 }
-CIMGUI_API ImGuiStoragePair* ImGuiStoragePair_ImGuiStoragePairPtr(ImGuiID _key,void* _val_p)
+CIMGUI_API void ImGuiStoragePair_ImGuiStoragePairPtr(ImGuiStoragePair* self,ImGuiID _key,void* _val_p)
 {
-    return IM_NEW(ImGuiStoragePair)(_key,_val_p);
+    new (self) ImGuiStoragePair(_key,_val_p);
 }
 CIMGUI_API void ImGuiStorage_Clear(ImGuiStorage* self)
 {
@@ -1700,13 +1700,13 @@ CIMGUI_API void ImGuiStorage_BuildSortByKey(ImGuiStorage* self)
 {
     return self->BuildSortByKey();
 }
-CIMGUI_API ImGuiListClipper* ImGuiListClipper_ImGuiListClipper(int items_count,float items_height)
+CIMGUI_API void ImGuiListClipper_ImGuiListClipper(ImGuiListClipper* self,int items_count,float items_height)
 {
-    return IM_NEW(ImGuiListClipper)(items_count,items_height);
+    new (self) ImGuiListClipper(items_count,items_height);
 }
 CIMGUI_API void ImGuiListClipper_destroy(ImGuiListClipper* self)
 {
-    IM_DELETE(self);
+    self->~ImGuiListClipper();
 }
 CIMGUI_API bool ImGuiListClipper_Step(ImGuiListClipper* self)
 {
@@ -1720,29 +1720,29 @@ CIMGUI_API void ImGuiListClipper_End(ImGuiListClipper* self)
 {
     return self->End();
 }
-CIMGUI_API ImColor* ImColor_ImColor(void)
+CIMGUI_API void ImColor_ImColor(ImColor* self)
 {
-    return IM_NEW(ImColor)();
+    new (self) ImColor();
 }
 CIMGUI_API void ImColor_destroy(ImColor* self)
 {
-    IM_DELETE(self);
+    self->~ImColor();
 }
-CIMGUI_API ImColor* ImColor_ImColorInt(int r,int g,int b,int a)
+CIMGUI_API void ImColor_ImColorInt(ImColor* self,int r,int g,int b,int a)
 {
-    return IM_NEW(ImColor)(r,g,b,a);
+    new (self) ImColor(r,g,b,a);
 }
-CIMGUI_API ImColor* ImColor_ImColorU32(ImU32 rgba)
+CIMGUI_API void ImColor_ImColorU32(ImColor* self,ImU32 rgba)
 {
-    return IM_NEW(ImColor)(rgba);
+    new (self) ImColor(rgba);
 }
-CIMGUI_API ImColor* ImColor_ImColorFloat(float r,float g,float b,float a)
+CIMGUI_API void ImColor_ImColorFloat(ImColor* self,float r,float g,float b,float a)
 {
-    return IM_NEW(ImColor)(r,g,b,a);
+    new (self) ImColor(r,g,b,a);
 }
-CIMGUI_API ImColor* ImColor_ImColorVec4(const ImVec4 col)
+CIMGUI_API void ImColor_ImColorVec4(ImColor* self,const ImVec4 col)
 {
-    return IM_NEW(ImColor)(col);
+    new (self) ImColor(col);
 }
 CIMGUI_API void ImColor_SetHSV(ImColor* self,float h,float s,float v,float a)
 {
@@ -1752,21 +1752,21 @@ CIMGUI_API ImColor ImColor_HSV(ImColor* self,float h,float s,float v,float a)
 {
     return self->HSV(h,s,v,a);
 }
-CIMGUI_API ImDrawCmd* ImDrawCmd_ImDrawCmd(void)
+CIMGUI_API void ImDrawCmd_ImDrawCmd(ImDrawCmd* self)
 {
-    return IM_NEW(ImDrawCmd)();
+    new (self) ImDrawCmd();
 }
 CIMGUI_API void ImDrawCmd_destroy(ImDrawCmd* self)
 {
-    IM_DELETE(self);
+    self->~ImDrawCmd();
 }
-CIMGUI_API ImDrawListSplitter* ImDrawListSplitter_ImDrawListSplitter(void)
+CIMGUI_API void ImDrawListSplitter_ImDrawListSplitter(ImDrawListSplitter* self)
 {
-    return IM_NEW(ImDrawListSplitter)();
+    new (self) ImDrawListSplitter();
 }
 CIMGUI_API void ImDrawListSplitter_destroy(ImDrawListSplitter* self)
 {
-    IM_DELETE(self);
+    self->~ImDrawListSplitter();
 }
 CIMGUI_API void ImDrawListSplitter_Clear(ImDrawListSplitter* self)
 {
@@ -1788,13 +1788,13 @@ CIMGUI_API void ImDrawListSplitter_SetCurrentChannel(ImDrawListSplitter* self,Im
 {
     return self->SetCurrentChannel(draw_list,channel_idx);
 }
-CIMGUI_API ImDrawList* ImDrawList_ImDrawList(const ImDrawListSharedData* shared_data)
+CIMGUI_API void ImDrawList_ImDrawList(ImDrawList* self,const ImDrawListSharedData* shared_data)
 {
-    return IM_NEW(ImDrawList)(shared_data);
+    new (self) ImDrawList(shared_data);
 }
 CIMGUI_API void ImDrawList_destroy(ImDrawList* self)
 {
-    IM_DELETE(self);
+    self->~ImDrawList();
 }
 CIMGUI_API void ImDrawList_PushClipRect(ImDrawList* self,ImVec2 clip_rect_min,ImVec2 clip_rect_max,bool intersect_with_current_clip_rect)
 {
@@ -2012,13 +2012,13 @@ CIMGUI_API void ImDrawList_UpdateTextureID(ImDrawList* self)
 {
     return self->UpdateTextureID();
 }
-CIMGUI_API ImDrawData* ImDrawData_ImDrawData(void)
+CIMGUI_API void ImDrawData_ImDrawData(ImDrawData* self)
 {
-    return IM_NEW(ImDrawData)();
+    new (self) ImDrawData();
 }
 CIMGUI_API void ImDrawData_destroy(ImDrawData* self)
 {
-    IM_DELETE(self);
+    self->~ImDrawData();
 }
 CIMGUI_API void ImDrawData_Clear(ImDrawData* self)
 {
@@ -2032,21 +2032,21 @@ CIMGUI_API void ImDrawData_ScaleClipRects(ImDrawData* self,const ImVec2 fb_scale
 {
     return self->ScaleClipRects(fb_scale);
 }
-CIMGUI_API ImFontConfig* ImFontConfig_ImFontConfig(void)
+CIMGUI_API void ImFontConfig_ImFontConfig(ImFontConfig* self)
 {
-    return IM_NEW(ImFontConfig)();
+    new (self) ImFontConfig();
 }
 CIMGUI_API void ImFontConfig_destroy(ImFontConfig* self)
 {
-    IM_DELETE(self);
+    self->~ImFontConfig();
 }
-CIMGUI_API ImFontGlyphRangesBuilder* ImFontGlyphRangesBuilder_ImFontGlyphRangesBuilder(void)
+CIMGUI_API void ImFontGlyphRangesBuilder_ImFontGlyphRangesBuilder(ImFontGlyphRangesBuilder* self)
 {
-    return IM_NEW(ImFontGlyphRangesBuilder)();
+    new (self) ImFontGlyphRangesBuilder();
 }
 CIMGUI_API void ImFontGlyphRangesBuilder_destroy(ImFontGlyphRangesBuilder* self)
 {
-    IM_DELETE(self);
+    self->~ImFontGlyphRangesBuilder();
 }
 CIMGUI_API void ImFontGlyphRangesBuilder_Clear(ImFontGlyphRangesBuilder* self)
 {
@@ -2076,25 +2076,25 @@ CIMGUI_API void ImFontGlyphRangesBuilder_BuildRanges(ImFontGlyphRangesBuilder* s
 {
     return self->BuildRanges(out_ranges);
 }
-CIMGUI_API ImFontAtlasCustomRect* ImFontAtlasCustomRect_ImFontAtlasCustomRect(void)
+CIMGUI_API void ImFontAtlasCustomRect_ImFontAtlasCustomRect(ImFontAtlasCustomRect* self)
 {
-    return IM_NEW(ImFontAtlasCustomRect)();
+    new (self) ImFontAtlasCustomRect();
 }
 CIMGUI_API void ImFontAtlasCustomRect_destroy(ImFontAtlasCustomRect* self)
 {
-    IM_DELETE(self);
+    self->~ImFontAtlasCustomRect();
 }
 CIMGUI_API bool ImFontAtlasCustomRect_IsPacked(ImFontAtlasCustomRect* self)
 {
     return self->IsPacked();
 }
-CIMGUI_API ImFontAtlas* ImFontAtlas_ImFontAtlas(void)
+CIMGUI_API void ImFontAtlas_ImFontAtlas(ImFontAtlas* self)
 {
-    return IM_NEW(ImFontAtlas)();
+    new (self) ImFontAtlas();
 }
 CIMGUI_API void ImFontAtlas_destroy(ImFontAtlas* self)
 {
-    IM_DELETE(self);
+    self->~ImFontAtlas();
 }
 CIMGUI_API ImFont* ImFontAtlas_AddFont(ImFontAtlas* self,const ImFontConfig* font_cfg)
 {
@@ -2208,13 +2208,13 @@ CIMGUI_API bool ImFontAtlas_GetMouseCursorTexData(ImFontAtlas* self,ImGuiMouseCu
 {
     return self->GetMouseCursorTexData(cursor,out_offset,out_size,out_uv_border,out_uv_fill);
 }
-CIMGUI_API ImFont* ImFont_ImFont(void)
+CIMGUI_API void ImFont_ImFont(ImFont* self)
 {
-    return IM_NEW(ImFont)();
+    new (self) ImFont();
 }
 CIMGUI_API void ImFont_destroy(ImFont* self)
 {
-    IM_DELETE(self);
+    self->~ImFont();
 }
 CIMGUI_API const ImFontGlyph* ImFont_FindGlyph(ImFont* self,ImWchar c)
 {

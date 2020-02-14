@@ -45,7 +45,7 @@ print("HAVE_COMPILER",HAVE_COMPILER)
 local implementations = {}
 for i=2,#script_args do table.insert(implementations,script_args[i]) end
 
-local placementConstruction = false
+local placementConstruction = true
 
 --------------------------------------------------------------------------
 --this table has the functions to be skipped in generation

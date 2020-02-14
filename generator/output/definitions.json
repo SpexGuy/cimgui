@@ -118,8 +118,13 @@
   ],
   "ImColor_ImColor": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImColor* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImColor*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImColor_ImColor",
@@ -131,8 +136,12 @@
       "stname": "ImColor"
     },
     {
-      "args": "(int r,int g,int b,int a)",
+      "args": "(ImColor* self,int r,int g,int b,int a)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImColor*"
+        },
         {
           "name": "r",
           "type": "int"
@@ -163,8 +172,12 @@
       "stname": "ImColor"
     },
     {
-      "args": "(ImU32 rgba)",
+      "args": "(ImColor* self,ImU32 rgba)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImColor*"
+        },
         {
           "name": "rgba",
           "type": "ImU32"
@@ -181,8 +194,12 @@
       "stname": "ImColor"
     },
     {
-      "args": "(float r,float g,float b,float a)",
+      "args": "(ImColor* self,float r,float g,float b,float a)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImColor*"
+        },
         {
           "name": "r",
           "type": "float"
@@ -213,8 +230,12 @@
       "stname": "ImColor"
     },
     {
-      "args": "(const ImVec4 col)",
+      "args": "(ImColor* self,const ImVec4 col)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImColor*"
+        },
         {
           "name": "col",
           "type": "const ImVec4"
@@ -290,8 +311,13 @@
   ],
   "ImDrawCmd_ImDrawCmd": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImDrawCmd* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImDrawCmd*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImDrawCmd_ImDrawCmd",
@@ -364,8 +390,13 @@
   ],
   "ImDrawData_ImDrawData": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImDrawData* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImDrawData*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImDrawData_ImDrawData",
@@ -462,8 +493,13 @@
   ],
   "ImDrawListSplitter_ImDrawListSplitter": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImDrawListSplitter* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImDrawListSplitter*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImDrawListSplitter_ImDrawListSplitter",
@@ -1756,8 +1792,12 @@
   ],
   "ImDrawList_ImDrawList": [
     {
-      "args": "(const ImDrawListSharedData* shared_data)",
+      "args": "(ImDrawList* self,const ImDrawListSharedData* shared_data)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImDrawList*"
+        },
         {
           "name": "shared_data",
           "type": "const ImDrawListSharedData*"
@@ -2506,8 +2546,13 @@
   ],
   "ImFontAtlasCustomRect_ImFontAtlasCustomRect": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImFontAtlasCustomRect* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImFontAtlasCustomRect*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImFontAtlasCustomRect_ImFontAtlasCustomRect",
@@ -3284,8 +3329,13 @@
   ],
   "ImFontAtlas_ImFontAtlas": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImFontAtlas* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImFontAtlas*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImFontAtlas_ImFontAtlas",
@@ -3362,8 +3412,13 @@
   ],
   "ImFontConfig_ImFontConfig": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImFontConfig* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImFontConfig*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImFontConfig_ImFontConfig",
@@ -3542,8 +3597,13 @@
   ],
   "ImFontGlyphRangesBuilder_ImFontGlyphRangesBuilder": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImFontGlyphRangesBuilder* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImFontGlyphRangesBuilder*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImFontGlyphRangesBuilder_ImFontGlyphRangesBuilder",
@@ -4030,8 +4090,13 @@
   ],
   "ImFont_ImFont": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImFont* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImFont*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImFont_ImFont",
@@ -4275,8 +4340,13 @@
   ],
   "ImGuiIO_ImGuiIO": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiIO* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiIO*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiIO_ImGuiIO",
@@ -4357,8 +4427,13 @@
   ],
   "ImGuiInputTextCallbackData_ImGuiInputTextCallbackData": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiInputTextCallbackData* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiInputTextCallbackData*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiInputTextCallbackData_ImGuiInputTextCallbackData",
@@ -4475,8 +4550,12 @@
   ],
   "ImGuiListClipper_ImGuiListClipper": [
     {
-      "args": "(int items_count,float items_height)",
+      "args": "(ImGuiListClipper* self,int items_count,float items_height)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiListClipper*"
+        },
         {
           "name": "items_count",
           "type": "int"
@@ -4541,8 +4620,13 @@
   ],
   "ImGuiOnceUponAFrame_ImGuiOnceUponAFrame": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiOnceUponAFrame* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiOnceUponAFrame*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiOnceUponAFrame_ImGuiOnceUponAFrame",
@@ -4595,8 +4679,13 @@
   ],
   "ImGuiPayload_ImGuiPayload": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiPayload* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiPayload*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiPayload_ImGuiPayload",
@@ -4693,8 +4782,12 @@
   ],
   "ImGuiStoragePair_ImGuiStoragePair": [
     {
-      "args": "(ImGuiID _key,int _val_i)",
+      "args": "(ImGuiStoragePair* self,ImGuiID _key,int _val_i)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiStoragePair*"
+        },
         {
           "name": "_key",
           "type": "ImGuiID"
@@ -4715,8 +4808,12 @@
       "stname": "ImGuiStoragePair"
     },
     {
-      "args": "(ImGuiID _key,float _val_f)",
+      "args": "(ImGuiStoragePair* self,ImGuiID _key,float _val_f)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiStoragePair*"
+        },
         {
           "name": "_key",
           "type": "ImGuiID"
@@ -4737,8 +4834,12 @@
       "stname": "ImGuiStoragePair"
     },
     {
-      "args": "(ImGuiID _key,void* _val_p)",
+      "args": "(ImGuiStoragePair* self,ImGuiID _key,void* _val_p)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiStoragePair*"
+        },
         {
           "name": "_key",
           "type": "ImGuiID"
@@ -5190,8 +5291,13 @@
   ],
   "ImGuiStyle_ImGuiStyle": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiStyle* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiStyle*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiStyle_ImGuiStyle",
@@ -5248,8 +5354,13 @@
   ],
   "ImGuiTextBuffer_ImGuiTextBuffer": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiTextBuffer* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiTextBuffer*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiTextBuffer_ImGuiTextBuffer",
@@ -5585,8 +5696,12 @@
   ],
   "ImGuiTextFilter_ImGuiTextFilter": [
     {
-      "args": "(const char* default_filter)",
+      "args": "(ImGuiTextFilter* self,const char* default_filter)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiTextFilter*"
+        },
         {
           "name": "default_filter",
           "type": "const char*"
@@ -5676,8 +5791,13 @@
   ],
   "ImGuiTextRange_ImGuiTextRange": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImGuiTextRange* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiTextRange*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImGuiTextRange_ImGuiTextRange",
@@ -5689,8 +5809,12 @@
       "stname": "ImGuiTextRange"
     },
     {
-      "args": "(const char* _b,const char* _e)",
+      "args": "(ImGuiTextRange* self,const char* _b,const char* _e)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiTextRange*"
+        },
         {
           "name": "_b",
           "type": "const char*"
@@ -5780,8 +5904,13 @@
   ],
   "ImVec2_ImVec2": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImVec2* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImVec2*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImVec2_ImVec2",
@@ -5793,8 +5922,12 @@
       "stname": "ImVec2"
     },
     {
-      "args": "(float _x,float _y)",
+      "args": "(ImVec2* self,float _x,float _y)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImVec2*"
+        },
         {
           "name": "_x",
           "type": "float"
@@ -5836,8 +5969,13 @@
   ],
   "ImVec4_ImVec4": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImVec4* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImVec4*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImVec4_ImVec4",
@@ -5849,8 +5987,12 @@
       "stname": "ImVec4"
     },
     {
-      "args": "(float _x,float _y,float _z,float _w)",
+      "args": "(ImVec4* self,float _x,float _y,float _z,float _w)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImVec4*"
+        },
         {
           "name": "_x",
           "type": "float"
@@ -5900,8 +6042,13 @@
   ],
   "ImVector_ImVector": [
     {
-      "args": "()",
-      "argsT": [],
+      "args": "(ImVector* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImVector*"
+        }
+      ],
       "argsoriginal": "()",
       "call_args": "()",
       "cimguiname": "ImVector_ImVector",
@@ -5914,8 +6061,12 @@
       "templated": true
     },
     {
-      "args": "(const ImVector src)",
+      "args": "(ImVector* self,const ImVector src)",
       "argsT": [
+        {
+          "name": "self",
+          "type": "ImVector*"
+        },
         {
           "name": "src",
           "type": "const ImVector"
