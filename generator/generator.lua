@@ -46,6 +46,7 @@ local implementations = {}
 for i=2,#script_args do table.insert(implementations,script_args[i]) end
 
 local placementConstruction = true
+local genTemplates = false
 
 --------------------------------------------------------------------------
 --this table has the functions to be skipped in generation
@@ -278,6 +279,36 @@ local function func_header_generate(FP)
 							table.insert(outtab,"CIMGUI_API "..def.ret.." "..def.ov_cimguiname..def.args..";"..addcoment.."\n")
 						end
 					end 
+				elseif genTemplates then
+					assert(def.stname ~= "", "templated fn without struct")
+					local addcoment = def.comment or ""
+					if addcoment ~= "" then
+						table.insert(outtab, addcoment.."\n")
+					end
+					local instances = FP.templates[def.stname]
+					local templateTypeName = FP.typenames[def.stname]
+					local empty = def.args:match("^%(%)") --no args
+					for cppName,cName in pairs(instances) do
+						local ov_cimguiname = def.ov_cimguiname.."_"..cName
+						local stname = def.stname.."_"..cName
+						local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+						if def.constructor then
+							if placementConstruction then
+								table.insert(outtab,"CIMGUI_API void "..ov_cimguiname ..(empty and "(void)" or args)..";\n")
+							else
+								table.insert(outtab,"CIMGUI_API "..stname.."* "..ov_cimguiname ..(empty and "(void)" or args)..";\n")
+							end
+						elseif def.destructor then
+							table.insert(outtab,"CIMGUI_API void "..ov_cimguiname..args..";\n")
+						else --not constructor
+							local ret = def.ret:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+							if def.stname == "" then --ImGui namespace or top level
+								table.insert(outtab,"CIMGUI_API "..ret.." "..ov_cimguiname..(empty and "(void)" or args)..";\n")
+							else
+								table.insert(outtab,"CIMGUI_API "..ret.." "..ov_cimguiname..args..";\n")
+							end
+						end 
+					end
 				end
 			else -- manual definition
 				print(t.cimguiname)
@@ -399,6 +430,75 @@ local function func_implementation(FP)
 					ImGui_f_implementation(outtab,def)
 				else -- stname
 					struct_f_implementation(outtab,def)
+				end
+			elseif genTemplates then --def.templated
+				assert(def.stname ~= "", "templated fn without struct")
+				local addcoment = def.comment or ""
+				if addcoment ~= "" then
+					table.insert(outtab, addcoment.."\n")
+				end
+				local instances = FP.templates[def.stname]
+				local templateTypeName = FP.typenames[def.stname]
+				local empty = def.args:match("^%(%)") --no args
+				for cppName,cName in pairs(instances) do
+					local ov_cimguiname = def.ov_cimguiname.."_"..cName
+					local stname = def.stname.."_"..cName
+					local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+					if def.constructor then
+						if placementConstruction then
+							table.insert(outtab,"CIMGUI_API void "..ov_cimguiname ..(empty and "(void)" or args).."\n")
+							table.insert(outtab,"{\n")
+							table.insert(outtab,"    new (self) "..stname..def.call_args..";\n")
+							table.insert(outtab,"}\n")
+						else
+							table.insert(outtab,"CIMGUI_API "..stname.."* "..ov_cimguiname..(empty and "(void)" or args).."\n")
+							table.insert(outtab,"{\n")
+							table.insert(outtab,"    return IM_NEW("..stname..")"..def.call_args..";\n")
+							table.insert(outtab,"}\n")
+						end
+					elseif def.destructor then
+						table.insert(outtab,"CIMGUI_API void "..ov_cimguiname..args.."\n")
+						table.insert(outtab,"{\n")
+						if placementConstruction then
+							table.insert(outtab,"    self->~"..stname.."();\n")
+						else
+							table.insert(outtab,"    IM_DELETE(self);\n")
+						end
+						table.insert(outtab,"}\n")
+					else --not constructor
+						local ret = def.ret:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+						local ptret = def.retref and "&" or ""
+						local call_args = def.call_args
+
+						table.insert(outtab,"CIMGUI_API".." "..ret.." "..ov_cimguiname..args.."\n")
+						table.insert(outtab,"{\n")
+						if def.isvararg then
+							call_args = call_args:gsub("%.%.%.","args")
+							table.insert(outtab,"    va_list args;\n")
+							table.insert(outtab,"    va_start(args, fmt);\n")
+							if def.ret~="void" then
+								table.insert(outtab,"    "..ret.." ret = self->"..def.funcname.."V"..call_args..";\n")
+							else
+								table.insert(outtab,"    self->"..def.funcname.."V"..call_args..";\n")
+							end
+							table.insert(outtab,"    va_end(args);\n")
+							if def.ret~="void" then
+								table.insert(outtab,"    return ret;\n")
+							end
+						elseif def.nonUDT then
+							if def.nonUDT == 1 then
+								table.insert(outtab,"    *pOut = self->"..def.funcname..call_args..";\n")
+							else --nonUDT==2
+								local retorig = def.retorig:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+								table.insert(outtab,"    "..retorig.." ret = self->"..def.funcname..call_args..";\n")
+								table.insert(outtab,"    "..ret.." ret2 = "..retorig.."ToSimple(ret);\n")
+								table.insert(outtab,"    return ret2;\n")
+							end
+						else --standard struct
+							table.insert(outtab,"    return "..ptret.."self->"..def.funcname..call_args..";\n")
+						end
+						table.insert(outtab,"}\n")
+					end 
 				end
 			end
         end
@@ -806,6 +906,9 @@ end
 save_data("./output/definitions.json",json.encode(json_prepare(parser1.defsT)))
 save_data("./output/structs_and_enums.json",json.encode(structs_and_enums_table))
 save_data("./output/typedefs_dict.json",json.encode(parser1.typedefs_dict))
+if genTemplates then
+	save_data("./output/templates.json",json.encode(parser1.templates))
+end
 if parser2 then
     save_data("./output/impl_definitions.json",json.encode(json_prepare(parser2.defsT)))
 end
