@@ -511,7 +511,7 @@ end
 local function AdjustArguments(FP)
     for fun,defs in pairs(FP.defsT) do
         --struct function but no constructors
-        if defs[1].stname~="" and defs[1].ret then
+        if defs[1].stname~="" and (defs[1].ret or FP.placementConstruction) then
             --print("adjusting",fun)
             for i,def in ipairs(defs) do
                 local empty = def.args:match("^%(%)") --no args

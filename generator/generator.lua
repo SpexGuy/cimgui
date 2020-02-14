@@ -4,6 +4,10 @@
 --------------------------------------------------------------------------
 assert(_VERSION=='Lua 5.1',"Must use LuaJIT")
 assert(bit,"Must use LuaJIT")
+
+local json = require"json"
+
+
 local script_args = {...}
 local COMPILER = script_args[1]
 local CPRE,CTEST
@@ -40,6 +44,8 @@ print("HAVE_COMPILER",HAVE_COMPILER)
 --get implementations
 local implementations = {}
 for i=2,#script_args do table.insert(implementations,script_args[i]) end
+
+local placementConstruction = false
 
 --------------------------------------------------------------------------
 --this table has the functions to be skipped in generation
@@ -246,30 +252,36 @@ local function func_header_generate(FP)
 
     table.insert(outtab,"#endif //CIMGUI_DEFINE_ENUMS_AND_STRUCTS\n")
     for _,t in ipairs(FP.funcdefs) do
-
         if t.cimguiname then
-        local cimf = FP.defsT[t.cimguiname]
-        local def = cimf[t.signature]
-        assert(def,t.signature..t.cimguiname)
-        local manual = FP.get_manuals(def)
-        if not manual and not def.templated then
+			local cimf = FP.defsT[t.cimguiname]
+			local def = cimf[t.signature]
+			assert(def,t.signature..t.cimguiname)
+			local manual = FP.get_manuals(def)
+			if not manual then
+				if not def.templated then
+					local addcoment = def.comment or ""
+					local empty = def.args:match("^%(%)") --no args
+					if def.constructor then
+						assert(def.stname ~= "","constructor without struct")
+						if placementConstruction then
+							table.insert(outtab,"CIMGUI_API void "..def.ov_cimguiname ..(empty and "(void)" or def.args)..";"..addcoment.."\n")
+						else
+							table.insert(outtab,"CIMGUI_API "..def.stname.."* "..def.ov_cimguiname ..(empty and "(void)" or def.args)..";"..addcoment.."\n")
+						end
+					elseif def.destructor then
+						table.insert(outtab,"CIMGUI_API void "..def.ov_cimguiname..def.args..";"..addcoment.."\n")
+					else --not constructor
 
-            local addcoment = def.comment or ""
-            local empty = def.args:match("^%(%)") --no args
-            if def.constructor then
-                assert(def.stname ~= "","constructor without struct")
-                table.insert(outtab,"CIMGUI_API "..def.stname.."* "..def.ov_cimguiname ..(empty and "(void)" or def.args)..";"..addcoment.."\n")
-            elseif def.destructor then
-                table.insert(outtab,"CIMGUI_API void "..def.ov_cimguiname..def.args..";"..addcoment.."\n")
-            else --not constructor
-
-                if def.stname == "" then --ImGui namespace or top level
-                    table.insert(outtab,"CIMGUI_API "..def.ret.." ".. def.ov_cimguiname ..(empty and "(void)" or def.args)..";"..addcoment.."\n")
-                else
-                    table.insert(outtab,"CIMGUI_API "..def.ret.." "..def.ov_cimguiname..def.args..";"..addcoment.."\n")
-                end
-            end 
-        end
+						if def.stname == "" then --ImGui namespace or top level
+							table.insert(outtab,"CIMGUI_API "..def.ret.." ".. def.ov_cimguiname ..(empty and "(void)" or def.args)..";"..addcoment.."\n")
+						else
+							table.insert(outtab,"CIMGUI_API "..def.ret.." "..def.ov_cimguiname..def.args..";"..addcoment.."\n")
+						end
+					end 
+				end
+			else -- manual definition
+				print(t.cimguiname)
+			end
         else --not cimguiname
             table.insert(outtab,t.comment:gsub("%%","%%%%").."\n")-- %% substitution for gsub
         end
@@ -356,26 +368,39 @@ local function func_implementation(FP)
         local def = cimf[t.signature]
         assert(def)
         local manual = FP.get_manuals(def)
-        if not manual and not def.templated then 
-            if def.constructor then
-                assert(def.stname ~= "","constructor without struct")
-                local empty = def.args:match("^%(%)") --no args
-                table.insert(outtab,"CIMGUI_API "..def.stname.."* "..def.ov_cimguiname..(empty and "(void)" or def.args).."\n")
-                table.insert(outtab,"{\n")
-                table.insert(outtab,"    return IM_NEW("..def.stname..")"..def.call_args..";\n")
-                table.insert(outtab,"}\n")
-            elseif def.destructor then
-                local args = "("..def.stname.."* self)"
-                local fname = def.stname.."_destroy" 
-                table.insert(outtab,"CIMGUI_API void "..fname..args.."\n")
-                table.insert(outtab,"{\n")
-                table.insert(outtab,"    IM_DELETE(self);\n")
-                table.insert(outtab,"}\n")
-            elseif def.stname == "" then
-                ImGui_f_implementation(outtab,def)
-            else -- stname
-                struct_f_implementation(outtab,def)
-            end
+        if not manual then
+			if not def.templated then
+				if def.constructor then
+					assert(def.stname ~= "","constructor without struct")
+					local empty = def.args:match("^%(%)") --no args
+					if placementConstruction then
+						table.insert(outtab,"CIMGUI_API void "..def.ov_cimguiname..(empty and "(void)" or def.args).."\n")
+						table.insert(outtab,"{\n")
+						table.insert(outtab,"    new (self) "..def.stname..def.call_args..";\n")
+						table.insert(outtab,"}\n")
+					else
+						table.insert(outtab,"CIMGUI_API "..def.stname.."* "..def.ov_cimguiname..(empty and "(void)" or def.args).."\n")
+						table.insert(outtab,"{\n")
+						table.insert(outtab,"    return IM_NEW("..def.stname..")"..def.call_args..";\n")
+						table.insert(outtab,"}\n")
+					end
+				elseif def.destructor then
+					local args = "("..def.stname.."* self)"
+					local fname = def.stname.."_destroy" 
+					table.insert(outtab,"CIMGUI_API void "..fname..args.."\n")
+					table.insert(outtab,"{\n")
+					if placementConstruction then
+						table.insert(outtab,"    self->~"..def.stname.."();\n")
+					else
+						table.insert(outtab,"    IM_DELETE(self);\n")
+					end
+					table.insert(outtab,"}\n")
+				elseif def.stname == "" then
+					ImGui_f_implementation(outtab,def)
+				else -- stname
+					struct_f_implementation(outtab,def)
+				end
+			end
         end
         until true
     end
@@ -548,6 +573,7 @@ local function parseImGuiHeader(header,names)
 	parser.cname_overloads = cimgui_overloads
 	parser.manuals = cimgui_manuals
 	parser.UDTs = {"ImVec2","ImVec4","ImColor"}
+	parser.placementConstruction = placementConstruction
 	
 	local pipe,err
 	if HAVE_COMPILER then
@@ -777,7 +803,6 @@ local function json_prepare(defs)
     return defs
 end
 ---[[
-local json = require"json"
 save_data("./output/definitions.json",json.encode(json_prepare(parser1.defsT)))
 save_data("./output/structs_and_enums.json",json.encode(structs_and_enums_table))
 save_data("./output/typedefs_dict.json",json.encode(parser1.typedefs_dict))
