@@ -907,7 +907,11 @@ save_data("./output/definitions.json",json.encode(json_prepare(parser1.defsT)))
 save_data("./output/structs_and_enums.json",json.encode(structs_and_enums_table))
 save_data("./output/typedefs_dict.json",json.encode(parser1.typedefs_dict))
 if genTemplates then
-	save_data("./output/templates.json",json.encode(parser1.templates))
+	local templates = {}
+	for cls,impls in pairs(parser1.templates) do
+		templates[cls] = {implementations=impls,generic=parser1.typenames[cls]}
+	end
+	save_data("./output/templates.json",json.encode(templates))
 end
 if parser2 then
     save_data("./output/impl_definitions.json",json.encode(json_prepare(parser2.defsT)))

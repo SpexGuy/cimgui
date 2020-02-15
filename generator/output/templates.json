@@ -1,21 +1,24 @@
 {
   "ImVector": {
-    "ImDrawChannel": "ImDrawChannel",
-    "ImDrawCmd": "ImDrawCmd",
-    "ImDrawIdx": "ImDrawIdx",
-    "ImDrawVert": "ImDrawVert",
-    "ImFont*": "ImFontPtr",
-    "ImFontAtlasCustomRect": "ImFontAtlasCustomRect",
-    "ImFontConfig": "ImFontConfig",
-    "ImFontGlyph": "ImFontGlyph",
-    "ImGuiStoragePair": "ImGuiStoragePair",
-    "ImGuiTextRange": "ImGuiTextRange",
-    "ImTextureID": "ImTextureID",
-    "ImU32": "ImU32",
-    "ImVec2": "ImVec2",
-    "ImVec4": "ImVec4",
-    "ImWchar": "ImWchar",
-    "char": "char",
-    "float": "float"
+    "generic": "T",
+    "implementations": {
+      "ImDrawChannel": "ImDrawChannel",
+      "ImDrawCmd": "ImDrawCmd",
+      "ImDrawIdx": "ImDrawIdx",
+      "ImDrawVert": "ImDrawVert",
+      "ImFont*": "ImFontPtr",
+      "ImFontAtlasCustomRect": "ImFontAtlasCustomRect",
+      "ImFontConfig": "ImFontConfig",
+      "ImFontGlyph": "ImFontGlyph",
+      "ImGuiStoragePair": "ImGuiStoragePair",
+      "ImGuiTextRange": "ImGuiTextRange",
+      "ImTextureID": "ImTextureID",
+      "ImU32": "ImU32",
+      "ImVec2": "ImVec2",
+      "ImVec4": "ImVec4",
+      "ImWchar": "ImWchar",
+      "char": "char",
+      "float": "float"
+    }
   }
 }
