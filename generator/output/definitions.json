@@ -1646,11 +1646,11 @@
   ],
   "ImDrawList_CloneOutput": [
     {
-      "args": "(ImDrawList* self)",
+      "args": "(const ImDrawList* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1666,11 +1666,11 @@
   ],
   "ImDrawList_GetClipRectMax": [
     {
-      "args": "(ImDrawList* self)",
+      "args": "(const ImDrawList* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1684,7 +1684,7 @@
       "stname": "ImDrawList"
     },
     {
-      "args": "(ImVec2 *pOut,ImDrawList* self)",
+      "args": "(ImVec2 *pOut,const ImDrawList* self)",
       "argsT": [
         {
           "name": "pOut",
@@ -1692,7 +1692,7 @@
         },
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1707,11 +1707,11 @@
       "stname": "ImDrawList"
     },
     {
-      "args": "(ImDrawList* self)",
+      "args": "(const ImDrawList* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1729,11 +1729,11 @@
   ],
   "ImDrawList_GetClipRectMin": [
     {
-      "args": "(ImDrawList* self)",
+      "args": "(const ImDrawList* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1747,7 +1747,7 @@
       "stname": "ImDrawList"
     },
     {
-      "args": "(ImVec2 *pOut,ImDrawList* self)",
+      "args": "(ImVec2 *pOut,const ImDrawList* self)",
       "argsT": [
         {
           "name": "pOut",
@@ -1755,7 +1755,7 @@
         },
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -1770,11 +1770,11 @@
       "stname": "ImDrawList"
     },
     {
-      "args": "(ImDrawList* self)",
+      "args": "(const ImDrawList* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImDrawList*"
+          "type": "const ImDrawList*"
         }
       ],
       "argsoriginal": "()",
@@ -2566,11 +2566,11 @@
   ],
   "ImFontAtlasCustomRect_IsPacked": [
     {
-      "args": "(ImFontAtlasCustomRect* self)",
+      "args": "(const ImFontAtlasCustomRect* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFontAtlasCustomRect*"
+          "type": "const ImFontAtlasCustomRect*"
         }
       ],
       "argsoriginal": "()",
@@ -2917,11 +2917,11 @@
   ],
   "ImFontAtlas_CalcCustomRectUV": [
     {
-      "args": "(ImFontAtlas* self,const ImFontAtlasCustomRect* rect,ImVec2* out_uv_min,ImVec2* out_uv_max)",
+      "args": "(const ImFontAtlas* self,const ImFontAtlasCustomRect* rect,ImVec2* out_uv_min,ImVec2* out_uv_max)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFontAtlas*"
+          "type": "const ImFontAtlas*"
         },
         {
           "name": "rect",
@@ -3029,11 +3029,11 @@
   ],
   "ImFontAtlas_GetCustomRectByIndex": [
     {
-      "args": "(ImFontAtlas* self,int index)",
+      "args": "(const ImFontAtlas* self,int index)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFontAtlas*"
+          "type": "const ImFontAtlas*"
         },
         {
           "name": "index",
@@ -3349,11 +3349,11 @@
   ],
   "ImFontAtlas_IsBuilt": [
     {
-      "args": "(ImFontAtlas* self)",
+      "args": "(const ImFontAtlas* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFontAtlas*"
+          "type": "const ImFontAtlas*"
         }
       ],
       "argsoriginal": "()",
@@ -3573,11 +3573,11 @@
   ],
   "ImFontGlyphRangesBuilder_GetBit": [
     {
-      "args": "(ImFontGlyphRangesBuilder* self,int n)",
+      "args": "(const ImFontGlyphRangesBuilder* self,int n)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFontGlyphRangesBuilder*"
+          "type": "const ImFontGlyphRangesBuilder*"
         },
         {
           "name": "n",
@@ -3774,11 +3774,11 @@
   ],
   "ImFont_CalcTextSizeA": [
     {
-      "args": "(ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
+      "args": "(const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "size",
@@ -3819,7 +3819,7 @@
       "stname": "ImFont"
     },
     {
-      "args": "(ImVec2 *pOut,ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
+      "args": "(ImVec2 *pOut,const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
       "argsT": [
         {
           "name": "pOut",
@@ -3827,7 +3827,7 @@
         },
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "size",
@@ -3869,11 +3869,11 @@
       "stname": "ImFont"
     },
     {
-      "args": "(ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
+      "args": "(const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "size",
@@ -3918,11 +3918,11 @@
   ],
   "ImFont_CalcWordWrapPositionA": [
     {
-      "args": "(ImFont* self,float scale,const char* text,const char* text_end,float wrap_width)",
+      "args": "(const ImFont* self,float scale,const char* text,const char* text_end,float wrap_width)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "scale",
@@ -3974,11 +3974,11 @@
   ],
   "ImFont_FindGlyph": [
     {
-      "args": "(ImFont* self,ImWchar c)",
+      "args": "(const ImFont* self,ImWchar c)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "c",
@@ -3998,11 +3998,11 @@
   ],
   "ImFont_FindGlyphNoFallback": [
     {
-      "args": "(ImFont* self,ImWchar c)",
+      "args": "(const ImFont* self,ImWchar c)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "c",
@@ -4022,11 +4022,11 @@
   ],
   "ImFont_GetCharAdvance": [
     {
-      "args": "(ImFont* self,ImWchar c)",
+      "args": "(const ImFont* self,ImWchar c)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "c",
@@ -4046,11 +4046,11 @@
   ],
   "ImFont_GetDebugName": [
     {
-      "args": "(ImFont* self)",
+      "args": "(const ImFont* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         }
       ],
       "argsoriginal": "()",
@@ -4110,11 +4110,11 @@
   ],
   "ImFont_IsLoaded": [
     {
-      "args": "(ImFont* self)",
+      "args": "(const ImFont* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         }
       ],
       "argsoriginal": "()",
@@ -4130,11 +4130,11 @@
   ],
   "ImFont_RenderChar": [
     {
-      "args": "(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,ImWchar c)",
+      "args": "(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,ImWchar c)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "draw_list",
@@ -4170,11 +4170,11 @@
   ],
   "ImFont_RenderText": [
     {
-      "args": "(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)",
+      "args": "(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImFont*"
+          "type": "const ImFont*"
         },
         {
           "name": "draw_list",
@@ -4407,11 +4407,11 @@
   ],
   "ImGuiInputTextCallbackData_HasSelection": [
     {
-      "args": "(ImGuiInputTextCallbackData* self)",
+      "args": "(const ImGuiInputTextCallbackData* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiInputTextCallbackData*"
+          "type": "const ImGuiInputTextCallbackData*"
         }
       ],
       "argsoriginal": "()",
@@ -4699,11 +4699,11 @@
   ],
   "ImGuiPayload_IsDataType": [
     {
-      "args": "(ImGuiPayload* self,const char* type)",
+      "args": "(const ImGuiPayload* self,const char* type)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiPayload*"
+          "type": "const ImGuiPayload*"
         },
         {
           "name": "type",
@@ -4723,11 +4723,11 @@
   ],
   "ImGuiPayload_IsDelivery": [
     {
-      "args": "(ImGuiPayload* self)",
+      "args": "(const ImGuiPayload* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiPayload*"
+          "type": "const ImGuiPayload*"
         }
       ],
       "argsoriginal": "()",
@@ -4743,11 +4743,11 @@
   ],
   "ImGuiPayload_IsPreview": [
     {
-      "args": "(ImGuiPayload* self)",
+      "args": "(const ImGuiPayload* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiPayload*"
+          "type": "const ImGuiPayload*"
         }
       ],
       "argsoriginal": "()",
@@ -4921,11 +4921,11 @@
   ],
   "ImGuiStorage_GetBool": [
     {
-      "args": "(ImGuiStorage* self,ImGuiID key,bool default_val)",
+      "args": "(const ImGuiStorage* self,ImGuiID key,bool default_val)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiStorage*"
+          "type": "const ImGuiStorage*"
         },
         {
           "name": "key",
@@ -4981,11 +4981,11 @@
   ],
   "ImGuiStorage_GetFloat": [
     {
-      "args": "(ImGuiStorage* self,ImGuiID key,float default_val)",
+      "args": "(const ImGuiStorage* self,ImGuiID key,float default_val)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiStorage*"
+          "type": "const ImGuiStorage*"
         },
         {
           "name": "key",
@@ -5041,11 +5041,11 @@
   ],
   "ImGuiStorage_GetInt": [
     {
-      "args": "(ImGuiStorage* self,ImGuiID key,int default_val)",
+      "args": "(const ImGuiStorage* self,ImGuiID key,int default_val)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiStorage*"
+          "type": "const ImGuiStorage*"
         },
         {
           "name": "key",
@@ -5101,11 +5101,11 @@
   ],
   "ImGuiStorage_GetVoidPtr": [
     {
-      "args": "(ImGuiStorage* self,ImGuiID key)",
+      "args": "(const ImGuiStorage* self,ImGuiID key)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiStorage*"
+          "type": "const ImGuiStorage*"
         },
         {
           "name": "key",
@@ -5462,11 +5462,11 @@
   ],
   "ImGuiTextBuffer_begin": [
     {
-      "args": "(ImGuiTextBuffer* self)",
+      "args": "(const ImGuiTextBuffer* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextBuffer*"
+          "type": "const ImGuiTextBuffer*"
         }
       ],
       "argsoriginal": "()",
@@ -5482,11 +5482,11 @@
   ],
   "ImGuiTextBuffer_c_str": [
     {
-      "args": "(ImGuiTextBuffer* self)",
+      "args": "(const ImGuiTextBuffer* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextBuffer*"
+          "type": "const ImGuiTextBuffer*"
         }
       ],
       "argsoriginal": "()",
@@ -5541,11 +5541,11 @@
   ],
   "ImGuiTextBuffer_empty": [
     {
-      "args": "(ImGuiTextBuffer* self)",
+      "args": "(const ImGuiTextBuffer* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextBuffer*"
+          "type": "const ImGuiTextBuffer*"
         }
       ],
       "argsoriginal": "()",
@@ -5561,11 +5561,11 @@
   ],
   "ImGuiTextBuffer_end": [
     {
-      "args": "(ImGuiTextBuffer* self)",
+      "args": "(const ImGuiTextBuffer* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextBuffer*"
+          "type": "const ImGuiTextBuffer*"
         }
       ],
       "argsoriginal": "()",
@@ -5605,11 +5605,11 @@
   ],
   "ImGuiTextBuffer_size": [
     {
-      "args": "(ImGuiTextBuffer* self)",
+      "args": "(const ImGuiTextBuffer* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextBuffer*"
+          "type": "const ImGuiTextBuffer*"
         }
       ],
       "argsoriginal": "()",
@@ -5722,11 +5722,11 @@
   ],
   "ImGuiTextFilter_IsActive": [
     {
-      "args": "(ImGuiTextFilter* self)",
+      "args": "(const ImGuiTextFilter* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextFilter*"
+          "type": "const ImGuiTextFilter*"
         }
       ],
       "argsoriginal": "()",
@@ -5742,11 +5742,11 @@
   ],
   "ImGuiTextFilter_PassFilter": [
     {
-      "args": "(ImGuiTextFilter* self,const char* text,const char* text_end)",
+      "args": "(const ImGuiTextFilter* self,const char* text,const char* text_end)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextFilter*"
+          "type": "const ImGuiTextFilter*"
         },
         {
           "name": "text",
@@ -5856,11 +5856,11 @@
   ],
   "ImGuiTextRange_empty": [
     {
-      "args": "(ImGuiTextRange* self)",
+      "args": "(const ImGuiTextRange* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextRange*"
+          "type": "const ImGuiTextRange*"
         }
       ],
       "argsoriginal": "()",
@@ -5876,11 +5876,11 @@
   ],
   "ImGuiTextRange_split": [
     {
-      "args": "(ImGuiTextRange* self,char separator,ImVector_ImGuiTextRange* out)",
+      "args": "(const ImGuiTextRange* self,char separator,ImVector_ImGuiTextRange* out)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImGuiTextRange*"
+          "type": "const ImGuiTextRange*"
         },
         {
           "name": "separator",
@@ -6086,11 +6086,11 @@
   ],
   "ImVector__grow_capacity": [
     {
-      "args": "(ImVector* self,int sz)",
+      "args": "(const ImVector* self,int sz)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         },
         {
           "name": "sz",
@@ -6131,11 +6131,11 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6172,11 +6172,11 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6193,11 +6193,11 @@
   ],
   "ImVector_capacity": [
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6235,11 +6235,11 @@
   ],
   "ImVector_contains": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(const ImVector* self,const T v)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         },
         {
           "name": "v",
@@ -6280,11 +6280,11 @@
   ],
   "ImVector_empty": [
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6320,11 +6320,11 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6441,11 +6441,11 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(const ImVector* self,const T v)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         },
         {
           "name": "v",
@@ -6536,11 +6536,11 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6558,11 +6558,11 @@
   ],
   "ImVector_index_from_ptr": [
     {
-      "args": "(ImVector* self,const T* it)",
+      "args": "(const ImVector* self,const T* it)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         },
         {
           "name": "it",
@@ -6785,11 +6785,11 @@
   ],
   "ImVector_size": [
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",
@@ -6806,11 +6806,11 @@
   ],
   "ImVector_size_in_bytes": [
     {
-      "args": "(ImVector* self)",
+      "args": "(const ImVector* self)",
       "argsT": [
         {
           "name": "self",
-          "type": "ImVector*"
+          "type": "const ImVector*"
         }
       ],
       "argsoriginal": "()",

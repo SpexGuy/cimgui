@@ -1652,275 +1652,275 @@ CIMGUI_API void ImVector_ImVectorVector_ImVec2(ImVector_ImVec2* self,const ImVec
 {
     new (self) ImVector_ImVec2(src);
 }
-CIMGUI_API bool ImVector_empty_float(ImVector_float* self)
+CIMGUI_API bool ImVector_empty_float(const ImVector_float* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API bool ImVector_empty_ImWchar(const ImVector_ImWchar* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API bool ImVector_empty_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API bool ImVector_empty_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API bool ImVector_empty_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API bool ImVector_empty_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API bool ImVector_empty_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_char(ImVector_char* self)
+CIMGUI_API bool ImVector_empty_char(const ImVector_char* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImU32(ImVector_ImU32* self)
+CIMGUI_API bool ImVector_empty_ImU32(const ImVector_ImU32* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API bool ImVector_empty_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API bool ImVector_empty_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API bool ImVector_empty_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API bool ImVector_empty_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API bool ImVector_empty_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API bool ImVector_empty_ImVec4(const ImVector_ImVec4* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API bool ImVector_empty_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->empty();
 }
-CIMGUI_API bool ImVector_empty_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API bool ImVector_empty_ImVec2(const ImVector_ImVec2* self)
 {
     return self->empty();
 }
-CIMGUI_API int ImVector_size_float(ImVector_float* self)
+CIMGUI_API int ImVector_size_float(const ImVector_float* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API int ImVector_size_ImWchar(const ImVector_ImWchar* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API int ImVector_size_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API int ImVector_size_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API int ImVector_size_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API int ImVector_size_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API int ImVector_size_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_char(ImVector_char* self)
+CIMGUI_API int ImVector_size_char(const ImVector_char* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImU32(ImVector_ImU32* self)
+CIMGUI_API int ImVector_size_ImU32(const ImVector_ImU32* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API int ImVector_size_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API int ImVector_size_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API int ImVector_size_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API int ImVector_size_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API int ImVector_size_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API int ImVector_size_ImVec4(const ImVector_ImVec4* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API int ImVector_size_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API int ImVector_size_ImVec2(const ImVector_ImVec2* self)
 {
     return self->size();
 }
-CIMGUI_API int ImVector_size_in_bytes_float(ImVector_float* self)
+CIMGUI_API int ImVector_size_in_bytes_float(const ImVector_float* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API int ImVector_size_in_bytes_ImWchar(const ImVector_ImWchar* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API int ImVector_size_in_bytes_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API int ImVector_size_in_bytes_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API int ImVector_size_in_bytes_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API int ImVector_size_in_bytes_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API int ImVector_size_in_bytes_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_char(ImVector_char* self)
+CIMGUI_API int ImVector_size_in_bytes_char(const ImVector_char* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImU32(ImVector_ImU32* self)
+CIMGUI_API int ImVector_size_in_bytes_ImU32(const ImVector_ImU32* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API int ImVector_size_in_bytes_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API int ImVector_size_in_bytes_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API int ImVector_size_in_bytes_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API int ImVector_size_in_bytes_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API int ImVector_size_in_bytes_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API int ImVector_size_in_bytes_ImVec4(const ImVector_ImVec4* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API int ImVector_size_in_bytes_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_size_in_bytes_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API int ImVector_size_in_bytes_ImVec2(const ImVector_ImVec2* self)
 {
     return self->size_in_bytes();
 }
-CIMGUI_API int ImVector_capacity_float(ImVector_float* self)
+CIMGUI_API int ImVector_capacity_float(const ImVector_float* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API int ImVector_capacity_ImWchar(const ImVector_ImWchar* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API int ImVector_capacity_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API int ImVector_capacity_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API int ImVector_capacity_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API int ImVector_capacity_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API int ImVector_capacity_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_char(ImVector_char* self)
+CIMGUI_API int ImVector_capacity_char(const ImVector_char* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImU32(ImVector_ImU32* self)
+CIMGUI_API int ImVector_capacity_ImU32(const ImVector_ImU32* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API int ImVector_capacity_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API int ImVector_capacity_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API int ImVector_capacity_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API int ImVector_capacity_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API int ImVector_capacity_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API int ImVector_capacity_ImVec4(const ImVector_ImVec4* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API int ImVector_capacity_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->capacity();
 }
-CIMGUI_API int ImVector_capacity_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API int ImVector_capacity_ImVec2(const ImVector_ImVec2* self)
 {
     return self->capacity();
 }
@@ -2060,71 +2060,71 @@ CIMGUI_API ImVec2* ImVector_begin_ImVec2(ImVector_ImVec2* self)
 {
     return self->begin();
 }
-CIMGUI_API const float* ImVector_begin_const_float(ImVector_float* self)
+CIMGUI_API const float* ImVector_begin_const_float(const ImVector_float* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImWchar* ImVector_begin_const_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API const ImWchar* ImVector_begin_const_ImWchar(const ImVector_ImWchar* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImDrawVert* ImVector_begin_const_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API const ImDrawVert* ImVector_begin_const_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImFontGlyph* ImVector_begin_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API const ImFontGlyph* ImVector_begin_const_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImGuiTextRange* ImVector_begin_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API const ImGuiTextRange* ImVector_begin_const_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImGuiStoragePair* ImVector_begin_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API const ImGuiStoragePair* ImVector_begin_const_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImDrawChannel* ImVector_begin_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API const ImDrawChannel* ImVector_begin_const_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->begin();
 }
-CIMGUI_API const char* ImVector_begin_const_char(ImVector_char* self)
+CIMGUI_API const char* ImVector_begin_const_char(const ImVector_char* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImU32* ImVector_begin_const_ImU32(ImVector_ImU32* self)
+CIMGUI_API const ImU32* ImVector_begin_const_ImU32(const ImVector_ImU32* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImVector_begin_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_begin_const_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImTextureID* ImVector_begin_const_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API const ImTextureID* ImVector_begin_const_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImFontConfig* ImVector_begin_const_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API const ImFontConfig* ImVector_begin_const_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImFont** ImVector_begin_const_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API const ImFont** ImVector_begin_const_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImDrawCmd* ImVector_begin_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API const ImDrawCmd* ImVector_begin_const_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImVec4* ImVector_begin_const_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API const ImVec4* ImVector_begin_const_ImVec4(const ImVector_ImVec4* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImDrawIdx* ImVector_begin_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API const ImDrawIdx* ImVector_begin_const_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->begin();
 }
-CIMGUI_API const ImVec2* ImVector_begin_const_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API const ImVec2* ImVector_begin_const_ImVec2(const ImVector_ImVec2* self)
 {
     return self->begin();
 }
@@ -2196,71 +2196,71 @@ CIMGUI_API ImVec2* ImVector_end_ImVec2(ImVector_ImVec2* self)
 {
     return self->end();
 }
-CIMGUI_API const float* ImVector_end_const_float(ImVector_float* self)
+CIMGUI_API const float* ImVector_end_const_float(const ImVector_float* self)
 {
     return self->end();
 }
-CIMGUI_API const ImWchar* ImVector_end_const_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API const ImWchar* ImVector_end_const_ImWchar(const ImVector_ImWchar* self)
 {
     return self->end();
 }
-CIMGUI_API const ImDrawVert* ImVector_end_const_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API const ImDrawVert* ImVector_end_const_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return self->end();
 }
-CIMGUI_API const ImFontGlyph* ImVector_end_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API const ImFontGlyph* ImVector_end_const_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return self->end();
 }
-CIMGUI_API const ImGuiTextRange* ImVector_end_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API const ImGuiTextRange* ImVector_end_const_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return self->end();
 }
-CIMGUI_API const ImGuiStoragePair* ImVector_end_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API const ImGuiStoragePair* ImVector_end_const_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return self->end();
 }
-CIMGUI_API const ImDrawChannel* ImVector_end_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API const ImDrawChannel* ImVector_end_const_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return self->end();
 }
-CIMGUI_API const char* ImVector_end_const_char(ImVector_char* self)
+CIMGUI_API const char* ImVector_end_const_char(const ImVector_char* self)
 {
     return self->end();
 }
-CIMGUI_API const ImU32* ImVector_end_const_ImU32(ImVector_ImU32* self)
+CIMGUI_API const ImU32* ImVector_end_const_ImU32(const ImVector_ImU32* self)
 {
     return self->end();
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImVector_end_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_end_const_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return self->end();
 }
-CIMGUI_API const ImTextureID* ImVector_end_const_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API const ImTextureID* ImVector_end_const_ImTextureID(const ImVector_ImTextureID* self)
 {
     return self->end();
 }
-CIMGUI_API const ImFontConfig* ImVector_end_const_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API const ImFontConfig* ImVector_end_const_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return self->end();
 }
-CIMGUI_API const ImFont** ImVector_end_const_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API const ImFont** ImVector_end_const_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return self->end();
 }
-CIMGUI_API const ImDrawCmd* ImVector_end_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API const ImDrawCmd* ImVector_end_const_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return self->end();
 }
-CIMGUI_API const ImVec4* ImVector_end_const_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API const ImVec4* ImVector_end_const_ImVec4(const ImVector_ImVec4* self)
 {
     return self->end();
 }
-CIMGUI_API const ImDrawIdx* ImVector_end_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API const ImDrawIdx* ImVector_end_const_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return self->end();
 }
-CIMGUI_API const ImVec2* ImVector_end_const_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API const ImVec2* ImVector_end_const_ImVec2(const ImVector_ImVec2* self)
 {
     return self->end();
 }
@@ -2332,71 +2332,71 @@ CIMGUI_API ImVec2* ImVector_front_ImVec2(ImVector_ImVec2* self)
 {
     return &self->front();
 }
-CIMGUI_API const float* ImVector_front_const_float(ImVector_float* self)
+CIMGUI_API const float* ImVector_front_const_float(const ImVector_float* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImWchar* ImVector_front_const_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API const ImWchar* ImVector_front_const_ImWchar(const ImVector_ImWchar* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImDrawVert* ImVector_front_const_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API const ImDrawVert* ImVector_front_const_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImFontGlyph* ImVector_front_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API const ImFontGlyph* ImVector_front_const_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImGuiTextRange* ImVector_front_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API const ImGuiTextRange* ImVector_front_const_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImGuiStoragePair* ImVector_front_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API const ImGuiStoragePair* ImVector_front_const_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImDrawChannel* ImVector_front_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API const ImDrawChannel* ImVector_front_const_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return &self->front();
 }
-CIMGUI_API const char* ImVector_front_const_char(ImVector_char* self)
+CIMGUI_API const char* ImVector_front_const_char(const ImVector_char* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImU32* ImVector_front_const_ImU32(ImVector_ImU32* self)
+CIMGUI_API const ImU32* ImVector_front_const_ImU32(const ImVector_ImU32* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImVector_front_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_front_const_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImTextureID* ImVector_front_const_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API const ImTextureID* ImVector_front_const_ImTextureID(const ImVector_ImTextureID* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImFontConfig* ImVector_front_const_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API const ImFontConfig* ImVector_front_const_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImFont** ImVector_front_const_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API const ImFont** ImVector_front_const_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImDrawCmd* ImVector_front_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API const ImDrawCmd* ImVector_front_const_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImVec4* ImVector_front_const_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API const ImVec4* ImVector_front_const_ImVec4(const ImVector_ImVec4* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImDrawIdx* ImVector_front_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API const ImDrawIdx* ImVector_front_const_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return &self->front();
 }
-CIMGUI_API const ImVec2* ImVector_front_const_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API const ImVec2* ImVector_front_const_ImVec2(const ImVector_ImVec2* self)
 {
     return &self->front();
 }
@@ -2468,71 +2468,71 @@ CIMGUI_API ImVec2* ImVector_back_ImVec2(ImVector_ImVec2* self)
 {
     return &self->back();
 }
-CIMGUI_API const float* ImVector_back_const_float(ImVector_float* self)
+CIMGUI_API const float* ImVector_back_const_float(const ImVector_float* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImWchar* ImVector_back_const_ImWchar(ImVector_ImWchar* self)
+CIMGUI_API const ImWchar* ImVector_back_const_ImWchar(const ImVector_ImWchar* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImDrawVert* ImVector_back_const_ImDrawVert(ImVector_ImDrawVert* self)
+CIMGUI_API const ImDrawVert* ImVector_back_const_ImDrawVert(const ImVector_ImDrawVert* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImFontGlyph* ImVector_back_const_ImFontGlyph(ImVector_ImFontGlyph* self)
+CIMGUI_API const ImFontGlyph* ImVector_back_const_ImFontGlyph(const ImVector_ImFontGlyph* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImGuiTextRange* ImVector_back_const_ImGuiTextRange(ImVector_ImGuiTextRange* self)
+CIMGUI_API const ImGuiTextRange* ImVector_back_const_ImGuiTextRange(const ImVector_ImGuiTextRange* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImGuiStoragePair* ImVector_back_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self)
+CIMGUI_API const ImGuiStoragePair* ImVector_back_const_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImDrawChannel* ImVector_back_const_ImDrawChannel(ImVector_ImDrawChannel* self)
+CIMGUI_API const ImDrawChannel* ImVector_back_const_ImDrawChannel(const ImVector_ImDrawChannel* self)
 {
     return &self->back();
 }
-CIMGUI_API const char* ImVector_back_const_char(ImVector_char* self)
+CIMGUI_API const char* ImVector_back_const_char(const ImVector_char* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImU32* ImVector_back_const_ImU32(ImVector_ImU32* self)
+CIMGUI_API const ImU32* ImVector_back_const_ImU32(const ImVector_ImU32* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImVector_back_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self)
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_back_const_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImTextureID* ImVector_back_const_ImTextureID(ImVector_ImTextureID* self)
+CIMGUI_API const ImTextureID* ImVector_back_const_ImTextureID(const ImVector_ImTextureID* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImFontConfig* ImVector_back_const_ImFontConfig(ImVector_ImFontConfig* self)
+CIMGUI_API const ImFontConfig* ImVector_back_const_ImFontConfig(const ImVector_ImFontConfig* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImFont** ImVector_back_const_ImFontPtr(ImVector_ImFontPtr* self)
+CIMGUI_API const ImFont** ImVector_back_const_ImFontPtr(const ImVector_ImFontPtr* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImDrawCmd* ImVector_back_const_ImDrawCmd(ImVector_ImDrawCmd* self)
+CIMGUI_API const ImDrawCmd* ImVector_back_const_ImDrawCmd(const ImVector_ImDrawCmd* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImVec4* ImVector_back_const_ImVec4(ImVector_ImVec4* self)
+CIMGUI_API const ImVec4* ImVector_back_const_ImVec4(const ImVector_ImVec4* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImDrawIdx* ImVector_back_const_ImDrawIdx(ImVector_ImDrawIdx* self)
+CIMGUI_API const ImDrawIdx* ImVector_back_const_ImDrawIdx(const ImVector_ImDrawIdx* self)
 {
     return &self->back();
 }
-CIMGUI_API const ImVec2* ImVector_back_const_ImVec2(ImVector_ImVec2* self)
+CIMGUI_API const ImVec2* ImVector_back_const_ImVec2(const ImVector_ImVec2* self)
 {
     return &self->back();
 }
@@ -2604,71 +2604,71 @@ CIMGUI_API void ImVector_swap_ImVec2(ImVector_ImVec2* self,ImVector_ImVec2* rhs)
 {
     return self->swap(*rhs);
 }
-CIMGUI_API int ImVector__grow_capacity_float(ImVector_float* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_float(const ImVector_float* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImWchar(ImVector_ImWchar* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImWchar(const ImVector_ImWchar* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImDrawVert(ImVector_ImDrawVert* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImDrawVert(const ImVector_ImDrawVert* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImFontGlyph(ImVector_ImFontGlyph* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImFontGlyph(const ImVector_ImFontGlyph* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImGuiTextRange(ImVector_ImGuiTextRange* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImGuiTextRange(const ImVector_ImGuiTextRange* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImDrawChannel(ImVector_ImDrawChannel* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImDrawChannel(const ImVector_ImDrawChannel* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_char(ImVector_char* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_char(const ImVector_char* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImU32(ImVector_ImU32* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImU32(const ImVector_ImU32* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImTextureID(ImVector_ImTextureID* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImTextureID(const ImVector_ImTextureID* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImFontConfig(ImVector_ImFontConfig* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImFontConfig(const ImVector_ImFontConfig* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImFontPtr(ImVector_ImFontPtr* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImFontPtr(const ImVector_ImFontPtr* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImDrawCmd(ImVector_ImDrawCmd* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImDrawCmd(const ImVector_ImDrawCmd* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImVec4(ImVector_ImVec4* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImVec4(const ImVector_ImVec4* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImDrawIdx(ImVector_ImDrawIdx* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImDrawIdx(const ImVector_ImDrawIdx* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
-CIMGUI_API int ImVector__grow_capacity_ImVec2(ImVector_ImVec2* self,int sz)
+CIMGUI_API int ImVector__grow_capacity_ImVec2(const ImVector_ImVec2* self,int sz)
 {
     return self->_grow_capacity(sz);
 }
@@ -3420,71 +3420,71 @@ CIMGUI_API ImVec2* ImVector_insert_ImVec2(ImVector_ImVec2* self,const ImVec2* it
 {
     return self->insert(it,v);
 }
-CIMGUI_API bool ImVector_contains_float(ImVector_float* self,const float v)
+CIMGUI_API bool ImVector_contains_float(const ImVector_float* self,const float v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+CIMGUI_API bool ImVector_contains_ImWchar(const ImVector_ImWchar* self,const ImWchar v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+CIMGUI_API bool ImVector_contains_ImDrawVert(const ImVector_ImDrawVert* self,const ImDrawVert v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+CIMGUI_API bool ImVector_contains_ImFontGlyph(const ImVector_ImFontGlyph* self,const ImFontGlyph v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+CIMGUI_API bool ImVector_contains_ImGuiTextRange(const ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+CIMGUI_API bool ImVector_contains_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+CIMGUI_API bool ImVector_contains_ImDrawChannel(const ImVector_ImDrawChannel* self,const ImDrawChannel v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_char(ImVector_char* self,const char v)
+CIMGUI_API bool ImVector_contains_char(const ImVector_char* self,const char v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImU32(ImVector_ImU32* self,const ImU32 v)
+CIMGUI_API bool ImVector_contains_ImU32(const ImVector_ImU32* self,const ImU32 v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+CIMGUI_API bool ImVector_contains_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+CIMGUI_API bool ImVector_contains_ImTextureID(const ImVector_ImTextureID* self,const ImTextureID v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+CIMGUI_API bool ImVector_contains_ImFontConfig(const ImVector_ImFontConfig* self,const ImFontConfig v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+CIMGUI_API bool ImVector_contains_ImFontPtr(const ImVector_ImFontPtr* self,const ImFont* v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+CIMGUI_API bool ImVector_contains_ImDrawCmd(const ImVector_ImDrawCmd* self,const ImDrawCmd v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+CIMGUI_API bool ImVector_contains_ImVec4(const ImVector_ImVec4* self,const ImVec4 v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+CIMGUI_API bool ImVector_contains_ImDrawIdx(const ImVector_ImDrawIdx* self,const ImDrawIdx v)
 {
     return self->contains(v);
 }
-CIMGUI_API bool ImVector_contains_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+CIMGUI_API bool ImVector_contains_ImVec2(const ImVector_ImVec2* self,const ImVec2 v)
 {
     return self->contains(v);
 }
@@ -3556,71 +3556,71 @@ CIMGUI_API ImVec2* ImVector_find_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
 {
     return self->find(v);
 }
-CIMGUI_API const float* ImVector_find_const_float(ImVector_float* self,const float v)
+CIMGUI_API const float* ImVector_find_const_float(const ImVector_float* self,const float v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImWchar* ImVector_find_const_ImWchar(ImVector_ImWchar* self,const ImWchar v)
+CIMGUI_API const ImWchar* ImVector_find_const_ImWchar(const ImVector_ImWchar* self,const ImWchar v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImDrawVert* ImVector_find_const_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert v)
+CIMGUI_API const ImDrawVert* ImVector_find_const_ImDrawVert(const ImVector_ImDrawVert* self,const ImDrawVert v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImFontGlyph* ImVector_find_const_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph v)
+CIMGUI_API const ImFontGlyph* ImVector_find_const_ImFontGlyph(const ImVector_ImFontGlyph* self,const ImFontGlyph v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImGuiTextRange* ImVector_find_const_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
+CIMGUI_API const ImGuiTextRange* ImVector_find_const_ImGuiTextRange(const ImVector_ImGuiTextRange* self,const ImGuiTextRange v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImGuiStoragePair* ImVector_find_const_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
+CIMGUI_API const ImGuiStoragePair* ImVector_find_const_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self,const ImGuiStoragePair v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImDrawChannel* ImVector_find_const_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel v)
+CIMGUI_API const ImDrawChannel* ImVector_find_const_ImDrawChannel(const ImVector_ImDrawChannel* self,const ImDrawChannel v)
 {
     return self->find(v);
 }
-CIMGUI_API const char* ImVector_find_const_char(ImVector_char* self,const char v)
+CIMGUI_API const char* ImVector_find_const_char(const ImVector_char* self,const char v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImU32* ImVector_find_const_ImU32(ImVector_ImU32* self,const ImU32 v)
+CIMGUI_API const ImU32* ImVector_find_const_ImU32(const ImVector_ImU32* self,const ImU32 v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImVector_find_const_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
+CIMGUI_API const ImFontAtlasCustomRect* ImVector_find_const_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImTextureID* ImVector_find_const_ImTextureID(ImVector_ImTextureID* self,const ImTextureID v)
+CIMGUI_API const ImTextureID* ImVector_find_const_ImTextureID(const ImVector_ImTextureID* self,const ImTextureID v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImFontConfig* ImVector_find_const_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig v)
+CIMGUI_API const ImFontConfig* ImVector_find_const_ImFontConfig(const ImVector_ImFontConfig* self,const ImFontConfig v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImFont** ImVector_find_const_ImFontPtr(ImVector_ImFontPtr* self,const ImFont* v)
+CIMGUI_API const ImFont** ImVector_find_const_ImFontPtr(const ImVector_ImFontPtr* self,const ImFont* v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImDrawCmd* ImVector_find_const_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd v)
+CIMGUI_API const ImDrawCmd* ImVector_find_const_ImDrawCmd(const ImVector_ImDrawCmd* self,const ImDrawCmd v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImVec4* ImVector_find_const_ImVec4(ImVector_ImVec4* self,const ImVec4 v)
+CIMGUI_API const ImVec4* ImVector_find_const_ImVec4(const ImVector_ImVec4* self,const ImVec4 v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImDrawIdx* ImVector_find_const_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx v)
+CIMGUI_API const ImDrawIdx* ImVector_find_const_ImDrawIdx(const ImVector_ImDrawIdx* self,const ImDrawIdx v)
 {
     return self->find(v);
 }
-CIMGUI_API const ImVec2* ImVector_find_const_ImVec2(ImVector_ImVec2* self,const ImVec2 v)
+CIMGUI_API const ImVec2* ImVector_find_const_ImVec2(const ImVector_ImVec2* self,const ImVec2 v)
 {
     return self->find(v);
 }
@@ -3760,71 +3760,71 @@ CIMGUI_API bool ImVector_find_erase_unsorted_ImVec2(ImVector_ImVec2* self,const 
 {
     return self->find_erase_unsorted(v);
 }
-CIMGUI_API int ImVector_index_from_ptr_float(ImVector_float* self,const float* it)
+CIMGUI_API int ImVector_index_from_ptr_float(const ImVector_float* self,const float* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImWchar(ImVector_ImWchar* self,const ImWchar* it)
+CIMGUI_API int ImVector_index_from_ptr_ImWchar(const ImVector_ImWchar* self,const ImWchar* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImDrawVert(ImVector_ImDrawVert* self,const ImDrawVert* it)
+CIMGUI_API int ImVector_index_from_ptr_ImDrawVert(const ImVector_ImDrawVert* self,const ImDrawVert* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImFontGlyph(ImVector_ImFontGlyph* self,const ImFontGlyph* it)
+CIMGUI_API int ImVector_index_from_ptr_ImFontGlyph(const ImVector_ImFontGlyph* self,const ImFontGlyph* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImGuiTextRange(ImVector_ImGuiTextRange* self,const ImGuiTextRange* it)
+CIMGUI_API int ImVector_index_from_ptr_ImGuiTextRange(const ImVector_ImGuiTextRange* self,const ImGuiTextRange* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImGuiStoragePair(ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it)
+CIMGUI_API int ImVector_index_from_ptr_ImGuiStoragePair(const ImVector_ImGuiStoragePair* self,const ImGuiStoragePair* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImDrawChannel(ImVector_ImDrawChannel* self,const ImDrawChannel* it)
+CIMGUI_API int ImVector_index_from_ptr_ImDrawChannel(const ImVector_ImDrawChannel* self,const ImDrawChannel* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_char(ImVector_char* self,const char* it)
+CIMGUI_API int ImVector_index_from_ptr_char(const ImVector_char* self,const char* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImU32(ImVector_ImU32* self,const ImU32* it)
+CIMGUI_API int ImVector_index_from_ptr_ImU32(const ImVector_ImU32* self,const ImU32* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImFontAtlasCustomRect(ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it)
+CIMGUI_API int ImVector_index_from_ptr_ImFontAtlasCustomRect(const ImVector_ImFontAtlasCustomRect* self,const ImFontAtlasCustomRect* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImTextureID(ImVector_ImTextureID* self,const ImTextureID* it)
+CIMGUI_API int ImVector_index_from_ptr_ImTextureID(const ImVector_ImTextureID* self,const ImTextureID* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImFontConfig(ImVector_ImFontConfig* self,const ImFontConfig* it)
+CIMGUI_API int ImVector_index_from_ptr_ImFontConfig(const ImVector_ImFontConfig* self,const ImFontConfig* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImFontPtr(ImVector_ImFontPtr* self,const ImFont** it)
+CIMGUI_API int ImVector_index_from_ptr_ImFontPtr(const ImVector_ImFontPtr* self,const ImFont** it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImDrawCmd(ImVector_ImDrawCmd* self,const ImDrawCmd* it)
+CIMGUI_API int ImVector_index_from_ptr_ImDrawCmd(const ImVector_ImDrawCmd* self,const ImDrawCmd* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImVec4(ImVector_ImVec4* self,const ImVec4* it)
+CIMGUI_API int ImVector_index_from_ptr_ImVec4(const ImVector_ImVec4* self,const ImVec4* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImDrawIdx(ImVector_ImDrawIdx* self,const ImDrawIdx* it)
+CIMGUI_API int ImVector_index_from_ptr_ImDrawIdx(const ImVector_ImDrawIdx* self,const ImDrawIdx* it)
 {
     return self->index_from_ptr(it);
 }
-CIMGUI_API int ImVector_index_from_ptr_ImVec2(ImVector_ImVec2* self,const ImVec2* it)
+CIMGUI_API int ImVector_index_from_ptr_ImVec2(const ImVector_ImVec2* self,const ImVec2* it)
 {
     return self->index_from_ptr(it);
 }
@@ -3876,7 +3876,7 @@ CIMGUI_API void ImGuiInputTextCallbackData_InsertChars(ImGuiInputTextCallbackDat
 {
     return self->InsertChars(pos,text,text_end);
 }
-CIMGUI_API bool ImGuiInputTextCallbackData_HasSelection(ImGuiInputTextCallbackData* self)
+CIMGUI_API bool ImGuiInputTextCallbackData_HasSelection(const ImGuiInputTextCallbackData* self)
 {
     return self->HasSelection();
 }
@@ -3892,15 +3892,15 @@ CIMGUI_API void ImGuiPayload_Clear(ImGuiPayload* self)
 {
     return self->Clear();
 }
-CIMGUI_API bool ImGuiPayload_IsDataType(ImGuiPayload* self,const char* type)
+CIMGUI_API bool ImGuiPayload_IsDataType(const ImGuiPayload* self,const char* type)
 {
     return self->IsDataType(type);
 }
-CIMGUI_API bool ImGuiPayload_IsPreview(ImGuiPayload* self)
+CIMGUI_API bool ImGuiPayload_IsPreview(const ImGuiPayload* self)
 {
     return self->IsPreview();
 }
-CIMGUI_API bool ImGuiPayload_IsDelivery(ImGuiPayload* self)
+CIMGUI_API bool ImGuiPayload_IsDelivery(const ImGuiPayload* self)
 {
     return self->IsDelivery();
 }
@@ -3924,7 +3924,7 @@ CIMGUI_API bool ImGuiTextFilter_Draw(ImGuiTextFilter* self,const char* label,flo
 {
     return self->Draw(label,width);
 }
-CIMGUI_API bool ImGuiTextFilter_PassFilter(ImGuiTextFilter* self,const char* text,const char* text_end)
+CIMGUI_API bool ImGuiTextFilter_PassFilter(const ImGuiTextFilter* self,const char* text,const char* text_end)
 {
     return self->PassFilter(text,text_end);
 }
@@ -3936,7 +3936,7 @@ CIMGUI_API void ImGuiTextFilter_Clear(ImGuiTextFilter* self)
 {
     return self->Clear();
 }
-CIMGUI_API bool ImGuiTextFilter_IsActive(ImGuiTextFilter* self)
+CIMGUI_API bool ImGuiTextFilter_IsActive(const ImGuiTextFilter* self)
 {
     return self->IsActive();
 }
@@ -3952,11 +3952,11 @@ CIMGUI_API void ImGuiTextRange_ImGuiTextRangeStr(ImGuiTextRange* self,const char
 {
     new (self) ImGuiTextRange(_b,_e);
 }
-CIMGUI_API bool ImGuiTextRange_empty(ImGuiTextRange* self)
+CIMGUI_API bool ImGuiTextRange_empty(const ImGuiTextRange* self)
 {
     return self->empty();
 }
-CIMGUI_API void ImGuiTextRange_split(ImGuiTextRange* self,char separator,ImVector_ImGuiTextRange* out)
+CIMGUI_API void ImGuiTextRange_split(const ImGuiTextRange* self,char separator,ImVector_ImGuiTextRange* out)
 {
     return self->split(separator,out);
 }
@@ -3968,19 +3968,19 @@ CIMGUI_API void ImGuiTextBuffer_destroy(ImGuiTextBuffer* self)
 {
     self->~ImGuiTextBuffer();
 }
-CIMGUI_API const char* ImGuiTextBuffer_begin(ImGuiTextBuffer* self)
+CIMGUI_API const char* ImGuiTextBuffer_begin(const ImGuiTextBuffer* self)
 {
     return self->begin();
 }
-CIMGUI_API const char* ImGuiTextBuffer_end(ImGuiTextBuffer* self)
+CIMGUI_API const char* ImGuiTextBuffer_end(const ImGuiTextBuffer* self)
 {
     return self->end();
 }
-CIMGUI_API int ImGuiTextBuffer_size(ImGuiTextBuffer* self)
+CIMGUI_API int ImGuiTextBuffer_size(const ImGuiTextBuffer* self)
 {
     return self->size();
 }
-CIMGUI_API bool ImGuiTextBuffer_empty(ImGuiTextBuffer* self)
+CIMGUI_API bool ImGuiTextBuffer_empty(const ImGuiTextBuffer* self)
 {
     return self->empty();
 }
@@ -3992,7 +3992,7 @@ CIMGUI_API void ImGuiTextBuffer_reserve(ImGuiTextBuffer* self,int capacity)
 {
     return self->reserve(capacity);
 }
-CIMGUI_API const char* ImGuiTextBuffer_c_str(ImGuiTextBuffer* self)
+CIMGUI_API const char* ImGuiTextBuffer_c_str(const ImGuiTextBuffer* self)
 {
     return self->c_str();
 }
@@ -4024,7 +4024,7 @@ CIMGUI_API void ImGuiStorage_Clear(ImGuiStorage* self)
 {
     return self->Clear();
 }
-CIMGUI_API int ImGuiStorage_GetInt(ImGuiStorage* self,ImGuiID key,int default_val)
+CIMGUI_API int ImGuiStorage_GetInt(const ImGuiStorage* self,ImGuiID key,int default_val)
 {
     return self->GetInt(key,default_val);
 }
@@ -4032,7 +4032,7 @@ CIMGUI_API void ImGuiStorage_SetInt(ImGuiStorage* self,ImGuiID key,int val)
 {
     return self->SetInt(key,val);
 }
-CIMGUI_API bool ImGuiStorage_GetBool(ImGuiStorage* self,ImGuiID key,bool default_val)
+CIMGUI_API bool ImGuiStorage_GetBool(const ImGuiStorage* self,ImGuiID key,bool default_val)
 {
     return self->GetBool(key,default_val);
 }
@@ -4040,7 +4040,7 @@ CIMGUI_API void ImGuiStorage_SetBool(ImGuiStorage* self,ImGuiID key,bool val)
 {
     return self->SetBool(key,val);
 }
-CIMGUI_API float ImGuiStorage_GetFloat(ImGuiStorage* self,ImGuiID key,float default_val)
+CIMGUI_API float ImGuiStorage_GetFloat(const ImGuiStorage* self,ImGuiID key,float default_val)
 {
     return self->GetFloat(key,default_val);
 }
@@ -4048,7 +4048,7 @@ CIMGUI_API void ImGuiStorage_SetFloat(ImGuiStorage* self,ImGuiID key,float val)
 {
     return self->SetFloat(key,val);
 }
-CIMGUI_API void* ImGuiStorage_GetVoidPtr(ImGuiStorage* self,ImGuiID key)
+CIMGUI_API void* ImGuiStorage_GetVoidPtr(const ImGuiStorage* self,ImGuiID key)
 {
     return self->GetVoidPtr(key);
 }
@@ -4196,11 +4196,11 @@ CIMGUI_API void ImDrawList_PopTextureID(ImDrawList* self)
 {
     return self->PopTextureID();
 }
-CIMGUI_API ImVec2 ImDrawList_GetClipRectMin(ImDrawList* self)
+CIMGUI_API ImVec2 ImDrawList_GetClipRectMin(const ImDrawList* self)
 {
     return self->GetClipRectMin();
 }
-CIMGUI_API ImVec2 ImDrawList_GetClipRectMax(ImDrawList* self)
+CIMGUI_API ImVec2 ImDrawList_GetClipRectMax(const ImDrawList* self)
 {
     return self->GetClipRectMax();
 }
@@ -4328,7 +4328,7 @@ CIMGUI_API void ImDrawList_AddDrawCmd(ImDrawList* self)
 {
     return self->AddDrawCmd();
 }
-CIMGUI_API ImDrawList* ImDrawList_CloneOutput(ImDrawList* self)
+CIMGUI_API ImDrawList* ImDrawList_CloneOutput(const ImDrawList* self)
 {
     return self->CloneOutput();
 }
@@ -4432,7 +4432,7 @@ CIMGUI_API void ImFontGlyphRangesBuilder_Clear(ImFontGlyphRangesBuilder* self)
 {
     return self->Clear();
 }
-CIMGUI_API bool ImFontGlyphRangesBuilder_GetBit(ImFontGlyphRangesBuilder* self,int n)
+CIMGUI_API bool ImFontGlyphRangesBuilder_GetBit(const ImFontGlyphRangesBuilder* self,int n)
 {
     return self->GetBit(n);
 }
@@ -4464,7 +4464,7 @@ CIMGUI_API void ImFontAtlasCustomRect_destroy(ImFontAtlasCustomRect* self)
 {
     self->~ImFontAtlasCustomRect();
 }
-CIMGUI_API bool ImFontAtlasCustomRect_IsPacked(ImFontAtlasCustomRect* self)
+CIMGUI_API bool ImFontAtlasCustomRect_IsPacked(const ImFontAtlasCustomRect* self)
 {
     return self->IsPacked();
 }
@@ -4528,7 +4528,7 @@ CIMGUI_API void ImFontAtlas_GetTexDataAsRGBA32(ImFontAtlas* self,unsigned char**
 {
     return self->GetTexDataAsRGBA32(out_pixels,out_width,out_height,out_bytes_per_pixel);
 }
-CIMGUI_API bool ImFontAtlas_IsBuilt(ImFontAtlas* self)
+CIMGUI_API bool ImFontAtlas_IsBuilt(const ImFontAtlas* self)
 {
     return self->IsBuilt();
 }
@@ -4576,11 +4576,11 @@ CIMGUI_API int ImFontAtlas_AddCustomRectFontGlyph(ImFontAtlas* self,ImFont* font
 {
     return self->AddCustomRectFontGlyph(font,id,width,height,advance_x,offset);
 }
-CIMGUI_API const ImFontAtlasCustomRect* ImFontAtlas_GetCustomRectByIndex(ImFontAtlas* self,int index)
+CIMGUI_API const ImFontAtlasCustomRect* ImFontAtlas_GetCustomRectByIndex(const ImFontAtlas* self,int index)
 {
     return self->GetCustomRectByIndex(index);
 }
-CIMGUI_API void ImFontAtlas_CalcCustomRectUV(ImFontAtlas* self,const ImFontAtlasCustomRect* rect,ImVec2* out_uv_min,ImVec2* out_uv_max)
+CIMGUI_API void ImFontAtlas_CalcCustomRectUV(const ImFontAtlas* self,const ImFontAtlasCustomRect* rect,ImVec2* out_uv_min,ImVec2* out_uv_max)
 {
     return self->CalcCustomRectUV(rect,out_uv_min,out_uv_max);
 }
@@ -4596,39 +4596,39 @@ CIMGUI_API void ImFont_destroy(ImFont* self)
 {
     self->~ImFont();
 }
-CIMGUI_API const ImFontGlyph* ImFont_FindGlyph(ImFont* self,ImWchar c)
+CIMGUI_API const ImFontGlyph* ImFont_FindGlyph(const ImFont* self,ImWchar c)
 {
     return self->FindGlyph(c);
 }
-CIMGUI_API const ImFontGlyph* ImFont_FindGlyphNoFallback(ImFont* self,ImWchar c)
+CIMGUI_API const ImFontGlyph* ImFont_FindGlyphNoFallback(const ImFont* self,ImWchar c)
 {
     return self->FindGlyphNoFallback(c);
 }
-CIMGUI_API float ImFont_GetCharAdvance(ImFont* self,ImWchar c)
+CIMGUI_API float ImFont_GetCharAdvance(const ImFont* self,ImWchar c)
 {
     return self->GetCharAdvance(c);
 }
-CIMGUI_API bool ImFont_IsLoaded(ImFont* self)
+CIMGUI_API bool ImFont_IsLoaded(const ImFont* self)
 {
     return self->IsLoaded();
 }
-CIMGUI_API const char* ImFont_GetDebugName(ImFont* self)
+CIMGUI_API const char* ImFont_GetDebugName(const ImFont* self)
 {
     return self->GetDebugName();
 }
-CIMGUI_API ImVec2 ImFont_CalcTextSizeA(ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
+CIMGUI_API ImVec2 ImFont_CalcTextSizeA(const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
 {
     return self->CalcTextSizeA(size,max_width,wrap_width,text_begin,text_end,remaining);
 }
-CIMGUI_API const char* ImFont_CalcWordWrapPositionA(ImFont* self,float scale,const char* text,const char* text_end,float wrap_width)
+CIMGUI_API const char* ImFont_CalcWordWrapPositionA(const ImFont* self,float scale,const char* text,const char* text_end,float wrap_width)
 {
     return self->CalcWordWrapPositionA(scale,text,text_end,wrap_width);
 }
-CIMGUI_API void ImFont_RenderChar(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,ImWchar c)
+CIMGUI_API void ImFont_RenderChar(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,ImWchar c)
 {
     return self->RenderChar(draw_list,size,pos,col,c);
 }
-CIMGUI_API void ImFont_RenderText(ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)
+CIMGUI_API void ImFont_RenderText(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)
 {
     return self->RenderText(draw_list,size,pos,col,clip_rect,text_begin,text_end,wrap_width,cpu_fine_clip);
 }
@@ -4846,31 +4846,31 @@ CIMGUI_API ImColor_Simple ImColor_HSV_nonUDT2(ImColor* self,float h,float s,floa
     ImColor_Simple ret2 = ImColorToSimple(ret);
     return ret2;
 }
-CIMGUI_API void ImDrawList_GetClipRectMin_nonUDT(ImVec2 *pOut,ImDrawList* self)
+CIMGUI_API void ImDrawList_GetClipRectMin_nonUDT(ImVec2 *pOut,const ImDrawList* self)
 {
     *pOut = self->GetClipRectMin();
 }
-CIMGUI_API ImVec2_Simple ImDrawList_GetClipRectMin_nonUDT2(ImDrawList* self)
+CIMGUI_API ImVec2_Simple ImDrawList_GetClipRectMin_nonUDT2(const ImDrawList* self)
 {
     ImVec2 ret = self->GetClipRectMin();
     ImVec2_Simple ret2 = ImVec2ToSimple(ret);
     return ret2;
 }
-CIMGUI_API void ImDrawList_GetClipRectMax_nonUDT(ImVec2 *pOut,ImDrawList* self)
+CIMGUI_API void ImDrawList_GetClipRectMax_nonUDT(ImVec2 *pOut,const ImDrawList* self)
 {
     *pOut = self->GetClipRectMax();
 }
-CIMGUI_API ImVec2_Simple ImDrawList_GetClipRectMax_nonUDT2(ImDrawList* self)
+CIMGUI_API ImVec2_Simple ImDrawList_GetClipRectMax_nonUDT2(const ImDrawList* self)
 {
     ImVec2 ret = self->GetClipRectMax();
     ImVec2_Simple ret2 = ImVec2ToSimple(ret);
     return ret2;
 }
-CIMGUI_API void ImFont_CalcTextSizeA_nonUDT(ImVec2 *pOut,ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
+CIMGUI_API void ImFont_CalcTextSizeA_nonUDT(ImVec2 *pOut,const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
 {
     *pOut = self->CalcTextSizeA(size,max_width,wrap_width,text_begin,text_end,remaining);
 }
-CIMGUI_API ImVec2_Simple ImFont_CalcTextSizeA_nonUDT2(ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
+CIMGUI_API ImVec2_Simple ImFont_CalcTextSizeA_nonUDT2(const ImFont* self,float size,float max_width,float wrap_width,const char* text_begin,const char* text_end,const char** remaining)
 {
     ImVec2 ret = self->CalcTextSizeA(size,max_width,wrap_width,text_begin,text_end,remaining);
     ImVec2_Simple ret2 = ImVec2ToSimple(ret);

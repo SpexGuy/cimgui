@@ -516,8 +516,12 @@ local function AdjustArguments(FP)
             for i,def in ipairs(defs) do
                 local empty = def.args:match("^%(%)") --no args
                 --local ptret = def.retref and "&" or ""
-                def.args = def.args:gsub("^%(","("..def.stname.."* self"..(empty and "" or ","))
-                table.insert(def.argsT,1,{type=def.stname.."*",name="self"})
+				local selfConst = ""
+				if def.signature:match("const$") then
+					selfConst = "const "
+				end
+                def.args = def.args:gsub("^%(","("..selfConst..def.stname.."* self"..(empty and "" or ","))
+                table.insert(def.argsT,1,{type=selfConst..def.stname.."*",name="self"})
             end
         end
     end
