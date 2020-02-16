@@ -289,8 +289,8 @@ local function func_header_generate(FP)
 					local templateTypeName = FP.typenames[def.stname]
 					local empty = def.args:match("^%(%)") --no args
 					for cppName,cName in pairs(instances) do
-						local ov_cimguiname = def.ov_cimguiname.."_"..cName
-						local stname = def.stname.."_"..cName
+                        local stname = def.stname.."_"..cName
+						local ov_cimguiname = def.ov_cimguiname:gsub(def.stname, stname)
 						local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
 						if def.constructor then
 							if placementConstruction then
@@ -441,8 +441,8 @@ local function func_implementation(FP)
 				local templateTypeName = FP.typenames[def.stname]
 				local empty = def.args:match("^%(%)") --no args
 				for cppName,cName in pairs(instances) do
-					local ov_cimguiname = def.ov_cimguiname.."_"..cName
-					local stname = def.stname.."_"..cName
+                    local stname = def.stname.."_"..cName
+					local ov_cimguiname = def.ov_cimguiname:gsub(def.stname, stname)
 					local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
 					if def.constructor then
 						if placementConstruction then
