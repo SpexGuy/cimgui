@@ -53,9 +53,7 @@ local genTemplates = true
 --------------------------------------------------------------------------
 local cimgui_manuals = {
     igLogText = true,
-    ImGuiTextBuffer_appendf = true,
-    igColorConvertRGBtoHSV = true,
-    igColorConvertHSVtoRGB = true
+    ImGuiTextBuffer_appendf = true
 }
 --------------------------------------------------------------------------
 --this table is a dictionary to force a naming of function overloading (instead of algorythmic generated)
@@ -95,6 +93,28 @@ local cimgui_overloads = {
     },
     igPushStyleColor = {
         ["(ImGuiCol,const ImVec4)"] = "igPushStyleColor"
+    }
+}
+
+local nogenerate_structs = {
+    ImDrawVert = true,
+    ImFontGlyph = true,
+    ImGuiTextRange = true,
+    ImGuiStoragePair = true,
+    ImDrawChannel = true,
+    ImFontAtlasCustomRect = true,
+    ImFontConfig = true,
+    ImDrawCmd = true,
+    ImVec2 = true,
+    ImVec4 = true,
+}
+local cimgui_nogenerate = {
+    ImVector = {
+        ImVector_contains = nogenerate_structs,
+        ImVector_find = nogenerate_structs,
+        ImVector_find_const = nogenerate_structs,
+        ImVector_find_erase = nogenerate_structs,
+        ImVector_find_erase_unsorted = nogenerate_structs,
     }
 }
 
@@ -287,11 +307,21 @@ local function func_header_generate(FP)
 					end
 					local instances = FP.templates[def.stname]
 					local templateTypeName = FP.typenames[def.stname]
+                    local nogenerate = cimgui_nogenerate[def.stname] or {}
+                    nogenerate = nogenerate[def.ov_cimguiname] or {}
 					local empty = def.args:match("^%(%)") --no args
 					for cppName,cName in pairs(instances) do
+                        if nogenerate[cName] then
+                            goto next_instance
+                        end
                         local stname = def.stname.."_"..cName
 						local ov_cimguiname = def.ov_cimguiname:gsub(def.stname, stname)
-						local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+						local args = def.args
+                        if cppName:match("%*") then
+                            args = args:gsub("const "..templateTypeName, cppName.."const")
+                        end
+                        args = args:gsub(templateTypeName, cppName)
+                        args = args:gsub(def.stname, stname)
 						if def.constructor then
 							if placementConstruction then
 								table.insert(outtab,"CIMGUI_API void "..ov_cimguiname ..(empty and "(void)" or args)..";\n")
@@ -301,13 +331,19 @@ local function func_header_generate(FP)
 						elseif def.destructor then
 							table.insert(outtab,"CIMGUI_API void "..ov_cimguiname..args..";\n")
 						else --not constructor
-							local ret = def.ret:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+							local ret = def.ret
+                            if cppName:match("%*") then
+                                ret = ret:gsub("const "..templateTypeName, cppName.."const")
+                            end
+                            ret = ret:gsub(templateTypeName, cppName)
+                            ret = ret:gsub(def.stname, stname)
 							if def.stname == "" then --ImGui namespace or top level
 								table.insert(outtab,"CIMGUI_API "..ret.." "..ov_cimguiname..(empty and "(void)" or args)..";\n")
 							else
 								table.insert(outtab,"CIMGUI_API "..ret.." "..ov_cimguiname..args..";\n")
 							end
-						end 
+						end
+                        ::next_instance::
 					end
 				end
 			else -- manual definition
@@ -407,7 +443,7 @@ local function func_implementation(FP)
 					if placementConstruction then
 						table.insert(outtab,"CIMGUI_API void "..def.ov_cimguiname..(empty and "(void)" or def.args).."\n")
 						table.insert(outtab,"{\n")
-						table.insert(outtab,"    new (self) "..def.stname..def.call_args..";\n")
+						table.insert(outtab,"    IM_PLACEMENT_NEW(self) "..def.stname..def.call_args..";\n")
 						table.insert(outtab,"}\n")
 					else
 						table.insert(outtab,"CIMGUI_API "..def.stname.."* "..def.ov_cimguiname..(empty and "(void)" or def.args).."\n")
@@ -439,16 +475,27 @@ local function func_implementation(FP)
 				end
 				local instances = FP.templates[def.stname]
 				local templateTypeName = FP.typenames[def.stname]
+                local nogenerate = cimgui_nogenerate[def.stname] or {}
+                nogenerate = nogenerate[def.ov_cimguiname] or {}
 				local empty = def.args:match("^%(%)") --no args
 				for cppName,cName in pairs(instances) do
+                    if nogenerate[cName] then
+                        goto next_instance
+                    end
                     local stname = def.stname.."_"..cName
 					local ov_cimguiname = def.ov_cimguiname:gsub(def.stname, stname)
-					local args = def.args:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+					local args = def.args
+                    if cppName:match("%*") then
+                        args = args:gsub("const "..templateTypeName, cppName.."const")
+                    end
+                    args = args:gsub(templateTypeName, cppName)
+                    args = args:gsub(def.stname, stname)
+
 					if def.constructor then
 						if placementConstruction then
 							table.insert(outtab,"CIMGUI_API void "..ov_cimguiname ..(empty and "(void)" or args).."\n")
 							table.insert(outtab,"{\n")
-							table.insert(outtab,"    new (self) "..stname..def.call_args..";\n")
+							table.insert(outtab,"    IM_PLACEMENT_NEW(self) "..stname..def.call_args..";\n")
 							table.insert(outtab,"}\n")
 						else
 							table.insert(outtab,"CIMGUI_API "..stname.."* "..ov_cimguiname..(empty and "(void)" or args).."\n")
@@ -466,7 +513,12 @@ local function func_implementation(FP)
 						end
 						table.insert(outtab,"}\n")
 					else --not constructor
-						local ret = def.ret:gsub(templateTypeName, cppName):gsub(def.stname, stname)
+						local ret = def.ret
+                        if cppName:match("%*") then
+                            ret = ret:gsub("const "..templateTypeName, cppName.."const")
+                        end
+                        ret = ret:gsub(templateTypeName, cppName)
+                        ret = ret:gsub(def.stname, stname)
 						local ptret = def.retref and "&" or ""
 						local call_args = def.call_args
 
@@ -498,7 +550,8 @@ local function func_implementation(FP)
 							table.insert(outtab,"    return "..ptret.."self->"..def.funcname..call_args..";\n")
 						end
 						table.insert(outtab,"}\n")
-					end 
+					end
+                    ::next_instance::
 				end
 			end
         end
@@ -618,8 +671,6 @@ local function cimgui_generation(parser)
 
 	local outpre,outpost = parser:gen_structs_and_enums()
 	parser.templates.ImVector.T = nil
-	cpp2ffi.prtable(parser.templates)
-	cpp2ffi.prtable(parser.typenames)
 	
 	local outtab = {}
     generate_templates(outtab,parser.templates)
@@ -909,7 +960,7 @@ save_data("./output/typedefs_dict.json",json.encode(parser1.typedefs_dict))
 if genTemplates then
 	local templates = {}
 	for cls,impls in pairs(parser1.templates) do
-		templates[cls] = {implementations=impls,generic=parser1.typenames[cls]}
+		templates[cls] = {implementations=impls,generic=parser1.typenames[cls],nogenerate=cimgui_nogenerate[cls]}
 	end
 	save_data("./output/templates.json",json.encode(templates))
 end

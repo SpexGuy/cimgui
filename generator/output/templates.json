@@ -19,6 +19,68 @@
       "ImWchar": "ImWchar",
       "char": "char",
       "float": "float"
+    },
+    "nogenerate": {
+      "ImVector_contains": {
+        "ImDrawChannel": true,
+        "ImDrawCmd": true,
+        "ImDrawVert": true,
+        "ImFontAtlasCustomRect": true,
+        "ImFontConfig": true,
+        "ImFontGlyph": true,
+        "ImGuiStoragePair": true,
+        "ImGuiTextRange": true,
+        "ImVec2": true,
+        "ImVec4": true
+      },
+      "ImVector_find": {
+        "ImDrawChannel": true,
+        "ImDrawCmd": true,
+        "ImDrawVert": true,
+        "ImFontAtlasCustomRect": true,
+        "ImFontConfig": true,
+        "ImFontGlyph": true,
+        "ImGuiStoragePair": true,
+        "ImGuiTextRange": true,
+        "ImVec2": true,
+        "ImVec4": true
+      },
+      "ImVector_find_const": {
+        "ImDrawChannel": true,
+        "ImDrawCmd": true,
+        "ImDrawVert": true,
+        "ImFontAtlasCustomRect": true,
+        "ImFontConfig": true,
+        "ImFontGlyph": true,
+        "ImGuiStoragePair": true,
+        "ImGuiTextRange": true,
+        "ImVec2": true,
+        "ImVec4": true
+      },
+      "ImVector_find_erase": {
+        "ImDrawChannel": true,
+        "ImDrawCmd": true,
+        "ImDrawVert": true,
+        "ImFontAtlasCustomRect": true,
+        "ImFontConfig": true,
+        "ImFontGlyph": true,
+        "ImGuiStoragePair": true,
+        "ImGuiTextRange": true,
+        "ImVec2": true,
+        "ImVec4": true
+      },
+      "ImVector_find_erase_unsorted": {
+        "ImDrawChannel": true,
+        "ImDrawCmd": true,
+        "ImDrawVert": true,
+        "ImFontAtlasCustomRect": true,
+        "ImFontConfig": true,
+        "ImFontGlyph": true,
+        "ImGuiStoragePair": true,
+        "ImGuiTextRange": true,
+        "ImVec2": true,
+        "ImVec4": true
+      }
     }
   }
 }
