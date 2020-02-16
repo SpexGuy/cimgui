@@ -414,10 +414,11 @@ local function parseFunction(self,stname,lineorig,namespace)
             rest = restt
 			local ptrFix = ""
             if arg:match("&") then
-				if arg:match("const") then
-					arg = arg:gsub("&","")
+                argtype, argname = arg:match("^const%s*(.+)&(.+)$")
+				if argtype and argname then
+					arg = strip(argtype)..' '..strip(argname)
 				else
-					arg = arg:gsub("&","*")
+                    arg = arg:gsub("&", "*")
 					ptrFix = "*"
 				end
             end

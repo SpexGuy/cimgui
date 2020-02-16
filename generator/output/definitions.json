@@ -230,7 +230,7 @@
       "stname": "ImColor"
     },
     {
-      "args": "(ImColor* self,const ImVec4 col)",
+      "args": "(ImColor* self,ImVec4 col)",
       "argsT": [
         {
           "name": "self",
@@ -238,7 +238,7 @@
         },
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(const ImVec4& col)",
@@ -248,7 +248,7 @@
       "defaults": [],
       "funcname": "ImColor",
       "ov_cimguiname": "ImColor_ImColorVec4",
-      "signature": "(const ImVec4)",
+      "signature": "(ImVec4)",
       "stname": "ImColor"
     }
   ],
@@ -410,7 +410,7 @@
   ],
   "ImDrawData_ScaleClipRects": [
     {
-      "args": "(ImDrawData* self,const ImVec2 fb_scale)",
+      "args": "(ImDrawData* self,ImVec2 fb_scale)",
       "argsT": [
         {
           "name": "self",
@@ -418,7 +418,7 @@
         },
         {
           "name": "fb_scale",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& fb_scale)",
@@ -428,7 +428,7 @@
       "funcname": "ScaleClipRects",
       "ov_cimguiname": "ImDrawData_ScaleClipRects",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": "ImDrawData"
     }
   ],
@@ -612,7 +612,7 @@
   ],
   "ImDrawList_AddBezierCurve": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,const ImVec2 p4,ImU32 col,float thickness,int num_segments)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImVec2 p4,ImU32 col,float thickness,int num_segments)",
       "argsT": [
         {
           "name": "self",
@@ -620,19 +620,19 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -656,7 +656,7 @@
       "funcname": "AddBezierCurve",
       "ov_cimguiname": "ImDrawList_AddBezierCurve",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32,float,int)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImVec2,ImU32,float,int)",
       "stname": "ImDrawList"
     }
   ],
@@ -690,7 +690,7 @@
   ],
   "ImDrawList_AddCircle": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,ImU32 col,int num_segments,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,ImU32 col,int num_segments,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -698,7 +698,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -727,13 +727,13 @@
       "funcname": "AddCircle",
       "ov_cimguiname": "ImDrawList_AddCircle",
       "ret": "void",
-      "signature": "(const ImVec2,float,ImU32,int,float)",
+      "signature": "(ImVec2,float,ImU32,int,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddCircleFilled": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,ImU32 col,int num_segments)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,ImU32 col,int num_segments)",
       "argsT": [
         {
           "name": "self",
@@ -741,7 +741,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -765,7 +765,7 @@
       "funcname": "AddCircleFilled",
       "ov_cimguiname": "ImDrawList_AddCircleFilled",
       "ret": "void",
-      "signature": "(const ImVec2,float,ImU32,int)",
+      "signature": "(ImVec2,float,ImU32,int)",
       "stname": "ImDrawList"
     }
   ],
@@ -823,7 +823,7 @@
   ],
   "ImDrawList_AddImage": [
     {
-      "args": "(ImDrawList* self,ImTextureID user_texture_id,const ImVec2 p_min,const ImVec2 p_max,const ImVec2 uv_min,const ImVec2 uv_max,ImU32 col)",
+      "args": "(ImDrawList* self,ImTextureID user_texture_id,ImVec2 p_min,ImVec2 p_max,ImVec2 uv_min,ImVec2 uv_max,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -835,19 +835,19 @@
         },
         {
           "name": "p_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -865,13 +865,13 @@
       "funcname": "AddImage",
       "ov_cimguiname": "ImDrawList_AddImage",
       "ret": "void",
-      "signature": "(ImTextureID,const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImTextureID,ImVec2,ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddImageQuad": [
     {
-      "args": "(ImDrawList* self,ImTextureID user_texture_id,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,const ImVec2 p4,const ImVec2 uv1,const ImVec2 uv2,const ImVec2 uv3,const ImVec2 uv4,ImU32 col)",
+      "args": "(ImDrawList* self,ImTextureID user_texture_id,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImVec2 p4,ImVec2 uv1,ImVec2 uv2,ImVec2 uv3,ImVec2 uv4,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -883,35 +883,35 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -931,13 +931,13 @@
       "funcname": "AddImageQuad",
       "ov_cimguiname": "ImDrawList_AddImageQuad",
       "ret": "void",
-      "signature": "(ImTextureID,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImTextureID,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddImageRounded": [
     {
-      "args": "(ImDrawList* self,ImTextureID user_texture_id,const ImVec2 p_min,const ImVec2 p_max,const ImVec2 uv_min,const ImVec2 uv_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners)",
+      "args": "(ImDrawList* self,ImTextureID user_texture_id,ImVec2 p_min,ImVec2 p_max,ImVec2 uv_min,ImVec2 uv_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners)",
       "argsT": [
         {
           "name": "self",
@@ -949,19 +949,19 @@
         },
         {
           "name": "p_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -985,13 +985,13 @@
       "funcname": "AddImageRounded",
       "ov_cimguiname": "ImDrawList_AddImageRounded",
       "ret": "void",
-      "signature": "(ImTextureID,const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32,float,ImDrawCornerFlags)",
+      "signature": "(ImTextureID,ImVec2,ImVec2,ImVec2,ImVec2,ImU32,float,ImDrawCornerFlags)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddLine": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,ImU32 col,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImU32 col,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -999,11 +999,11 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1023,13 +1023,13 @@
       "funcname": "AddLine",
       "ov_cimguiname": "ImDrawList_AddLine",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32,float)",
+      "signature": "(ImVec2,ImVec2,ImU32,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddNgon": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,ImU32 col,int num_segments,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,ImU32 col,int num_segments,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -1037,7 +1037,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -1065,13 +1065,13 @@
       "funcname": "AddNgon",
       "ov_cimguiname": "ImDrawList_AddNgon",
       "ret": "void",
-      "signature": "(const ImVec2,float,ImU32,int,float)",
+      "signature": "(ImVec2,float,ImU32,int,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddNgonFilled": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,ImU32 col,int num_segments)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,ImU32 col,int num_segments)",
       "argsT": [
         {
           "name": "self",
@@ -1079,7 +1079,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -1101,7 +1101,7 @@
       "funcname": "AddNgonFilled",
       "ov_cimguiname": "ImDrawList_AddNgonFilled",
       "ret": "void",
-      "signature": "(const ImVec2,float,ImU32,int)",
+      "signature": "(ImVec2,float,ImU32,int)",
       "stname": "ImDrawList"
     }
   ],
@@ -1147,7 +1147,7 @@
   ],
   "ImDrawList_AddQuad": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,const ImVec2 p4,ImU32 col,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImVec2 p4,ImU32 col,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -1155,19 +1155,19 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1187,13 +1187,13 @@
       "funcname": "AddQuad",
       "ov_cimguiname": "ImDrawList_AddQuad",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32,float)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImVec2,ImU32,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddQuadFilled": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,const ImVec2 p4,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImVec2 p4,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -1201,19 +1201,19 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1227,13 +1227,13 @@
       "funcname": "AddQuadFilled",
       "ov_cimguiname": "ImDrawList_AddQuadFilled",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddRect": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p_min,const ImVec2 p_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 p_min,ImVec2 p_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -1241,11 +1241,11 @@
         },
         {
           "name": "p_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1275,13 +1275,13 @@
       "funcname": "AddRect",
       "ov_cimguiname": "ImDrawList_AddRect",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32,float,ImDrawCornerFlags,float)",
+      "signature": "(ImVec2,ImVec2,ImU32,float,ImDrawCornerFlags,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddRectFilled": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p_min,const ImVec2 p_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners)",
+      "args": "(ImDrawList* self,ImVec2 p_min,ImVec2 p_max,ImU32 col,float rounding,ImDrawCornerFlags rounding_corners)",
       "argsT": [
         {
           "name": "self",
@@ -1289,11 +1289,11 @@
         },
         {
           "name": "p_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1318,13 +1318,13 @@
       "funcname": "AddRectFilled",
       "ov_cimguiname": "ImDrawList_AddRectFilled",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32,float,ImDrawCornerFlags)",
+      "signature": "(ImVec2,ImVec2,ImU32,float,ImDrawCornerFlags)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddRectFilledMultiColor": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p_min,const ImVec2 p_max,ImU32 col_upr_left,ImU32 col_upr_right,ImU32 col_bot_right,ImU32 col_bot_left)",
+      "args": "(ImDrawList* self,ImVec2 p_min,ImVec2 p_max,ImU32 col_upr_left,ImU32 col_upr_right,ImU32 col_bot_right,ImU32 col_bot_left)",
       "argsT": [
         {
           "name": "self",
@@ -1332,11 +1332,11 @@
         },
         {
           "name": "p_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col_upr_left",
@@ -1362,13 +1362,13 @@
       "funcname": "AddRectFilledMultiColor",
       "ov_cimguiname": "ImDrawList_AddRectFilledMultiColor",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32,ImU32,ImU32,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImU32,ImU32,ImU32,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddText": [
     {
-      "args": "(ImDrawList* self,const ImVec2 pos,ImU32 col,const char* text_begin,const char* text_end)",
+      "args": "(ImDrawList* self,ImVec2 pos,ImU32 col,const char* text_begin,const char* text_end)",
       "argsT": [
         {
           "name": "self",
@@ -1376,7 +1376,7 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1398,13 +1398,13 @@
         "text_end": "((void*)0)"
       },
       "funcname": "AddText",
-      "ov_cimguiname": "ImDrawList_AddText",
+      "ov_cimguiname": "ImDrawList_AddTextVec2",
       "ret": "void",
-      "signature": "(const ImVec2,ImU32,const char*,const char*)",
+      "signature": "(ImVec2,ImU32,const char*,const char*)",
       "stname": "ImDrawList"
     },
     {
-      "args": "(ImDrawList* self,const ImFont* font,float font_size,const ImVec2 pos,ImU32 col,const char* text_begin,const char* text_end,float wrap_width,const ImVec4* cpu_fine_clip_rect)",
+      "args": "(ImDrawList* self,const ImFont* font,float font_size,ImVec2 pos,ImU32 col,const char* text_begin,const char* text_end,float wrap_width,const ImVec4* cpu_fine_clip_rect)",
       "argsT": [
         {
           "name": "self",
@@ -1420,7 +1420,7 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1454,13 +1454,13 @@
       "funcname": "AddText",
       "ov_cimguiname": "ImDrawList_AddTextFontPtr",
       "ret": "void",
-      "signature": "(const ImFont*,float,const ImVec2,ImU32,const char*,const char*,float,const ImVec4*)",
+      "signature": "(const ImFont*,float,ImVec2,ImU32,const char*,const char*,float,const ImVec4*)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddTriangle": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,ImU32 col,float thickness)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImU32 col,float thickness)",
       "argsT": [
         {
           "name": "self",
@@ -1468,15 +1468,15 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1496,13 +1496,13 @@
       "funcname": "AddTriangle",
       "ov_cimguiname": "ImDrawList_AddTriangle",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,ImU32,float)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImU32,float)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_AddTriangleFilled": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p1,const ImVec2 p2,const ImVec2 p3,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 p1,ImVec2 p2,ImVec2 p3,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -1510,15 +1510,15 @@
         },
         {
           "name": "p1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -1532,7 +1532,7 @@
       "funcname": "AddTriangleFilled",
       "ov_cimguiname": "ImDrawList_AddTriangleFilled",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
@@ -1816,7 +1816,7 @@
   ],
   "ImDrawList_PathArcTo": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,float a_min,float a_max,int num_segments)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,float a_min,float a_max,int num_segments)",
       "argsT": [
         {
           "name": "self",
@@ -1824,7 +1824,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -1852,13 +1852,13 @@
       "funcname": "PathArcTo",
       "ov_cimguiname": "ImDrawList_PathArcTo",
       "ret": "void",
-      "signature": "(const ImVec2,float,float,float,int)",
+      "signature": "(ImVec2,float,float,float,int)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PathArcToFast": [
     {
-      "args": "(ImDrawList* self,const ImVec2 center,float radius,int a_min_of_12,int a_max_of_12)",
+      "args": "(ImDrawList* self,ImVec2 center,float radius,int a_min_of_12,int a_max_of_12)",
       "argsT": [
         {
           "name": "self",
@@ -1866,7 +1866,7 @@
         },
         {
           "name": "center",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "radius",
@@ -1888,13 +1888,13 @@
       "funcname": "PathArcToFast",
       "ov_cimguiname": "ImDrawList_PathArcToFast",
       "ret": "void",
-      "signature": "(const ImVec2,float,int,int)",
+      "signature": "(ImVec2,float,int,int)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PathBezierCurveTo": [
     {
-      "args": "(ImDrawList* self,const ImVec2 p2,const ImVec2 p3,const ImVec2 p4,int num_segments)",
+      "args": "(ImDrawList* self,ImVec2 p2,ImVec2 p3,ImVec2 p4,int num_segments)",
       "argsT": [
         {
           "name": "self",
@@ -1902,15 +1902,15 @@
         },
         {
           "name": "p2",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p3",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "p4",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "num_segments",
@@ -1926,7 +1926,7 @@
       "funcname": "PathBezierCurveTo",
       "ov_cimguiname": "ImDrawList_PathBezierCurveTo",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,int)",
+      "signature": "(ImVec2,ImVec2,ImVec2,int)",
       "stname": "ImDrawList"
     }
   ],
@@ -1976,7 +1976,7 @@
   ],
   "ImDrawList_PathLineTo": [
     {
-      "args": "(ImDrawList* self,const ImVec2 pos)",
+      "args": "(ImDrawList* self,ImVec2 pos)",
       "argsT": [
         {
           "name": "self",
@@ -1984,7 +1984,7 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& pos)",
@@ -1994,13 +1994,13 @@
       "funcname": "PathLineTo",
       "ov_cimguiname": "ImDrawList_PathLineTo",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PathLineToMergeDuplicate": [
     {
-      "args": "(ImDrawList* self,const ImVec2 pos)",
+      "args": "(ImDrawList* self,ImVec2 pos)",
       "argsT": [
         {
           "name": "self",
@@ -2008,7 +2008,7 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& pos)",
@@ -2018,13 +2018,13 @@
       "funcname": "PathLineToMergeDuplicate",
       "ov_cimguiname": "ImDrawList_PathLineToMergeDuplicate",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PathRect": [
     {
-      "args": "(ImDrawList* self,const ImVec2 rect_min,const ImVec2 rect_max,float rounding,ImDrawCornerFlags rounding_corners)",
+      "args": "(ImDrawList* self,ImVec2 rect_min,ImVec2 rect_max,float rounding,ImDrawCornerFlags rounding_corners)",
       "argsT": [
         {
           "name": "self",
@@ -2032,11 +2032,11 @@
         },
         {
           "name": "rect_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "rect_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "rounding",
@@ -2057,7 +2057,7 @@
       "funcname": "PathRect",
       "ov_cimguiname": "ImDrawList_PathRect",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,float,ImDrawCornerFlags)",
+      "signature": "(ImVec2,ImVec2,float,ImDrawCornerFlags)",
       "stname": "ImDrawList"
     }
   ],
@@ -2137,7 +2137,7 @@
   ],
   "ImDrawList_PrimQuadUV": [
     {
-      "args": "(ImDrawList* self,const ImVec2 a,const ImVec2 b,const ImVec2 c,const ImVec2 d,const ImVec2 uv_a,const ImVec2 uv_b,const ImVec2 uv_c,const ImVec2 uv_d,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 a,ImVec2 b,ImVec2 c,ImVec2 d,ImVec2 uv_a,ImVec2 uv_b,ImVec2 uv_c,ImVec2 uv_d,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -2145,35 +2145,35 @@
         },
         {
           "name": "a",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "b",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "c",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "d",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_a",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_b",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_c",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_d",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -2187,13 +2187,13 @@
       "funcname": "PrimQuadUV",
       "ov_cimguiname": "ImDrawList_PrimQuadUV",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PrimRect": [
     {
-      "args": "(ImDrawList* self,const ImVec2 a,const ImVec2 b,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 a,ImVec2 b,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -2201,11 +2201,11 @@
         },
         {
           "name": "a",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "b",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -2219,13 +2219,13 @@
       "funcname": "PrimRect",
       "ov_cimguiname": "ImDrawList_PrimRect",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
   "ImDrawList_PrimRectUV": [
     {
-      "args": "(ImDrawList* self,const ImVec2 a,const ImVec2 b,const ImVec2 uv_a,const ImVec2 uv_b,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 a,ImVec2 b,ImVec2 uv_a,ImVec2 uv_b,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -2233,19 +2233,19 @@
         },
         {
           "name": "a",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "b",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_a",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv_b",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -2259,7 +2259,7 @@
       "funcname": "PrimRectUV",
       "ov_cimguiname": "ImDrawList_PrimRectUV",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
@@ -2321,7 +2321,7 @@
   ],
   "ImDrawList_PrimVtx": [
     {
-      "args": "(ImDrawList* self,const ImVec2 pos,const ImVec2 uv,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 pos,ImVec2 uv,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -2329,11 +2329,11 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -2347,7 +2347,7 @@
       "funcname": "PrimVtx",
       "ov_cimguiname": "ImDrawList_PrimVtx",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
@@ -2377,7 +2377,7 @@
   ],
   "ImDrawList_PrimWriteVtx": [
     {
-      "args": "(ImDrawList* self,const ImVec2 pos,const ImVec2 uv,ImU32 col)",
+      "args": "(ImDrawList* self,ImVec2 pos,ImVec2 uv,ImU32 col)",
       "argsT": [
         {
           "name": "self",
@@ -2385,11 +2385,11 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "col",
@@ -2403,7 +2403,7 @@
       "funcname": "PrimWriteVtx",
       "ov_cimguiname": "ImDrawList_PrimWriteVtx",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImU32)",
+      "signature": "(ImVec2,ImVec2,ImU32)",
       "stname": "ImDrawList"
     }
   ],
@@ -2605,7 +2605,7 @@
   ],
   "ImFontAtlas_AddCustomRectFontGlyph": [
     {
-      "args": "(ImFontAtlas* self,ImFont* font,ImWchar id,int width,int height,float advance_x,const ImVec2 offset)",
+      "args": "(ImFontAtlas* self,ImFont* font,ImWchar id,int width,int height,float advance_x,ImVec2 offset)",
       "argsT": [
         {
           "name": "self",
@@ -2633,7 +2633,7 @@
         },
         {
           "name": "offset",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(ImFont* font,ImWchar id,int width,int height,float advance_x,const ImVec2& offset=ImVec2(0,0))",
@@ -2645,7 +2645,7 @@
       "funcname": "AddCustomRectFontGlyph",
       "ov_cimguiname": "ImFontAtlas_AddCustomRectFontGlyph",
       "ret": "int",
-      "signature": "(ImFont*,ImWchar,int,int,float,const ImVec2)",
+      "signature": "(ImFont*,ImWchar,int,int,float,ImVec2)",
       "stname": "ImFontAtlas"
     }
   ],
@@ -4170,7 +4170,7 @@
   ],
   "ImFont_RenderText": [
     {
-      "args": "(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,const ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)",
+      "args": "(const ImFont* self,ImDrawList* draw_list,float size,ImVec2 pos,ImU32 col,ImVec4 clip_rect,const char* text_begin,const char* text_end,float wrap_width,bool cpu_fine_clip)",
       "argsT": [
         {
           "name": "self",
@@ -4194,7 +4194,7 @@
         },
         {
           "name": "clip_rect",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "text_begin",
@@ -4223,7 +4223,7 @@
       "funcname": "RenderText",
       "ov_cimguiname": "ImFont_RenderText",
       "ret": "void",
-      "signature": "(ImDrawList*,float,ImVec2,ImU32,const ImVec4,const char*,const char*,float,bool)const",
+      "signature": "(ImDrawList*,float,ImVec2,ImU32,ImVec4,const char*,const char*,float,bool)const",
       "stname": "ImFont"
     }
   ],
@@ -6061,7 +6061,7 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self,const ImVector src)",
+      "args": "(ImVector* self,ImVector src)",
       "argsT": [
         {
           "name": "self",
@@ -6069,7 +6069,7 @@
         },
         {
           "name": "src",
-          "type": "const ImVector"
+          "type": "ImVector"
         }
       ],
       "argsoriginal": "(const ImVector<T>& src)",
@@ -6079,7 +6079,7 @@
       "defaults": [],
       "funcname": "ImVector",
       "ov_cimguiname": "ImVector_ImVectorVector",
-      "signature": "(const ImVector)",
+      "signature": "(ImVector)",
       "stname": "ImVector",
       "templated": true
     }
@@ -6235,7 +6235,7 @@
   ],
   "ImVector_contains": [
     {
-      "args": "(const ImVector* self,const T v)",
+      "args": "(const ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6243,7 +6243,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6253,7 +6253,7 @@
       "funcname": "contains",
       "ov_cimguiname": "ImVector_contains",
       "ret": "bool",
-      "signature": "(const T)const",
+      "signature": "(T)const",
       "stname": "ImVector",
       "templated": true
     }
@@ -6418,7 +6418,7 @@
   ],
   "ImVector_find": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6426,7 +6426,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6436,12 +6436,12 @@
       "funcname": "find",
       "ov_cimguiname": "ImVector_find",
       "ret": "T*",
-      "signature": "(const T)",
+      "signature": "(T)",
       "stname": "ImVector",
       "templated": true
     },
     {
-      "args": "(const ImVector* self,const T v)",
+      "args": "(const ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6449,7 +6449,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6459,14 +6459,14 @@
       "funcname": "find",
       "ov_cimguiname": "ImVector_find_const",
       "ret": "const T*",
-      "signature": "(const T)const",
+      "signature": "(T)const",
       "stname": "ImVector",
       "templated": true
     }
   ],
   "ImVector_find_erase": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6474,7 +6474,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6484,14 +6484,14 @@
       "funcname": "find_erase",
       "ov_cimguiname": "ImVector_find_erase",
       "ret": "bool",
-      "signature": "(const T)",
+      "signature": "(T)",
       "stname": "ImVector",
       "templated": true
     }
   ],
   "ImVector_find_erase_unsorted": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6499,7 +6499,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6509,7 +6509,7 @@
       "funcname": "find_erase_unsorted",
       "ov_cimguiname": "ImVector_find_erase_unsorted",
       "ret": "bool",
-      "signature": "(const T)",
+      "signature": "(T)",
       "stname": "ImVector",
       "templated": true
     }
@@ -6583,7 +6583,7 @@
   ],
   "ImVector_insert": [
     {
-      "args": "(ImVector* self,const T* it,const T v)",
+      "args": "(ImVector* self,const T* it,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6595,7 +6595,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T* it,const T& v)",
@@ -6605,7 +6605,7 @@
       "funcname": "insert",
       "ov_cimguiname": "ImVector_insert",
       "ret": "T*",
-      "signature": "(const T*,const T)",
+      "signature": "(const T*,T)",
       "stname": "ImVector",
       "templated": true
     }
@@ -6633,7 +6633,7 @@
   ],
   "ImVector_push_back": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6641,7 +6641,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6651,14 +6651,14 @@
       "funcname": "push_back",
       "ov_cimguiname": "ImVector_push_back",
       "ret": "void",
-      "signature": "(const T)",
+      "signature": "(T)",
       "stname": "ImVector",
       "templated": true
     }
   ],
   "ImVector_push_front": [
     {
-      "args": "(ImVector* self,const T v)",
+      "args": "(ImVector* self,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6666,7 +6666,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(const T& v)",
@@ -6676,7 +6676,7 @@
       "funcname": "push_front",
       "ov_cimguiname": "ImVector_push_front",
       "ret": "void",
-      "signature": "(const T)",
+      "signature": "(T)",
       "stname": "ImVector",
       "templated": true
     }
@@ -6731,7 +6731,7 @@
       "templated": true
     },
     {
-      "args": "(ImVector* self,int new_size,const T v)",
+      "args": "(ImVector* self,int new_size,T v)",
       "argsT": [
         {
           "name": "self",
@@ -6743,7 +6743,7 @@
         },
         {
           "name": "v",
-          "type": "const T"
+          "type": "T"
         }
       ],
       "argsoriginal": "(int new_size,const T& v)",
@@ -6753,7 +6753,7 @@
       "funcname": "resize",
       "ov_cimguiname": "ImVector_resizeT",
       "ret": "void",
-      "signature": "(int,const T)",
+      "signature": "(int,T)",
       "stname": "ImVector",
       "templated": true
     }
@@ -6952,7 +6952,7 @@
   ],
   "igBeginChild": [
     {
-      "args": "(const char* str_id,const ImVec2 size,bool border,ImGuiWindowFlags flags)",
+      "args": "(const char* str_id,ImVec2 size,bool border,ImGuiWindowFlags flags)",
       "argsT": [
         {
           "name": "str_id",
@@ -6960,7 +6960,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "border",
@@ -6981,13 +6981,13 @@
       },
       "funcname": "BeginChild",
       "namespace": "ImGui",
-      "ov_cimguiname": "igBeginChild",
+      "ov_cimguiname": "igBeginChildStr",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2,bool,ImGuiWindowFlags)",
+      "signature": "(const char*,ImVec2,bool,ImGuiWindowFlags)",
       "stname": ""
     },
     {
-      "args": "(ImGuiID id,const ImVec2 size,bool border,ImGuiWindowFlags flags)",
+      "args": "(ImGuiID id,ImVec2 size,bool border,ImGuiWindowFlags flags)",
       "argsT": [
         {
           "name": "id",
@@ -6995,7 +6995,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "border",
@@ -7018,13 +7018,13 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igBeginChildID",
       "ret": "bool",
-      "signature": "(ImGuiID,const ImVec2,bool,ImGuiWindowFlags)",
+      "signature": "(ImGuiID,ImVec2,bool,ImGuiWindowFlags)",
       "stname": ""
     }
   ],
   "igBeginChildFrame": [
     {
-      "args": "(ImGuiID id,const ImVec2 size,ImGuiWindowFlags flags)",
+      "args": "(ImGuiID id,ImVec2 size,ImGuiWindowFlags flags)",
       "argsT": [
         {
           "name": "id",
@@ -7032,7 +7032,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "flags",
@@ -7049,7 +7049,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igBeginChildFrame",
       "ret": "bool",
-      "signature": "(ImGuiID,const ImVec2,ImGuiWindowFlags)",
+      "signature": "(ImGuiID,ImVec2,ImGuiWindowFlags)",
       "stname": ""
     }
   ],
@@ -7490,7 +7490,7 @@
   ],
   "igButton": [
     {
-      "args": "(const char* label,const ImVec2 size)",
+      "args": "(const char* label,ImVec2 size)",
       "argsT": [
         {
           "name": "label",
@@ -7498,7 +7498,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const char* label,const ImVec2& size=ImVec2(0,0))",
@@ -7511,7 +7511,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igButton",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2)",
+      "signature": "(const char*,ImVec2)",
       "stname": ""
     }
   ],
@@ -7852,7 +7852,7 @@
   ],
   "igColorButton": [
     {
-      "args": "(const char* desc_id,const ImVec4 col,ImGuiColorEditFlags flags,ImVec2 size)",
+      "args": "(const char* desc_id,ImVec4 col,ImGuiColorEditFlags flags,ImVec2 size)",
       "argsT": [
         {
           "name": "desc_id",
@@ -7860,7 +7860,7 @@
         },
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "flags",
@@ -7882,17 +7882,17 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igColorButton",
       "ret": "bool",
-      "signature": "(const char*,const ImVec4,ImGuiColorEditFlags,ImVec2)",
+      "signature": "(const char*,ImVec4,ImGuiColorEditFlags,ImVec2)",
       "stname": ""
     }
   ],
   "igColorConvertFloat4ToU32": [
     {
-      "args": "(const ImVec4 in)",
+      "args": "(ImVec4 in)",
       "argsT": [
         {
           "name": "in",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(const ImVec4& in)",
@@ -7903,7 +7903,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igColorConvertFloat4ToU32",
       "ret": "ImU32",
-      "signature": "(const ImVec4)",
+      "signature": "(ImVec4)",
       "stname": ""
     }
   ],
@@ -9042,11 +9042,11 @@
   ],
   "igDummy": [
     {
-      "args": "(const ImVec2 size)",
+      "args": "(ImVec2 size)",
       "argsT": [
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& size)",
@@ -9057,7 +9057,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igDummy",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": ""
     }
   ],
@@ -9360,11 +9360,11 @@
       "stname": ""
     },
     {
-      "args": "(const ImVec4 col)",
+      "args": "(ImVec4 col)",
       "argsT": [
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(const ImVec4& col)",
@@ -9375,7 +9375,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igGetColorU32Vec4",
       "ret": "ImU32",
-      "signature": "(const ImVec4)",
+      "signature": "(ImVec4)",
       "stname": ""
     },
     {
@@ -10967,7 +10967,7 @@
   ],
   "igImage": [
     {
-      "args": "(ImTextureID user_texture_id,const ImVec2 size,const ImVec2 uv0,const ImVec2 uv1,const ImVec4 tint_col,const ImVec4 border_col)",
+      "args": "(ImTextureID user_texture_id,ImVec2 size,ImVec2 uv0,ImVec2 uv1,ImVec4 tint_col,ImVec4 border_col)",
       "argsT": [
         {
           "name": "user_texture_id",
@@ -10975,23 +10975,23 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv0",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "tint_col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "border_col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(ImTextureID user_texture_id,const ImVec2& size,const ImVec2& uv0=ImVec2(0,0),const ImVec2& uv1=ImVec2(1,1),const ImVec4& tint_col=ImVec4(1,1,1,1),const ImVec4& border_col=ImVec4(0,0,0,0))",
@@ -11007,13 +11007,13 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igImage",
       "ret": "void",
-      "signature": "(ImTextureID,const ImVec2,const ImVec2,const ImVec2,const ImVec4,const ImVec4)",
+      "signature": "(ImTextureID,ImVec2,ImVec2,ImVec2,ImVec4,ImVec4)",
       "stname": ""
     }
   ],
   "igImageButton": [
     {
-      "args": "(ImTextureID user_texture_id,const ImVec2 size,const ImVec2 uv0,const ImVec2 uv1,int frame_padding,const ImVec4 bg_col,const ImVec4 tint_col)",
+      "args": "(ImTextureID user_texture_id,ImVec2 size,ImVec2 uv0,ImVec2 uv1,int frame_padding,ImVec4 bg_col,ImVec4 tint_col)",
       "argsT": [
         {
           "name": "user_texture_id",
@@ -11021,15 +11021,15 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv0",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "uv1",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "frame_padding",
@@ -11037,11 +11037,11 @@
         },
         {
           "name": "bg_col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "tint_col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(ImTextureID user_texture_id,const ImVec2& size,const ImVec2& uv0=ImVec2(0,0),const ImVec2& uv1=ImVec2(1,1),int frame_padding=-1,const ImVec4& bg_col=ImVec4(0,0,0,0),const ImVec4& tint_col=ImVec4(1,1,1,1))",
@@ -11058,7 +11058,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igImageButton",
       "ret": "bool",
-      "signature": "(ImTextureID,const ImVec2,const ImVec2,const ImVec2,int,const ImVec4,const ImVec4)",
+      "signature": "(ImTextureID,ImVec2,ImVec2,ImVec2,int,ImVec4,ImVec4)",
       "stname": ""
     }
   ],
@@ -11570,7 +11570,7 @@
   ],
   "igInputTextMultiline": [
     {
-      "args": "(const char* label,char* buf,size_t buf_size,const ImVec2 size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)",
+      "args": "(const char* label,char* buf,size_t buf_size,ImVec2 size,ImGuiInputTextFlags flags,ImGuiInputTextCallback callback,void* user_data)",
       "argsT": [
         {
           "name": "label",
@@ -11586,7 +11586,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "flags",
@@ -11614,7 +11614,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igInputTextMultiline",
       "ret": "bool",
-      "signature": "(const char*,char*,size_t,const ImVec2,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
+      "signature": "(const char*,char*,size_t,ImVec2,ImGuiInputTextFlags,ImGuiInputTextCallback,void*)",
       "stname": ""
     }
   ],
@@ -11669,7 +11669,7 @@
   ],
   "igInvisibleButton": [
     {
-      "args": "(const char* str_id,const ImVec2 size)",
+      "args": "(const char* str_id,ImVec2 size)",
       "argsT": [
         {
           "name": "str_id",
@@ -11677,7 +11677,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const char* str_id,const ImVec2& size)",
@@ -11688,7 +11688,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igInvisibleButton",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2)",
+      "signature": "(const char*,ImVec2)",
       "stname": ""
     }
   ],
@@ -12097,15 +12097,15 @@
   ],
   "igIsMouseHoveringRect": [
     {
-      "args": "(const ImVec2 r_min,const ImVec2 r_max,bool clip)",
+      "args": "(ImVec2 r_min,ImVec2 r_max,bool clip)",
       "argsT": [
         {
           "name": "r_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "r_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "clip",
@@ -12122,7 +12122,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igIsMouseHoveringRect",
       "ret": "bool",
-      "signature": "(const ImVec2,const ImVec2,bool)",
+      "signature": "(ImVec2,ImVec2,bool)",
       "stname": ""
     }
   ],
@@ -12193,11 +12193,11 @@
   ],
   "igIsRectVisible": [
     {
-      "args": "(const ImVec2 size)",
+      "args": "(ImVec2 size)",
       "argsT": [
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& size)",
@@ -12208,19 +12208,19 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igIsRectVisible",
       "ret": "bool",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": ""
     },
     {
-      "args": "(const ImVec2 rect_min,const ImVec2 rect_max)",
+      "args": "(ImVec2 rect_min,ImVec2 rect_max)",
       "argsT": [
         {
           "name": "rect_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "rect_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& rect_min,const ImVec2& rect_max)",
@@ -12231,7 +12231,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igIsRectVisibleVec2",
       "ret": "bool",
-      "signature": "(const ImVec2,const ImVec2)",
+      "signature": "(ImVec2,ImVec2)",
       "stname": ""
     }
   ],
@@ -12472,7 +12472,7 @@
   ],
   "igListBoxHeader": [
     {
-      "args": "(const char* label,const ImVec2 size)",
+      "args": "(const char* label,ImVec2 size)",
       "argsT": [
         {
           "name": "label",
@@ -12480,7 +12480,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const char* label,const ImVec2& size=ImVec2(0,0))",
@@ -12493,7 +12493,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igListBoxHeaderVec2",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2)",
+      "signature": "(const char*,ImVec2)",
       "stname": ""
     },
     {
@@ -13314,7 +13314,7 @@
   ],
   "igProgressBar": [
     {
-      "args": "(float fraction,const ImVec2 size_arg,const char* overlay)",
+      "args": "(float fraction,ImVec2 size_arg,const char* overlay)",
       "argsT": [
         {
           "name": "fraction",
@@ -13322,7 +13322,7 @@
         },
         {
           "name": "size_arg",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "overlay",
@@ -13340,7 +13340,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igProgressBar",
       "ret": "void",
-      "signature": "(float,const ImVec2,const char*)",
+      "signature": "(float,ImVec2,const char*)",
       "stname": ""
     }
   ],
@@ -13388,15 +13388,15 @@
   ],
   "igPushClipRect": [
     {
-      "args": "(const ImVec2 clip_rect_min,const ImVec2 clip_rect_max,bool intersect_with_current_clip_rect)",
+      "args": "(ImVec2 clip_rect_min,ImVec2 clip_rect_max,bool intersect_with_current_clip_rect)",
       "argsT": [
         {
           "name": "clip_rect_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "clip_rect_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "intersect_with_current_clip_rect",
@@ -13411,7 +13411,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igPushClipRect",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,bool)",
+      "signature": "(ImVec2,ImVec2,bool)",
       "stname": ""
     }
   ],
@@ -13564,7 +13564,7 @@
       "stname": ""
     },
     {
-      "args": "(ImGuiCol idx,const ImVec4 col)",
+      "args": "(ImGuiCol idx,ImVec4 col)",
       "argsT": [
         {
           "name": "idx",
@@ -13572,7 +13572,7 @@
         },
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         }
       ],
       "argsoriginal": "(ImGuiCol idx,const ImVec4& col)",
@@ -13581,9 +13581,9 @@
       "defaults": [],
       "funcname": "PushStyleColor",
       "namespace": "ImGui",
-      "ov_cimguiname": "igPushStyleColor",
+      "ov_cimguiname": "igPushStyleColorVec4",
       "ret": "void",
-      "signature": "(ImGuiCol,const ImVec4)",
+      "signature": "(ImGuiCol,ImVec4)",
       "stname": ""
     }
   ],
@@ -13612,7 +13612,7 @@
       "stname": ""
     },
     {
-      "args": "(ImGuiStyleVar idx,const ImVec2 val)",
+      "args": "(ImGuiStyleVar idx,ImVec2 val)",
       "argsT": [
         {
           "name": "idx",
@@ -13620,7 +13620,7 @@
         },
         {
           "name": "val",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(ImGuiStyleVar idx,const ImVec2& val)",
@@ -13631,7 +13631,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igPushStyleVarVec2",
       "ret": "void",
-      "signature": "(ImGuiStyleVar,const ImVec2)",
+      "signature": "(ImGuiStyleVar,ImVec2)",
       "stname": ""
     }
   ],
@@ -13823,7 +13823,7 @@
   ],
   "igSelectable": [
     {
-      "args": "(const char* label,bool selected,ImGuiSelectableFlags flags,const ImVec2 size)",
+      "args": "(const char* label,bool selected,ImGuiSelectableFlags flags,ImVec2 size)",
       "argsT": [
         {
           "name": "label",
@@ -13839,7 +13839,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const char* label,bool selected=false,ImGuiSelectableFlags flags=0,const ImVec2& size=ImVec2(0,0))",
@@ -13852,13 +13852,13 @@
       },
       "funcname": "Selectable",
       "namespace": "ImGui",
-      "ov_cimguiname": "igSelectable",
+      "ov_cimguiname": "igSelectableBool",
       "ret": "bool",
-      "signature": "(const char*,bool,ImGuiSelectableFlags,const ImVec2)",
+      "signature": "(const char*,bool,ImGuiSelectableFlags,ImVec2)",
       "stname": ""
     },
     {
-      "args": "(const char* label,bool* p_selected,ImGuiSelectableFlags flags,const ImVec2 size)",
+      "args": "(const char* label,bool* p_selected,ImGuiSelectableFlags flags,ImVec2 size)",
       "argsT": [
         {
           "name": "label",
@@ -13874,7 +13874,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const char* label,bool* p_selected,ImGuiSelectableFlags flags=0,const ImVec2& size=ImVec2(0,0))",
@@ -13888,7 +13888,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSelectableBoolPtr",
       "ret": "bool",
-      "signature": "(const char*,bool*,ImGuiSelectableFlags,const ImVec2)",
+      "signature": "(const char*,bool*,ImGuiSelectableFlags,ImVec2)",
       "stname": ""
     }
   ],
@@ -14058,11 +14058,11 @@
   ],
   "igSetCursorPos": [
     {
-      "args": "(const ImVec2 local_pos)",
+      "args": "(ImVec2 local_pos)",
       "argsT": [
         {
           "name": "local_pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& local_pos)",
@@ -14073,7 +14073,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetCursorPos",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": ""
     }
   ],
@@ -14121,11 +14121,11 @@
   ],
   "igSetCursorScreenPos": [
     {
-      "args": "(const ImVec2 pos)",
+      "args": "(ImVec2 pos)",
       "argsT": [
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& pos)",
@@ -14136,7 +14136,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetCursorScreenPos",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": ""
     }
   ],
@@ -14349,11 +14349,11 @@
   ],
   "igSetNextWindowContentSize": [
     {
-      "args": "(const ImVec2 size)",
+      "args": "(ImVec2 size)",
       "argsT": [
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& size)",
@@ -14364,7 +14364,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetNextWindowContentSize",
       "ret": "void",
-      "signature": "(const ImVec2)",
+      "signature": "(ImVec2)",
       "stname": ""
     }
   ],
@@ -14386,11 +14386,11 @@
   ],
   "igSetNextWindowPos": [
     {
-      "args": "(const ImVec2 pos,ImGuiCond cond,const ImVec2 pivot)",
+      "args": "(ImVec2 pos,ImGuiCond cond,ImVec2 pivot)",
       "argsT": [
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14398,7 +14398,7 @@
         },
         {
           "name": "pivot",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         }
       ],
       "argsoriginal": "(const ImVec2& pos,ImGuiCond cond=0,const ImVec2& pivot=ImVec2(0,0))",
@@ -14412,17 +14412,17 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetNextWindowPos",
       "ret": "void",
-      "signature": "(const ImVec2,ImGuiCond,const ImVec2)",
+      "signature": "(ImVec2,ImGuiCond,ImVec2)",
       "stname": ""
     }
   ],
   "igSetNextWindowSize": [
     {
-      "args": "(const ImVec2 size,ImGuiCond cond)",
+      "args": "(ImVec2 size,ImGuiCond cond)",
       "argsT": [
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14439,21 +14439,21 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetNextWindowSize",
       "ret": "void",
-      "signature": "(const ImVec2,ImGuiCond)",
+      "signature": "(ImVec2,ImGuiCond)",
       "stname": ""
     }
   ],
   "igSetNextWindowSizeConstraints": [
     {
-      "args": "(const ImVec2 size_min,const ImVec2 size_max,ImGuiSizeCallback custom_callback,void* custom_callback_data)",
+      "args": "(ImVec2 size_min,ImVec2 size_max,ImGuiSizeCallback custom_callback,void* custom_callback_data)",
       "argsT": [
         {
           "name": "size_min",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "size_max",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "custom_callback",
@@ -14475,7 +14475,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetNextWindowSizeConstraints",
       "ret": "void",
-      "signature": "(const ImVec2,const ImVec2,ImGuiSizeCallback,void*)",
+      "signature": "(ImVec2,ImVec2,ImGuiSizeCallback,void*)",
       "stname": ""
     }
   ],
@@ -14828,11 +14828,11 @@
   ],
   "igSetWindowPos": [
     {
-      "args": "(const ImVec2 pos,ImGuiCond cond)",
+      "args": "(ImVec2 pos,ImGuiCond cond)",
       "argsT": [
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14849,11 +14849,11 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetWindowPosVec2",
       "ret": "void",
-      "signature": "(const ImVec2,ImGuiCond)",
+      "signature": "(ImVec2,ImGuiCond)",
       "stname": ""
     },
     {
-      "args": "(const char* name,const ImVec2 pos,ImGuiCond cond)",
+      "args": "(const char* name,ImVec2 pos,ImGuiCond cond)",
       "argsT": [
         {
           "name": "name",
@@ -14861,7 +14861,7 @@
         },
         {
           "name": "pos",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14878,17 +14878,17 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetWindowPosStr",
       "ret": "void",
-      "signature": "(const char*,const ImVec2,ImGuiCond)",
+      "signature": "(const char*,ImVec2,ImGuiCond)",
       "stname": ""
     }
   ],
   "igSetWindowSize": [
     {
-      "args": "(const ImVec2 size,ImGuiCond cond)",
+      "args": "(ImVec2 size,ImGuiCond cond)",
       "argsT": [
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14905,11 +14905,11 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetWindowSizeVec2",
       "ret": "void",
-      "signature": "(const ImVec2,ImGuiCond)",
+      "signature": "(ImVec2,ImGuiCond)",
       "stname": ""
     },
     {
-      "args": "(const char* name,const ImVec2 size,ImGuiCond cond)",
+      "args": "(const char* name,ImVec2 size,ImGuiCond cond)",
       "argsT": [
         {
           "name": "name",
@@ -14917,7 +14917,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "cond",
@@ -14934,7 +14934,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igSetWindowSizeStr",
       "ret": "void",
-      "signature": "(const char*,const ImVec2,ImGuiCond)",
+      "signature": "(const char*,ImVec2,ImGuiCond)",
       "stname": ""
     }
   ],
@@ -15695,11 +15695,11 @@
   ],
   "igTextColored": [
     {
-      "args": "(const ImVec4 col,const char* fmt,...)",
+      "args": "(ImVec4 col,const char* fmt,...)",
       "argsT": [
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "fmt",
@@ -15719,17 +15719,17 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igTextColored",
       "ret": "void",
-      "signature": "(const ImVec4,const char*,...)",
+      "signature": "(ImVec4,const char*,...)",
       "stname": ""
     }
   ],
   "igTextColoredV": [
     {
-      "args": "(const ImVec4 col,const char* fmt,va_list args)",
+      "args": "(ImVec4 col,const char* fmt,va_list args)",
       "argsT": [
         {
           "name": "col",
-          "type": "const ImVec4"
+          "type": "ImVec4"
         },
         {
           "name": "fmt",
@@ -15748,7 +15748,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igTextColoredV",
       "ret": "void",
-      "signature": "(const ImVec4,const char*,va_list)",
+      "signature": "(ImVec4,const char*,va_list)",
       "stname": ""
     }
   ],
@@ -16277,7 +16277,7 @@
   ],
   "igVSliderFloat": [
     {
-      "args": "(const char* label,const ImVec2 size,float* v,float v_min,float v_max,const char* format,float power)",
+      "args": "(const char* label,ImVec2 size,float* v,float v_min,float v_max,const char* format,float power)",
       "argsT": [
         {
           "name": "label",
@@ -16285,7 +16285,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "v",
@@ -16319,13 +16319,13 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igVSliderFloat",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2,float*,float,float,const char*,float)",
+      "signature": "(const char*,ImVec2,float*,float,float,const char*,float)",
       "stname": ""
     }
   ],
   "igVSliderInt": [
     {
-      "args": "(const char* label,const ImVec2 size,int* v,int v_min,int v_max,const char* format)",
+      "args": "(const char* label,ImVec2 size,int* v,int v_min,int v_max,const char* format)",
       "argsT": [
         {
           "name": "label",
@@ -16333,7 +16333,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "v",
@@ -16362,13 +16362,13 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igVSliderInt",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2,int*,int,int,const char*)",
+      "signature": "(const char*,ImVec2,int*,int,int,const char*)",
       "stname": ""
     }
   ],
   "igVSliderScalar": [
     {
-      "args": "(const char* label,const ImVec2 size,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,float power)",
+      "args": "(const char* label,ImVec2 size,ImGuiDataType data_type,void* p_data,const void* p_min,const void* p_max,const char* format,float power)",
       "argsT": [
         {
           "name": "label",
@@ -16376,7 +16376,7 @@
         },
         {
           "name": "size",
-          "type": "const ImVec2"
+          "type": "ImVec2"
         },
         {
           "name": "data_type",
@@ -16414,7 +16414,7 @@
       "namespace": "ImGui",
       "ov_cimguiname": "igVSliderScalar",
       "ret": "bool",
-      "signature": "(const char*,const ImVec2,ImGuiDataType,void*,const void*,const void*,const char*,float)",
+      "signature": "(const char*,ImVec2,ImGuiDataType,void*,const void*,const void*,const char*,float)",
       "stname": ""
     }
   ],
