@@ -17,6 +17,9 @@ if COMPILER == "gcc" or COMPILER == "clang" then
 elseif COMPILER == "cl" then
     CPRE = COMPILER..[[ /E /DIMGUI_DISABLE_OBSOLETE_FUNCTIONS /DIMGUI_API="" /DIMGUI_IMPL_API="" ]]
     CTEST = COMPILER
+elseif COMPILER == "zig" then
+    CPRE = COMPILER..[[ c++ --target=native-native-gnu -E -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_API="" -DIMGUI_IMPL_API="" ]]
+    CTEST = COMPILER.." c++ --version"
 else
     print("Working without compiler ")
 end
@@ -562,7 +565,15 @@ end
 -------------------functions for getting and setting defines
 local function get_defines(t)
     if COMPILER == "cl" then print"can't get defines with cl compiler"; return {} end
-    local pipe,err = io.popen(COMPILER..[[ -E -dM -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_API="" -DIMGUI_IMPL_API="" ../imgui/imgui.h]],"r")
+    if not HAVE_COMPILER then print"can't get defines with no compiler"; return {} end
+    local pipe,err,file
+    if HAVE_COMPILER then
+        file,err = io.open("output/stub.cpp", "w")
+        if not file then error("could not create output/stub.cpp: "..err) end
+        file:write([[#include "../../imgui/imgui.h"]])
+        file:close()
+        pipe,err = io.popen(CPRE..[[ -dM output/stub.cpp ]],"r")
+    end
     local defines = {}
     while true do
         local line = pipe:read"*l"
@@ -575,6 +586,9 @@ local function get_defines(t)
         end
     end
     pipe:close()
+    if HAVE_COMPILER then
+        os.remove("output/stub.cpp")
+    end
     --require"anima.utils"
     --prtable(defines)
     --FLT_MAX
@@ -726,15 +740,19 @@ local function parseImGuiHeader(header,names)
 	parser.UDTs = {"ImVec2","ImVec4","ImColor"}
 	parser.placementConstruction = placementConstruction
 	
-	local pipe,err
+	local pipe,err,file
 	if HAVE_COMPILER then
-		pipe,err = io.popen(CPRE..header,"r")
+        file,err = io.open("output/stub.cpp", "w")
+        if not file then error("could not create output/stub.cpp: "..err) end
+        file:write('#include "../'..header..'"')
+        file:close()
+		pipe,err = io.popen(CPRE.."output/stub.cpp","r")
 	else
 		pipe,err = io.open(header,"r")
 	end
 	
 	if not pipe then
-		error("could not execute gcc "..err)
+		error("could not execute "..COMPILER.." "..err)
 	end
 	
 	local iterator = (HAVE_COMPILER and cpp2ffi.location) or filelines
@@ -755,6 +773,11 @@ local function parseImGuiHeader(header,names)
 	end
 	--cpp2ffi.save_data("cdefs1.lua",table.concat(tableo))
 	pipe:close()
+
+    if HAVE_COMPILER then
+        os.remove("output/stub.cpp")
+    end
+
 	return parser
 end
 --generation
@@ -903,7 +926,7 @@ if #implementations > 0 then
     for i,impl in ipairs(implementations) do
         local source = [[../imgui/examples/imgui_impl_]].. impl .. ".h "
         local locati = [[imgui_impl_]].. impl
-        local pipe,err
+        local pipe,err,file
 		local extra_includes = ""
 		local include_cmd = COMPILER=="cl" and [[ /I ]] or [[ -I ]]
 		if config[impl] then
@@ -912,6 +935,10 @@ if #implementations > 0 then
 			end
 		end
         if HAVE_COMPILER then
+            file,err = io.open("output/stub.cpp", "w")
+            if not file then error("could not create output/stub.cpp: "..err) end
+            file:write('#include "../'..header..'"')
+            file:close()
             pipe,err = io.popen(CPRE..extra_includes..source,"r")
         else
             pipe,err = io.open(source,"r")
@@ -927,6 +954,9 @@ if #implementations > 0 then
 			parser2:insert(line)
         end
         pipe:close()
+        if HAVE_COMPILER then
+            os.remove("output/stub.cpp")
+        end
     end
     parser2:do_parse()
 
